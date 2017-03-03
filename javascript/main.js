@@ -1,29 +1,3 @@
-/**
-  * isMobile
-  * responsiveMenu
-  * headerFixed
-  * scrollBtn
-  * onepage_nav 
-  * ajaxAppointmentl
-  * ajaxContactForm
-  * alertBox
-  * detectViewport
-  * counter
-  * tabs
-  * flatPricingCarousel
-  * flatTestimonials
-  * simpleSlider
-  * datepicker
-  * sectionVideo
-  * googleMap  
-  * responsiveVideo
-  * flatAnimation
-  * goTop
-  * retinaLogos
-  * parallax
-  * removePreloader
-*/
-
 ;(function($) {
 
    'use strict'
@@ -595,29 +569,29 @@
         if ( matchMedia( 'only screen and (min-width: 991px)' ).matches ) {
             headerFixed();
         }             
-        onepage_nav();
-        scrollBtn();        
-        responsiveMenu();
-        blogSlider();
-        portfolioIsotope(); 
-        detectViewport();  
-        counter(); 
-        tabs();   
-        flatPricingCarousel(); 
-        flatTestimonials();
-        simpleSlider();       
-        datepicker();
-        ajaxAppointment();
-        ajaxContactForm();
-        alertBox();
-        sectionVideo();
-        googleMap();        
-        flatAnimation();
-        goTop();        
-        responsiveVideo();
-        retinaLogos(); 
-        parallax();
-        removePreloader();
+        // onepage_nav();
+        // scrollBtn();        
+        // responsiveMenu();
+        // blogSlider();
+        // portfolioIsotope(); 
+        // detectViewport();  
+        // counter(); 
+        // tabs();   
+        // flatPricingCarousel(); 
+        // flatTestimonials();
+        // simpleSlider();       
+        // datepicker();
+        // ajaxAppointment();
+        // ajaxContactForm();
+        // alertBox();
+        // sectionVideo();
+        // googleMap();        
+        // flatAnimation();
+        // goTop();        
+        // responsiveVideo();
+        // retinaLogos(); 
+        // parallax();
+        // removePreloader();
    	});
 
 })(jQuery);

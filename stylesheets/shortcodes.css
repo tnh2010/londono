@@ -21,6 +21,52 @@
 
 /*Top
 --------------------------------------------------------------*/
+.top {
+    background-color: #ffffff;
+}
 
+.top-info li a {
+    line-height: 32px;
+    display: inline-block;
+    color: #666666;
+}
+
+.top-info li {
+    display: inline-block;
+    font-family: "ProximaNova Semibold",sans-serif;
+    font-size: 12px;
+    padding: 0 10px;
+    float: right;
+    position: relative;
+}
+.top .language  select{
+    border: 0;
+    font-family: "ProximaNova Semibold",sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+li.language:before {
+    content: "\f107";
+    font-family: FontAwesome;
+    position: absolute;
+    background-color: #fff;
+    right: 14px;
+    font-size: 16px;
+    top: 5px;
+}
+
+.top-info li.phone:before {
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    font-size: 15px;
+    content: "\f095";
+    font-family: "FontAwesome";
+}
+
+.top-info li.phone {
+	padding-left: 35px;
+}
 
 

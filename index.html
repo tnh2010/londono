@@ -20,7 +20,7 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
 
     <!-- Responsive -->
-    <link rel="stylesheet" type="text/css" href="stylesheets/responsive.css">
+    <!-- <link rel="stylesheet" type="text/css" href="stylesheets/responsive.css"> -->
 	
 	<!-- Animation Style -->
     <link rel="stylesheet" type="text/css" href="stylesheets/animate.css">
@@ -37,21 +37,22 @@
         <div class="top">
             <div class="container">
                 <div class="row">
-                    <ul>
-                        <li>
-                            <a href="#">SELL WITH US</a>
+                    <ul class="top-info">
+                        
+                        <li class="language">
+                            <select >
+                                <option value="EN">EN</option>
+                                <option value="VI">VI</option>
+                            </select>
+                        </li>
+                        <li class="phone">
+                            <a href="#">514 937 1717</a>
                         </li>
                         <li>
                             <a href="#">VISIT OUR OPEN HOUSES</a>
                         </li>
                         <li>
-                            <a href="#">514 937 1717</a>
-                        </li>
-                        <li>
-                            <select class="language">
-                                <option value="EN">EN</option>
-                                <option value="VI">VI</option>
-                            </select>
+                            <a href="#">SELL WITH US</a>
                         </li>
                     </ul>
                 </div><!--/.row -->
@@ -60,62 +61,48 @@
         <!-- Header -->            
         <header id="header" class="header clearfix"> 
             <div class="header-inner">
-                <div id="logo" class="logo">
-                    <a href="index.html" rel="home">
-                        <img src="images/logo.png" alt="image">
-                    </a>
-                </div><!-- /.logo -->
-                <div class="nav-wrap">
-                    <div class="btn-menu open"></div><!-- //mobile menu button -->
-                    <nav id="mainnav" class="mainnav">
-                        <ul class="menu"> 
-                            <li class="home">
-                                <a href="index.html">Home</a>
-                                <ul class="submenu"> 
-                                    <li><a href="index.html">Home V.1</a>
-                                    </li>
-                                    <li><a href="index-2.html">Home V.2</a></li>
-                                    <li><a href="index-3.html">Home V.3</a></li>
-                                    <li><a href="index-animated.html">Home Animated</a></li>
-                                </ul><!-- /.submenu -->
-                            </li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#doctor">Doctor</a></li>
-                            <li><a href="#services">Services</a></li>
-                            <li><a href="#portfolio">Portfolio</a>
-                                <ul class="submenu"> 
-                                    <li><a href="portfolio-v1.html">Portfolio 1</a></li>
-                                    <li><a href="portfolio-v2.html">Portfolio 2</a></li>
-                                    <li><a href="portfolio-v3.html">Portfolio 3</a></li>
-                                    <li><a href="portfolio-v4.html">Portfolio 4</a></li>
-                                </ul><!-- /.submenu -->
-                            </li>
-                            <li><a href="#appointment">appointment</a></li>
-                            <li><a href="#blog">Blogs</a>
-                                <ul class="submenu"> 
-                                    <li><a href="blog.html">Blogs </a></li>
-                                    <li><a href="blog-v1.html">Blogs 1 </a></li>
-                                    <li><a href="blog-single.html">Blogs Single</a></li>
-                                </ul><!-- /.submenu -->
-                            </li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul><!-- /.menu -->
-                    </nav><!-- /.mainnav -->
-                </div><!-- /.nav-wrap -->
-                <div class="language-wrap">
-                    <div class="btn-menu-active">
-                        <a href="#"><img src="images/icon/btn-menu-activet.png" alt="images"></a>
+                <div class="container">
+                    <div class="col-md-3">
+                        <div id="logo" class="logo">
+                            <a href="index.html" rel="home">
+                                <img src="images/logo.png" alt="image">
+                            </a>
+                        </div><!-- /.logo -->
                     </div>
-                    <ul class="language">
-                        <li class="current"><a href="#">en</a></li>
-                        <li><a href="#">fr</a></li>
-                    </ul><!-- /.language -->                    
-                </div><!-- /.language-wrap -->
+                    <div class="col-md-8">
+                        <div class="nav-wrap">
+                            <div class="btn-menu open"></div><!-- //mobile menu button -->
+                            <nav id="mainnav" class="mainnav">
+                                <ul class="menu"> 
+                                    <li class="home">
+                                        <a href="index.html">VIEW ALL PROPERTIES</a>
+                                        <ul class="submenu"> 
+                                            <li><a href="index.html">Home V.1</a>
+                                            </li>
+                                            <li><a href="index-animated.html">Home Animated</a></li>
+                                        </ul><!-- /.submenu -->
+                                    </li>
+                                    <li><a href="#about">MEET OUR BROKERS</a></li>
+                                    <li><a href="#doctor">ABOUT US</a></li>
+                                    <li><a href="#services">THE PROPERTY SHOP</a></li>
+                                    <li><a href="#portfolio">CONTACT US</a>
+                                    </li>
+                                </ul><!-- /.menu -->
+                            </nav><!-- /.mainnav -->
+                        </div><!-- /.nav-wrap -->
+                    </div>
+                    <div class="col-md-1">
+                        <div class="widget-search">
+                            <input type="text" name="input-search">
+                            <input type="submit" name="submit" class="button button-search">
+                        </div>
+                    </div>
+                </div>
             </div><!-- /.header-inner --> 
         </header><!-- /.header --> 
 
         <!-- Slider -->
-        <div class="tp-banner-container">
+        <!-- <div class="tp-banner-container">
             <div class="tp-banner" >
                 <ul>
                     <li data-transition="slideup" data-slotamount="7" data-masterspeed="1000" data-saveperformance="on">
@@ -162,7 +149,7 @@
                     </li>
                 </ul>
             </div>
-        </div>
+        </div> -->
        
         <!-- Entry Page -->
         <div class="entry-page">
