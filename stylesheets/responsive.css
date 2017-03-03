@@ -1,403 +1,67 @@
 /* Media Queries
 -------------------------------------------------------------- */
 @media only screen and (max-width: 1366px) {
-	.header-inner .logo {
-		padding: 0 30px 0 30px;
-		float: left;
-	}
-
-	 .header-inner .nav-wrap {
-	 	float: right;
-	 }
-
-	#mainnav > ul > li {
-		padding: 19px 10px 20px 10px;
-	}
-
-	.home #services .hoa-divider.d100px,
-	.home2 #services .hoa-divider.d100px,
-	.home2 #appointment .hoa-divider.d100px {
-		height: 50px;
-	}
-
-	.home2 #appointment .title-section {
-		margin-bottom: 60px;
-	}
-
-	.home2 #appointment .input-wrap {
-		margin-bottom: 10px;
-	}
-
-	.home2 #appointment .textarea-wrap,
-	.home2 #appointment textarea {
-		height: 130px;
-	}
-
-	.home #services .hoa-iconbox {
-		margin-bottom: 0;
-	}
-
-	.home #services .title-section.desc,
-	.comment-form .form-submit {
-		margin-bottom: 30px;
-	}
-
-	.home .row-appointment .hoa-testimonials-single {
-		padding: 170px 30px 50px 30px;
-	}
-
-	.header.style2 .header-inner .logo,
-	.header.style3 .header-inner .logo {
-		padding: 0 90px 0 30px;
-	}
-
-	.header.style2 #mainnav > ul > li.home > a,
-	.header.style3 #mainnav > ul > li.home > a {
-		padding: 0 10px 0 10px;
-	}
-
-	.header-inner .language-wrap,
-	.header.style2 .btn-menu-active,
-	.setting-wrap {
-		display: none;
-	}	
-
-	.hoa-testimonials-single:before {
-		top: 91px;
-	}
+	
 }
 
 /* Smaller than standard 1200 */
 @media only screen and (max-width: 1199px) {
-	.header-inner .language-wrap,
-	.header.style2 .btn-menu-active,
-	.setting-wrap {
+	.button-show-search {
+		display: inline-block;
+	}
+	.widget-search {
 		display: none;
 	}
-
-	.header-inner .nav-wrap {
-		float: right;
+	#logo:before {
+		content: none ;
 	}
-
-	#mainnav > ul > li {
-		padding: 19px 7px 20px 7px;
+	#logo a img {
+	    width: 125px;
 	}
-
-	#mainnav > ul > li > a {
-		padding: 0 7px;
-	}
-
-	.header.style2 .header-inner .logo, 
-	.header.style3 .header-inner .logo {
-		padding: 0 30px 0 15px;
-	}
-
-	#mainnav ul li ul {
-		left: -100%;
-	}
-
-	#services > .col-md-6 {
-		width: 100%;
+	.header-inner .wrap-menu {
+		margin: 0;
 	}
 }
 
 /* Smaller than standard 992 */
 @media only screen and (max-width: 991px) {
+	#mainnav {
+		display: none;
+	}
 	.btn-menu {
 		display: block ;
 	}
 
-	#mainnav,
-	.header-inner .language-wrap {
-		display: none;
+
+
+	.button-show-search {
+	    width: 30px;
+	    height: 30px;
+	    text-align: center;
+	    cursor: pointer;
+	    display: inline-block;
+	    padding-top: 5px;
+	    margin-top: 17px;
+	    margin-right: 10px;
+	    position: absolute;
+	    display: none;
 	}
 
-	.header-inner .logo {
-		float: left;
+	.button-show-search i {
+	    font-size: 20px;
+	    color: #fff;
 	}
 
-	.header-inner .nav-wrap {
-		float: right;
+	.button-show-search {
+	    display: inline-block;
+	    float: right;
+	    position: relative;
 	}
 
-	.hoa-row.row-about {
-		padding: 90px 0 60px;
+	.header-inner .wrap-menu {
+	    margin-right: -28px;
 	}
 
-	.hoa-row,
-	.hoa-row.row-portfolio,
-	.hoa-row.row-pricing,
-	.main-content,
-	.hoa-stats.video-bg,
-	.home2 .hoa-row.row-portfolio,
-	.home2 .hoa-row.row-pricing,
-	.home2 .hoa-row.row-testimonials {
-		padding: 60px 0;
-	}
-
-	.hoa-row.row-progress,
-	.home2 .hoa-row.row-progress,
-	.home3 .hoa-row.row-portfolio {
-		padding: 60px 0 0;
-	}
-
-	.padding-left61px,
-	.entry .feature-post,
-	.appointment-form .wrap-right {
-		padding-left: 0;
-	}
-
-	.appointment-form.for-full-width 
-	.input-wrap.wrap-right:before {
-		left: 0;
-	}
-
-	.appointment-form .wrap-left {
-		padding-right: 0;
-	}
-
-	.about-wrap.padding-left61px {
-		padding-top: 20px;
-	}
-
-	.hoa-counter {
-		padding: 19px 15px;
-    	overflow: hidden;
-	}
-
-	.margin-top93px {
-		margin-top: 20px;
-	}
-
-	.title-section {
-		margin-bottom: 70px;
-	}
-
-	.hoa-tabs.advantage {
-		padding: 30px 10px 30px;
-	}
-	
-	.hoa-tabs.advantage .content-tab .content-inner p {
-		padding: 20px 0;
-	}
-
-	.hoa-bg-white,
-	.hoa-bg {
-		width: 100%;
-		margin-left: 0;
-	}
-
-	.home #services .hoa-iconbox,
-	.hoa-latest-blog .entry, 
-	.hoa-latest-blog .entry-content p {
-		margin-bottom: 20px;
-	}
-
-	.appointment-form .send-wrap,
-	.hoa-contact-form .submit-wrap,
-	.hoa-progress-item {
-		margin-bottom: 60px;
-	}
-	
-	.hoa-team.style1 .content,
-	.appointment-form .wrap-left,
-	.appointment-form .wrap-right,
-	.hoa-contact-form .wrap-type-input, 
-	.hoa-contact-form .textarea-wrap,
-	.comment-form .name-container, 
-	.comment-form .phone-container,
-	.comment-form .email-container, 
-	.comment-form .website-container,
-	.home .hoa-team.style1 .avatar,
-	.hoa-portfolio.v1 .item,
-	.hoa-portfolio.v4 .item {
-		width: 100%;
-	}	
-	
-	.hoa-team.style1.img-small .avatar,
-	.hoa-team.style1.img-small .content,
-	.hoa-portfolio.v2 .item,
-	.hoa-portfolio.v3 .item {
-		width: 50%;
-	}
-
-	.hoa-portfolio .item .title-portfolio {
-		font-size: 14px;
-	}
-
-	.portfolio-row-page .hoa-portfolio.v4 .item {
-		padding: 0 0 0;
-	}
-
-	.pricing-table .img {
-		text-align: center;
-	}
-
-	.hoa-divider.d100px {
-		height: 60px;
-	}
-
-	.wrap-testimonials {
-		padding: 30px;
-	}
-
-	.hoa-latest-blog .entry .main-post,
-	.blog-posts.v1 .entry .main-post,
-	.blog-single .entry .main-post {
-		padding-left: 40px;
-	}
-
-	.hoa-team.style1 .content {
-		padding: 30px 15px;
-	}
-
-	.appointment-form,
-	.tp-caption {
-		padding: 0 15px;
-	}
-
-	.page-template-front-page .hoa-portfolio .portfolio-filter,
-	.hoa-tabs.advantage {
-		margin-top: 0;
-	}
-
-	.page-template-front-page .hoa-portfolio .portfolio-filter > li {
-		margin-bottom: 15px;
-	}
-
-	.hoa-tabs.advantage.bg-white-after:after {
-		width: 0;
-		height: 0;
-	}
-
-	.hoa-tabs.member .menu-tab {
-		top: 30px;
-	}
-
-	.entry .entry-title,
-	.hoa-latest-blog.style1 .entry .entry-title {
-		font-size: 17px;
-		padding-top: 34px;
-	}
-
-	.hoa-row.row-services-box {
-		padding: 0 0 60px;
-	}
-
-	.wrap-simple-slider,
-	.hoa-about-box,
-	.home2 .hoa-row.row-contact .hoa-contact-form,
-	.bg-white-after .appointment-form,
-	.home3 .hoa-contact-form,
-	.hoa-contact-form .wrap-type-input, 
-	.hoa-contact-form .textarea-wrap,
-	.hoa-contact-form.for-full-width {
-		padding: 0 0;
-	}
-
-	.hoa-callout-box.aside .callout-wrap {
-		display: block;
-	}
-
-	.hoa-callout-box .buttons {	
-		text-align: center;
-		display: block;
-	}
-
-	.hoa-callout-box .text {
-		overflow: hidden;
-	}
-
-	.home3 .hoa-iconbox.icon-top.border {
-		margin-bottom: 100px;
-	}
-
-	.bg-white-after .appointment-form {
-		margin-left: 0;
-	}
-
-	.bg-white-after .appointment-form .wrap-right,
-	.comment-form .name-container, 
-	.comment-form .phone-container,
-	.hoa-portfolio.v4 .portfolio-wrap {
-		margin-right: 0;
-	}
-
-	.hoa-portfolio .portfolio-filter {
-		text-align: center;
-	}
-
-	.hoa-portfolio .portfolio-filter > li:before,
-	.hoa-portfolio .portfolio-filter > li a {
-		color: #202020;
-	}
-
-	.hoa-portfolio .portfolio-filter {
-		margin-bottom: 30px;
-	}
-
-	.breadcrumbs,
-	.page-title-heading h1 {
-		padding-left: 15px;
-	}
-
-	.page-title-heading h1,
-	.title-box .main-title {
-		font-size: 35px;
-	}
-
-	.entry .feature-post {
-		float: none;
-	}
-
-	.comment-post .children {
-		margin-left: 30px;
-	}
-
-	.hoa-portfolio.v4 .item {
-		padding: 0 0 30px 0;
-	}
-
-	.home #services .hoa-divider.d100px, 
-	.home2 #appointment .hoa-divider.d100px {
-		height: 60px;
-	}
-
-	.entry .feature-post {
-		margin-right: 0;
-		width: 100%;
-		text-align: center;
-	}
-
-	.go-top,
-	.hoa-portfolio .item .link,
-	.switcher-container h2 a {
-		width: 33px;
-		height: 33px;
-		line-height: 33px;
-	}
-
-	.hoa-portfolio .item .link {
-		margin-left: -16px;
-	}
-
-	.go-top.style1 {
-		top: -16px;
-	}
-
-	.switcher-container h2 a i,
-	.go-top i {
-		font-size: 18px;
-	}
-
-	.switcher-container h2 a {
-		left: -33px;
-	}
-
-	.switcher-container h2 a i {
-		margin-top: 8px;
-	}
-	
 }
 
 /* Tablet Landscape */
@@ -412,128 +76,7 @@
 
 /* All Mobile Sizes */
 @media only screen and (max-width: 767px) {
-	.header-inner .logo {
-		padding: 0 15px 0 15px;
-	}
-
-	.page-title-heading h1, 
-	.title-box .main-title {
-		font-size: 30px;
-	}
-
-	.page-title-heading h1 {
-		margin-top: -15px;
-	}
-
-	.tp-caption.hoa-scroll-btn i {
-		font-size: 18px;
-	}
-
-	.tp-caption.hoa-content-slider:before {
-		width: 1px;
-	}
-
-	.title-box .main-title {
-		font-size: 25px;
-	}
 	
-	.hoa-tabs.member .menu-tab {
-		top: 0;
-	}
-
-	.hoa-callout-box .icon {
-		float: none;
-		margin: 15px auto;   
-	}
-
-	.hoa-callout-box .text {
-		text-align: center;
-	}
-
-	.page-title-heading h1 {
-		font-size: 25px;
-	}
-
-	blockquote .wrap-text {
-		padding: 15px;
-	}
-
-	.hoa-latest-blog .entry .main-post, 
-	.blog-posts.v1 .entry .main-post, 
-	.blog-single .entry .main-post {
-		padding-left: 0;
-	}
-
-	.blog-posts.v1 .entry .feature-post .type-post,
-	.blog-single .entry .feature-post .type-post {
-		left: 10px;
-    	top: 71%;
-	}
-
-	.entry .entry-title,
-	.comment-post h4.comment-title {
-		font-size: 13px;
-		padding-top: 15px;
-	}
-
-	.sidebar {
-		padding-top: 30px;
-	}
-
-	.main-content {
-		padding: 60px 0 0;
-	}
-
-	footer {
-		padding: 60px 0 60px;
-	}
-
-	blockquote .blockqoute-text,
-	.comment-list-wrap {
-		margin-bottom: 0;
-	}
-
-	blockquote .wrap-text {
-		border: 0;
-	}
-
-	.post-wrap,
-	.hoa-portfolio .portfolio-filter > li {
-		padding-right: 0;
-	}
-
-	.flex-direction-nav a {
-		top: 50%;
-		margin-top: -10px;
-	}
-
-	.blog-posts.v1 blockquote:after {
-		left: 0;
-	}
-
-	.comment-post .comment-avatar {
-		float: none;
-	}
-
-	.tp-caption.hoa-button:after {
-		background-color: transparent;
-	}
-
-	.tp-caption.hoa-button i,
-	.tp-leftarrow.square, 
-	.tp-rightarrow.square,
-	.tp-caption.hoa-title-slider3:after {
-		display: none;
-	}
-
-	.hoa-latest-blog .entry .feature-post .type-post {
-		left: 15px;
-    	top: 86%;
-	}
-
-	.footer-widgets .widget {	    
-	    padding: 36px 15px 42px 15px;
-	}	
 }
 
 /* Mobile Landscape Size */
@@ -543,40 +86,12 @@
 
 /* Mobile Portrait Size */
 @media only screen and (max-width: 479px) {
-	.hoa-latest-blog .entry .feature-post .type-post {
-		top: 80%;
-	}	
-	
-	.hoa-portfolio.v2 .item,
-	.hoa-portfolio.v3 .item {
-		width: 100%;
+	.top{
+		display: none;
 	}
 }
 
 @media (max-width: 320px) {	
-	.hoa-team.style1.img-small .avatar,
-	.hoa-team.style1.img-small .content {
-		width: 100%;
-	}
-
-	.hoa-latest-blog.style1 .entry .entry-title {
-		font-size: 14px;
-	}
-
-	.hoa-latest-blog.style1 .entry .entry-title {
-		padding-top: 0;
-	}
-
-
-
-	.hoa-iconbox.icon-right,
-	.hoa-iconbox.icon-left {
-		padding-left: 0;
-		padding-right: 0;
-	}
-
-	.hoa-socials li {
-		margin-right: 1px;
-	}
+	
 }
 

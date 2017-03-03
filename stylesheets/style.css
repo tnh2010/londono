@@ -356,6 +356,10 @@ input[type="color"],
     background-color: #111e2e;
 }
 
+.header-inner .wrap-menu {
+    margin: 0 -15px 0 0;
+}
+
 /* Header Fix */
 #header.downscrolled {
 	position: fixed;
@@ -436,9 +440,8 @@ input[type="color"],
 
 #mainnav ul li a {
 	text-transform: uppercase;
-	font-size: 14px;
-	font-family: 'Lato', sans-serif;
-	font-weight: 400;
+	font-family: "ProximaNova Semibold",sans-serif;
+	font-size: 13px;
 	color: #ffffff;
 }
 
@@ -446,12 +449,13 @@ input[type="color"],
 	color: #b28500;	
 }
 
-#mainnav ul li ul li a:hover {
-	padding-left: 5px;
-}
-
 #mainnav > ul > li {
 	float: left;
+}
+
+#mainnav ul li ul li a {
+    padding: 10px 0 10px 15px;
+    display: block;
 }
 
 #mainnav > ul > li > a {
@@ -459,7 +463,7 @@ input[type="color"],
     display: inline-block;
     position: relative;
     line-height: 65px;
-    padding: 0 15px;
+    padding: 0 13px;
     color: #fff;
     font-family: "ProximaNova Semibold",sans-serif;
 }
@@ -492,7 +496,6 @@ input[type="color"],
 }
 
 #mainnav ul li ul li {
-	padding: 10px 0 10px 15px;
 	border-top: 1px solid #b28500;	
 }
 
@@ -517,6 +520,76 @@ input[type="color"],
 
 #mainnav ul li ul li ul li a:hover {
 	color: #f1c40f;
+}
+
+
+/*Widget search
+------------------------------------------------------*/
+
+
+.widget-search {
+    float: right;
+    position: relative;
+    line-height: 65px;
+    margin-left: 5px;
+}
+
+.widget-search .input-search {
+    color: #fff;
+    width: 175px;
+    border: 0;
+    border-bottom: 1px solid #424d59;
+}
+
+.widget-search .input-search::placeholder {
+	font-size: 13px;
+	font-family: "ProximaNova Semibold",sans-serif;
+}
+
+
+.widget-search .button-search {
+    position: absolute;
+    top: 20px;
+    right: -6px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.widget-search .button.button-search i {
+    position: absolute;
+    right: 7px;
+    top: 8px;
+    color: #ffffff;
+}
+
+.button-show-search {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    padding-top: 5px;
+    margin-top: 15px;
+    position: absolute;
+    display: none;
+}
+
+.widget-search.on {
+    position: absolute;
+    right: 0;
+    top: 100%;
+}
+
+.widget-search.on .input-search {
+    width: 200px;
+    color: #424d59;
+}
+
+.widget-search.on .button.button-search i {
+    color: #424d59;
 }
 
 .header.style1 #mainnav > ul > li.home > a:before,
@@ -651,41 +724,49 @@ input[type="color"],
 #mainnav-mobi > ul > li > ul > li.active > a {
 	color: #fff;
 }
-
 .btn-menu {
-	float: right;	
-	font-size: 32px;	
-	color: #b28500;
-	text-align:center;	
-    width: 45px;
-    height: 73px;
+     display: none; 
+    font-size: 14px;
+    font-family: "FontAwesome";
+    color: #fff;
     text-align: center;
-    line-height: 73px;	
-	cursor: pointer;
-    font-family: 'Material Icons';
-	display: none;			
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    cursor: pointer;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+    margin-top: 8px;
+    float: right;
+    -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
-.btn-menu:before{
-	content: "\E5D2";
-	-webkit-transition: all 0.3s ease-out;
-	   -moz-transition: all 0.3s ease-out;
-	    -ms-transition: all 0.3s ease-out;
-	     -o-transition: all 0.3s ease-out;
-	        transition: all 0.3s ease-out;
+.btn-menu:before {
+    content: "\f0c9";
+    font-size: 29px;
+    font-weight: normal;
 }
 
-.btn-menu.active:before{
-	content: "\E5CD";
+
+.btn-menu.active:before {
+    content: "\f00d";
+    font-size: 29px;
 }
 
 .btn-submenu {
 	position: absolute;
 	right: 20px;
 	top: 0;
-	font-family: 'Material Icons';
+	font-family: 'FontAwesome';
 	font-size: 24px;
-	line-height: 60px;
+	line-height: 50px;
 	text-align: center;
 	cursor: pointer;
 	width: 70px;
@@ -693,12 +774,13 @@ input[type="color"],
 }
 
 .btn-submenu:before {
-	content: "\E5CF";
+	content: "\f107";
 	color: #fff;
+    font-family: 'FontAwesome';
 }
 
 .btn-submenu.active:before {	
-	content: "\E5CE";
+	content: "\f106";
 }
 
 /* Page Title

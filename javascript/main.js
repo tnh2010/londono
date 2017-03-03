@@ -564,6 +564,19 @@
         });
     };
 
+    var clickFunction = function() {        
+        $('.button-show-search').click(function() {
+            if ($('.widget-search').hasClass('on')) {
+                $('.widget-search').removeClass('on');
+            }
+            else {
+                $('.widget-search').addClass('on');
+            }
+            $('.widget-search').toggle();
+        });
+    };
+    
+
    	// Dom Ready
 	$(function() { 
         if ( matchMedia( 'only screen and (min-width: 991px)' ).matches ) {
@@ -571,7 +584,7 @@
         }             
         // onepage_nav();
         // scrollBtn();        
-        // responsiveMenu();
+         responsiveMenu();
         // blogSlider();
         // portfolioIsotope(); 
         // detectViewport();  
@@ -592,6 +605,8 @@
         // retinaLogos(); 
         // parallax();
         // removePreloader();
+
+        clickFunction();
    	});
 
 })(jQuery);

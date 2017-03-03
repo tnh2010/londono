@@ -31,6 +31,10 @@
     color: #666666;
 }
 
+.top-info li:hover a {
+    color: #b28500;
+}
+
 .top-info li {
     display: inline-block;
     font-family: "ProximaNova Semibold",sans-serif;
@@ -56,17 +60,21 @@ li.language:before {
     top: 5px;
 }
 
-.top-info li.phone:before {
+.top-info li.phone a:before {
     position: absolute;
-    top: 5px;
-    left: 20px;
+    top: 0;
+    left: 25px;
     font-size: 15px;
     content: "\f095";
     font-family: "FontAwesome";
 }
 
-.top-info li.phone {
+.top-info li.phone a{
 	padding-left: 35px;
+}
+
+.top-info li.phone:hover:before {
+    color: #b28500;
 }
 
 
