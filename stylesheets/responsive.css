@@ -14,9 +14,9 @@
 		padding: 19px 10px 20px 10px;
 	}
 
-	.home #services .flat-divider.d100px,
-	.home2 #services .flat-divider.d100px,
-	.home2 #appointment .flat-divider.d100px {
+	.home #services .hoa-divider.d100px,
+	.home2 #services .hoa-divider.d100px,
+	.home2 #appointment .hoa-divider.d100px {
 		height: 50px;
 	}
 
@@ -33,7 +33,7 @@
 		height: 130px;
 	}
 
-	.home #services .flat-iconbox {
+	.home #services .hoa-iconbox {
 		margin-bottom: 0;
 	}
 
@@ -42,7 +42,7 @@
 		margin-bottom: 30px;
 	}
 
-	.home .row-appointment .flat-testimonials-single {
+	.home .row-appointment .hoa-testimonials-single {
 		padding: 170px 30px 50px 30px;
 	}
 
@@ -62,7 +62,7 @@
 		display: none;
 	}	
 
-	.flat-testimonials-single:before {
+	.hoa-testimonials-single:before {
 		top: 91px;
 	}
 }
@@ -120,24 +120,24 @@
 		float: right;
 	}
 
-	.flat-row.row-about {
+	.hoa-row.row-about {
 		padding: 90px 0 60px;
 	}
 
-	.flat-row,
-	.flat-row.row-portfolio,
-	.flat-row.row-pricing,
+	.hoa-row,
+	.hoa-row.row-portfolio,
+	.hoa-row.row-pricing,
 	.main-content,
-	.flat-stats.video-bg,
-	.home2 .flat-row.row-portfolio,
-	.home2 .flat-row.row-pricing,
-	.home2 .flat-row.row-testimonials {
+	.hoa-stats.video-bg,
+	.home2 .hoa-row.row-portfolio,
+	.home2 .hoa-row.row-pricing,
+	.home2 .hoa-row.row-testimonials {
 		padding: 60px 0;
 	}
 
-	.flat-row.row-progress,
-	.home2 .flat-row.row-progress,
-	.home3 .flat-row.row-portfolio {
+	.hoa-row.row-progress,
+	.home2 .hoa-row.row-progress,
+	.home3 .hoa-row.row-portfolio {
 		padding: 60px 0 0;
 	}
 
@@ -160,7 +160,7 @@
 		padding-top: 20px;
 	}
 
-	.flat-counter {
+	.hoa-counter {
 		padding: 19px 15px;
     	overflow: hidden;
 	}
@@ -173,59 +173,59 @@
 		margin-bottom: 70px;
 	}
 
-	.flat-tabs.advantage {
+	.hoa-tabs.advantage {
 		padding: 30px 10px 30px;
 	}
 	
-	.flat-tabs.advantage .content-tab .content-inner p {
+	.hoa-tabs.advantage .content-tab .content-inner p {
 		padding: 20px 0;
 	}
 
-	.flat-bg-white,
-	.flat-bg {
+	.hoa-bg-white,
+	.hoa-bg {
 		width: 100%;
 		margin-left: 0;
 	}
 
-	.home #services .flat-iconbox,
-	.flat-latest-blog .entry, 
-	.flat-latest-blog .entry-content p {
+	.home #services .hoa-iconbox,
+	.hoa-latest-blog .entry, 
+	.hoa-latest-blog .entry-content p {
 		margin-bottom: 20px;
 	}
 
 	.appointment-form .send-wrap,
-	.flat-contact-form .submit-wrap,
-	.flat-progress-item {
+	.hoa-contact-form .submit-wrap,
+	.hoa-progress-item {
 		margin-bottom: 60px;
 	}
 	
-	.flat-team.style1 .content,
+	.hoa-team.style1 .content,
 	.appointment-form .wrap-left,
 	.appointment-form .wrap-right,
-	.flat-contact-form .wrap-type-input, 
-	.flat-contact-form .textarea-wrap,
+	.hoa-contact-form .wrap-type-input, 
+	.hoa-contact-form .textarea-wrap,
 	.comment-form .name-container, 
 	.comment-form .phone-container,
 	.comment-form .email-container, 
 	.comment-form .website-container,
-	.home .flat-team.style1 .avatar,
-	.flat-portfolio.v1 .item,
-	.flat-portfolio.v4 .item {
+	.home .hoa-team.style1 .avatar,
+	.hoa-portfolio.v1 .item,
+	.hoa-portfolio.v4 .item {
 		width: 100%;
 	}	
 	
-	.flat-team.style1.img-small .avatar,
-	.flat-team.style1.img-small .content,
-	.flat-portfolio.v2 .item,
-	.flat-portfolio.v3 .item {
+	.hoa-team.style1.img-small .avatar,
+	.hoa-team.style1.img-small .content,
+	.hoa-portfolio.v2 .item,
+	.hoa-portfolio.v3 .item {
 		width: 50%;
 	}
 
-	.flat-portfolio .item .title-portfolio {
+	.hoa-portfolio .item .title-portfolio {
 		font-size: 14px;
 	}
 
-	.portfolio-row-page .flat-portfolio.v4 .item {
+	.portfolio-row-page .hoa-portfolio.v4 .item {
 		padding: 0 0 0;
 	}
 
@@ -233,7 +233,7 @@
 		text-align: center;
 	}
 
-	.flat-divider.d100px {
+	.hoa-divider.d100px {
 		height: 60px;
 	}
 
@@ -241,13 +241,13 @@
 		padding: 30px;
 	}
 
-	.flat-latest-blog .entry .main-post,
+	.hoa-latest-blog .entry .main-post,
 	.blog-posts.v1 .entry .main-post,
 	.blog-single .entry .main-post {
 		padding-left: 40px;
 	}
 
-	.flat-team.style1 .content {
+	.hoa-team.style1 .content {
 		padding: 30px 15px;
 	}
 
@@ -256,59 +256,59 @@
 		padding: 0 15px;
 	}
 
-	.page-template-front-page .flat-portfolio .portfolio-filter,
-	.flat-tabs.advantage {
+	.page-template-front-page .hoa-portfolio .portfolio-filter,
+	.hoa-tabs.advantage {
 		margin-top: 0;
 	}
 
-	.page-template-front-page .flat-portfolio .portfolio-filter > li {
+	.page-template-front-page .hoa-portfolio .portfolio-filter > li {
 		margin-bottom: 15px;
 	}
 
-	.flat-tabs.advantage.bg-white-after:after {
+	.hoa-tabs.advantage.bg-white-after:after {
 		width: 0;
 		height: 0;
 	}
 
-	.flat-tabs.member .menu-tab {
+	.hoa-tabs.member .menu-tab {
 		top: 30px;
 	}
 
 	.entry .entry-title,
-	.flat-latest-blog.style1 .entry .entry-title {
+	.hoa-latest-blog.style1 .entry .entry-title {
 		font-size: 17px;
 		padding-top: 34px;
 	}
 
-	.flat-row.row-services-box {
+	.hoa-row.row-services-box {
 		padding: 0 0 60px;
 	}
 
 	.wrap-simple-slider,
-	.flat-about-box,
-	.home2 .flat-row.row-contact .flat-contact-form,
+	.hoa-about-box,
+	.home2 .hoa-row.row-contact .hoa-contact-form,
 	.bg-white-after .appointment-form,
-	.home3 .flat-contact-form,
-	.flat-contact-form .wrap-type-input, 
-	.flat-contact-form .textarea-wrap,
-	.flat-contact-form.for-full-width {
+	.home3 .hoa-contact-form,
+	.hoa-contact-form .wrap-type-input, 
+	.hoa-contact-form .textarea-wrap,
+	.hoa-contact-form.for-full-width {
 		padding: 0 0;
 	}
 
-	.flat-callout-box.aside .callout-wrap {
+	.hoa-callout-box.aside .callout-wrap {
 		display: block;
 	}
 
-	.flat-callout-box .buttons {	
+	.hoa-callout-box .buttons {	
 		text-align: center;
 		display: block;
 	}
 
-	.flat-callout-box .text {
+	.hoa-callout-box .text {
 		overflow: hidden;
 	}
 
-	.home3 .flat-iconbox.icon-top.border {
+	.home3 .hoa-iconbox.icon-top.border {
 		margin-bottom: 100px;
 	}
 
@@ -319,20 +319,20 @@
 	.bg-white-after .appointment-form .wrap-right,
 	.comment-form .name-container, 
 	.comment-form .phone-container,
-	.flat-portfolio.v4 .portfolio-wrap {
+	.hoa-portfolio.v4 .portfolio-wrap {
 		margin-right: 0;
 	}
 
-	.flat-portfolio .portfolio-filter {
+	.hoa-portfolio .portfolio-filter {
 		text-align: center;
 	}
 
-	.flat-portfolio .portfolio-filter > li:before,
-	.flat-portfolio .portfolio-filter > li a {
+	.hoa-portfolio .portfolio-filter > li:before,
+	.hoa-portfolio .portfolio-filter > li a {
 		color: #202020;
 	}
 
-	.flat-portfolio .portfolio-filter {
+	.hoa-portfolio .portfolio-filter {
 		margin-bottom: 30px;
 	}
 
@@ -354,12 +354,12 @@
 		margin-left: 30px;
 	}
 
-	.flat-portfolio.v4 .item {
+	.hoa-portfolio.v4 .item {
 		padding: 0 0 30px 0;
 	}
 
-	.home #services .flat-divider.d100px, 
-	.home2 #appointment .flat-divider.d100px {
+	.home #services .hoa-divider.d100px, 
+	.home2 #appointment .hoa-divider.d100px {
 		height: 60px;
 	}
 
@@ -370,14 +370,14 @@
 	}
 
 	.go-top,
-	.flat-portfolio .item .link,
+	.hoa-portfolio .item .link,
 	.switcher-container h2 a {
 		width: 33px;
 		height: 33px;
 		line-height: 33px;
 	}
 
-	.flat-portfolio .item .link {
+	.hoa-portfolio .item .link {
 		margin-left: -16px;
 	}
 
@@ -425,11 +425,11 @@
 		margin-top: -15px;
 	}
 
-	.tp-caption.flat-scroll-btn i {
+	.tp-caption.hoa-scroll-btn i {
 		font-size: 18px;
 	}
 
-	.tp-caption.flat-content-slider:before {
+	.tp-caption.hoa-content-slider:before {
 		width: 1px;
 	}
 
@@ -437,16 +437,16 @@
 		font-size: 25px;
 	}
 	
-	.flat-tabs.member .menu-tab {
+	.hoa-tabs.member .menu-tab {
 		top: 0;
 	}
 
-	.flat-callout-box .icon {
+	.hoa-callout-box .icon {
 		float: none;
 		margin: 15px auto;   
 	}
 
-	.flat-callout-box .text {
+	.hoa-callout-box .text {
 		text-align: center;
 	}
 
@@ -458,7 +458,7 @@
 		padding: 15px;
 	}
 
-	.flat-latest-blog .entry .main-post, 
+	.hoa-latest-blog .entry .main-post, 
 	.blog-posts.v1 .entry .main-post, 
 	.blog-single .entry .main-post {
 		padding-left: 0;
@@ -498,7 +498,7 @@
 	}
 
 	.post-wrap,
-	.flat-portfolio .portfolio-filter > li {
+	.hoa-portfolio .portfolio-filter > li {
 		padding-right: 0;
 	}
 
@@ -515,18 +515,18 @@
 		float: none;
 	}
 
-	.tp-caption.flat-button:after {
+	.tp-caption.hoa-button:after {
 		background-color: transparent;
 	}
 
-	.tp-caption.flat-button i,
+	.tp-caption.hoa-button i,
 	.tp-leftarrow.square, 
 	.tp-rightarrow.square,
-	.tp-caption.flat-title-slider3:after {
+	.tp-caption.hoa-title-slider3:after {
 		display: none;
 	}
 
-	.flat-latest-blog .entry .feature-post .type-post {
+	.hoa-latest-blog .entry .feature-post .type-post {
 		left: 15px;
     	top: 86%;
 	}
@@ -543,39 +543,39 @@
 
 /* Mobile Portrait Size */
 @media only screen and (max-width: 479px) {
-	.flat-latest-blog .entry .feature-post .type-post {
+	.hoa-latest-blog .entry .feature-post .type-post {
 		top: 80%;
 	}	
 	
-	.flat-portfolio.v2 .item,
-	.flat-portfolio.v3 .item {
+	.hoa-portfolio.v2 .item,
+	.hoa-portfolio.v3 .item {
 		width: 100%;
 	}
 }
 
 @media (max-width: 320px) {	
-	.flat-team.style1.img-small .avatar,
-	.flat-team.style1.img-small .content {
+	.hoa-team.style1.img-small .avatar,
+	.hoa-team.style1.img-small .content {
 		width: 100%;
 	}
 
-	.flat-latest-blog.style1 .entry .entry-title {
+	.hoa-latest-blog.style1 .entry .entry-title {
 		font-size: 14px;
 	}
 
-	.flat-latest-blog.style1 .entry .entry-title {
+	.hoa-latest-blog.style1 .entry .entry-title {
 		padding-top: 0;
 	}
 
 
 
-	.flat-iconbox.icon-right,
-	.flat-iconbox.icon-left {
+	.hoa-iconbox.icon-right,
+	.hoa-iconbox.icon-left {
 		padding-left: 0;
 		padding-right: 0;
 	}
 
-	.flat-socials li {
+	.hoa-socials li {
 		margin-right: 1px;
 	}
 }

@@ -111,7 +111,7 @@
     }
 
     var scrollBtn = function () {
-        $('.flat-scroll-btn').on( 'click', function() {
+        $('.hoa-scroll-btn').on( 'click', function() {
             var anchor = 'about';
             var largeScreen = matchMedia('only screen and (min-width: 992px)').matches;
             var headerHeight = 0;
@@ -183,7 +183,7 @@
 
                             $form.prepend(
                                 $('<div />', {
-                                    'class': 'flat-alert ' + cls,
+                                    'class': 'hoa-alert ' + cls,
                                     'text' : result
                                 }).append(
                                     $('<a class="close" href="#"><i class="fa fa-close"></i></a>')
@@ -228,7 +228,7 @@
 
                             $form.prepend(
                                 $('<div />', {
-                                    'class': 'flat-alert ' + cls,
+                                    'class': 'hoa-alert ' + cls,
                                     'text' : result
                                 }).append(
                                     $('<a class="close" href="#"><i class="fa fa-close"></i></a>')
@@ -248,7 +248,7 @@
 
     var alertBox = function() {
         $(document).on('click', '.close', function(e) {
-            $(this).closest('.flat-alert').remove();
+            $(this).closest('.hoa-alert').remove();
             e.preventDefault();
         })     
     }  
@@ -294,7 +294,7 @@
                 return false;
             });
 
-            $('.flat-portfolio .load-more a').on('click', function(e) {
+            $('.hoa-portfolio .load-more a').on('click', function(e) {
                 e.preventDefault();
 
                 var el = $(this),
@@ -339,7 +339,7 @@
     };
 
     var counter = function() {
-        $('.flat-counter').on('on-appear', function() {            
+        $('.hoa-counter').on('on-appear', function() {            
             $(this).find('.numb-count').each(function() { 
                 var to = parseInt( ($(this).attr('data-to')),10 ), speed = parseInt( ($(this).attr('data-speed')),10 );
                 console.log(speed);
@@ -354,25 +354,25 @@
     };
        
     var tabs = function() {
-        $('.flat-tabs').each(function() {
+        $('.hoa-tabs').each(function() {
             $(this).children('.content-tab').children().hide();
             $(this).children('.content-tab').children().first().show();
             $(this).find('.menu-tab').children('li').on('click', function(e) {  
                 var liActive = $(this).index(),
-                    contentActive = $(this).siblings().removeClass('active').parents('.flat-tabs').children('.content-tab').children().eq(liActive);
+                    contentActive = $(this).siblings().removeClass('active').parents('.hoa-tabs').children('.content-tab').children().eq(liActive);
 
                 contentActive.addClass('active').fadeIn('slow');
                 contentActive.siblings().removeClass('active');
-                $(this).addClass('active').parents('.flat-tabs').children('.content-tab').children().eq(liActive).siblings().hide();
+                $(this).addClass('active').parents('.hoa-tabs').children('.content-tab').children().eq(liActive).siblings().hide();
                 e.preventDefault();
             });
         });
     };
 
     var flatPricingCarousel = function() {
-        $('.flat-row').each(function() {
+        $('.hoa-row').each(function() {
             if ( $().owlCarousel ) {
-                $(this).find('.flat-pricing-table').owlCarousel({
+                $(this).find('.hoa-pricing-table').owlCarousel({
                     loop: true,
                     margin: 30,
                     nav: false,
@@ -398,14 +398,14 @@
     };
 
     var flatTestimonials = function() {
-        $('.flat-row').each(function() {            
+        $('.hoa-row').each(function() {            
             if ( $().owlCarousel ) {
-                $(this).find('.flat-testimonials').owlCarousel({
+                $(this).find('.hoa-testimonials').owlCarousel({
                     loop: true,
                     margin: 30,
-                    nav: $('.flat-testimonials').data('nav'),
-                    dots: $('.flat-testimonials').data('dots'),                     
-                    autoplay: $('.flat-testimonials').data('auto'),                    
+                    nav: $('.hoa-testimonials').data('nav'),
+                    dots: $('.hoa-testimonials').data('dots'),                     
+                    autoplay: $('.hoa-testimonials').data('auto'),                    
                     responsive:{
                         0:{
                             items: 1
@@ -417,7 +417,7 @@
                             items: 1
                         },
                         1200: {
-                            items: $('.flat-testimonials').data('item')
+                            items: $('.hoa-testimonials').data('item')
                         }
                     }
                 });
@@ -529,7 +529,7 @@
 
     var flatAnimation = function() {
         if ( isMobile.any() == null ) {
-            $('.flat-animation').each( function() {
+            $('.hoa-animation').each( function() {
                 var flatElement = $(this),
                     flatAnimationClass = flatElement.data('animation'),
                     flatAnimationDelay = flatElement.data('animation-delay'),
