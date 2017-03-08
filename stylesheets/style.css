@@ -940,6 +940,7 @@ input[type="color"],
     left: 50%;
     margin-left: -350px;
     margin-top: -80px;
+    z-index: 99;
 }
 
 /*Slider profile 
@@ -1009,26 +1010,13 @@ input[type="color"],
     color: #072c47;
     font-size: 14px;
     border-color: #072c47;
-    font-family: ProximaNova Bold, sans-serif;
+    font-family: "ProximaNova Bold", sans-serif;
 }
 
 .button.button-folio:hover {
     background-color: #072c47;
     color: #fff;
 }
-
-.button.button-folio.seeopen {
-    color: #fff;
-    background-color: #072c47;
-    margin-left: 3.5px;
-}
-
-.button.button-folio.seeopen:hover {
-    background-color: #ffffff;
-    color: #072c47;
-}
-
-
 
 /* Profile
 -------------------------------------------------------------- */
@@ -1192,6 +1180,12 @@ input[type="color"],
     font-size: 13px;
     font-family: ProximaNova Semibold;
 }
+.mainnav.mainnav-footer ul li a:hover {
+    color: #b28500;
+}
+.mainnav.mainnav-footer ul li:first-child a {
+    padding-right: 0;
+}
 
 .mainnav.mainnav-footer {
     overflow: hidden;
@@ -1213,7 +1207,11 @@ input[type="color"],
 .button.button-logout {
     border: none;
     padding-left: 30px;
+    padding-right: 0;
+    margin-right: 0;
 }
+
+
 
 .wrap-icon-footer {
     margin-bottom: 30px;
@@ -1235,6 +1233,11 @@ input[type="color"],
     border: 1px solid rgba(255, 255, 255, .2);
 }
 
+.button.button-chat:hover ,.button.button-open:hover{
+    background-color: #fff;
+    color: #072c47;
+}
+
 .button.button-logout:before {
     position: absolute;
     top: 5px;
@@ -1244,6 +1247,11 @@ input[type="color"],
     height: 19px;
     background-image: url('../images/icon/logout.png');
     background-size: cover;
+    transition: 0.2s;
+}
+
+.button.button-logout:hover:before {
+    left: 5px;
 }
 
 /* GoTop Button

@@ -254,6 +254,7 @@ li.language:before {
     background-color: rgba(0,0,0,0.7);
     margin-top: 135px;
     text-align: center;
+    float: right;
 }
 
 /*Widget search in slide 

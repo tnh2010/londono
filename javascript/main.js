@@ -70,12 +70,12 @@
         if ( $('body').hasClass('header-sticky') ) {
             var hd_height = $('#header').height();           
             $(window).on('load scroll', function(){                
-                if ( $(window).scrollTop() > hd_height + 30 ) {
+                if ( $(window).scrollTop() > hd_height + 200) {
                     $('#header').addClass('downscrolled');                      
-                } else {                    
+                } else {
                     $('#header').removeClass('downscrolled');                   
                 }
-                if( $(window).scrollTop() > 100 ) {
+                if( $(window).scrollTop() > 300) {
                     $('#header').addClass('upscrolled');                    
                 } else {
                     $('#header').removeClass('upscrolled');                    
