@@ -1,8 +1,52 @@
+/*Columns difine 
+--------------------------------------------------------------*/
+
+.two-columns .entry{
+    width: 50%;
+}
+
+.three-columns .entry{
+    width: 33.33%;
+}
+
+.four-columns .entry{
+    width: 25%;
+}
+
+.five-columns .entry{
+    width: 20%;
+}
+
+.two-columns .entry,
+.three-columns .entry,
+.four-columns .entry,
+.five-columns .entry {
+    float: left;
+    padding: 0 15px;
+}
+
+.two-columns ,
+.three-columns ,
+.four-columns ,
+.five-columns  {
+    overflow: hidden;
+}
+
+/* Row
+-------------------------------------------------------------- */
+.hoa-row {
+    clear: both;
+    display: block;
+    position: relative;
+    padding: 100px 0;
+}
+
 /* Divider
 -------------------------------------------------------------- */
 .hoa-divider {
 	position: relative;
 	width: 100%;
+    overflow: hidden;
 }
 
 .hoa-divider.divider20{
@@ -18,6 +62,7 @@
 .hoa-divider.divider100{
 	height: 100px;
 }
+
 
 /*Top
 --------------------------------------------------------------*/
@@ -77,4 +122,234 @@ li.language:before {
     color: #b28500;
 }
 
+/*Title section 
+---------------------------------------------------*/
+.title-section {
+    text-align: center;
+    position: relative;
+    margin-bottom: 50px;
+    color: #fff;
+}
 
+.title-section .title {
+    font-size: 32px;
+    line-height: 32px;
+    font-family: "ProximaNova Light",sans-serif;
+    margin-bottom: 10px;
+}
+
+.title-section .subtitle {
+    font-size: 16px;
+}
+
+
+/*Title section style1
+---------------------------------------------------*/
+.title-section.style1 .title {
+    font-size: 25px;
+    display: inline-block;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0 35px;
+    z-index: 2;
+    color: #666666;
+    position: relative;
+}
+
+.title-section.style1:before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #ddd;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: 1;
+}
+
+/*Project item 
+-----------------------------------------------------*/
+.project-item {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.project-item .wrap-desc {
+    border: 1px solid #ddd;
+    padding-top: 10px;
+    border-top: none;
+}
+
+.project-item .wrap-img {
+    position: relative;
+}
+
+.project-item .wrap-img:before {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    color: #fff;
+    content: "\f08a";
+    font-family: "FontAwesome";
+    cursor: pointer;
+}
+
+
+.project-item .title {
+    font-size: 16px;
+    font-family: ProximaNova Bold,sans-serif;
+    line-height: 25.6px;
+    color: #26557a;
+}
+.project-item .desc {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+
+
+.button.button-project-item {
+    border-radius: 16px;
+    background-color: #b20000;
+    color: #fff;
+    font-size: 11px;
+    border: none;
+}
+
+/*Profile 
+----------------------------------------------------------*/
+.profile {
+    overflow: hidden;
+    background-image: url(../images/profiles/bgmem1.jpg);
+    background-size: cover;
+}
+
+.wrap-info.wrap-img-profile {
+    width: 26.4%;
+}
+
+.wrap-info {
+    float: left;
+}
+
+.wrap-info.wrap-info-profile {
+    width: 73.6%;
+}
+
+.wrap-info.wrap-info-profile .desc-sub {
+    color: #ffdc73;
+    font-size: 16px;
+    font-family: "ProximaNova Semibold",sans-serif;
+}
+
+.wrap-info.wrap-info-profile .desc {
+    font-family: "DroidSerif Italic", sans-serif;
+    font-size: 50px;
+    color: #fff;
+    line-height: 65px;
+}
+
+.wrap-info.wrap-info-profile {
+    width: 73.6%;
+    padding: 35px 0;
+    background-color: rgba(0,0,0,0.7);
+    margin-top: 135px;
+    text-align: center;
+}
+
+/*Widget search in slide 
+---------------------------------------------------------*/
+.search-in-slide {
+    display: inline-block;
+}
+.wrap-input-search .input-search {
+    width: 600px;
+}
+
+.search-in-slide .wrap-title div.title-option {
+    float: right;
+    font-family: "ProximaNova Semibold",sans-serif;
+    font-size: 13px;
+    color: #fff;
+}
+
+.search-in-slide .wrap-title div.title {
+    float: left;
+    font-family: "ProximaNova Semibold",sans-serif;
+    font-size: 16px;
+    color: #fff;
+}
+
+.search-in-slide .wrap-title div {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.search-in-slide {
+    display: inline-block;    
+    padding: 35px 50px 55px 50px;
+    background-color: rgba(0,0,0,0.85);
+    letter-spacing: 1px;
+}
+
+.search-in-slide .wrap-input-search .input-search {
+    width: 600px;
+    height: 60px;
+    padding: 0 24px;
+    color: #fff;
+    background-color: #295375;
+    opacity: 0.6;
+    font-size: 18px;
+    font-family: DroidSerif Italic;
+}
+
+.search-in-slide .wrap-input-search .input-search::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #fff;
+    letter-spacing: 1px;
+}
+.search-in-slide .wrap-input-search .input-search::-moz-placeholder { /* Firefox 19+ */
+    color: #fff;
+    letter-spacing: 1px;
+}
+.search-in-slide .wrap-input-search .input-search:-ms-input-placeholder { /* IE 10+ */
+    color: #fff;
+    letter-spacing: 1px;
+}
+.search-in-slide .wrap-input-search .input-search:-moz-placeholder { /* Firefox 18- */
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.search-in-slide .wrap-input-search {
+    position: relative;
+}
+
+.search-in-slide .wrap-input-search .button.button-search {
+    position: absolute;
+    right: 0;
+    top: 34px;
+    padding: 10px 20px;
+    margin: 0;
+    border: none;
+}
+
+.search-in-slide .wrap-input-search .button.button-search i{
+    font-size: 24px;
+}
+
+.search-in-slide .title-option {
+    float: right;
+    font-family: "ProximaNova Semibold",sans-serif;
+    font-size: 13px;
+    color: #fff;
+    position: relative;
+    padding-left: 30px;
+}
+
+.search-in-slide input.check-option {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    top: -5px;
+    z-index: 5;
+}

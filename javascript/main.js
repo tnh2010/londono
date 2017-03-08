@@ -75,7 +75,7 @@
                 } else {                    
                     $('#header').removeClass('downscrolled');                   
                 }
-                if( $(window).scrollTop() > 300 ) {
+                if( $(window).scrollTop() > 100 ) {
                     $('#header').addClass('upscrolled');                    
                 } else {
                     $('#header').removeClass('upscrolled');                    
@@ -401,7 +401,7 @@
 
     var simpleSlider = function() { 
         if ( $().flexslider ) {
-            $('.simple-slider').each(function() {
+            $('.featured-slider').each(function() {
                 var $this = $(this)
                 $this.find('.flexslider').flexslider({
                     animation      :  "slide",
@@ -575,10 +575,54 @@
             $('.widget-search').toggle();
         });
     };
+
+    var Carousel_slider_featured = function() {
+        $('.slider-entry').each(function(){
+            if ( $().owlCarousel ) {
+                $(this).find('#flat-entry-carousel').owlCarousel({
+                    loop: true,
+                    margin: 30,
+                    auto:true,
+                    nav:true,
+                    responsive:{
+                        0:{
+                            items: 1
+                        },
+                        767:{
+                            items: 2
+                        },
+                        991:{
+                            items: 2
+                        }, 
+                        1200:{
+                            items: 3
+                        }               
+                    }
+                });
+            }
+        });
+    };
     
 
    	// Dom Ready
 	$(function() { 
+        $(window).load(function() {
+          $('.flexslider').flexslider({
+            animation: "slide",
+            controlNav: false,
+            directionNav: true ,
+            nextText: '<i class="fa fa-angle-right" aria-hidden="true"></i>',
+            prevText: '<i class="fa fa-angle-left" aria-hidden="true"></i>'
+          });
+
+          $('.flexslider-profiles').flexslider({
+            animation: "slide",
+            controlNav: false,
+            directionNav: true ,
+            nextText: '<i class="fa fa-angle-right" aria-hidden="true"></i>',
+            prevText: '<i class="fa fa-angle-left" aria-hidden="true"></i>'
+          });
+        });
         if ( matchMedia( 'only screen and (min-width: 991px)' ).matches ) {
             headerFixed();
         }             
@@ -592,7 +636,7 @@
         // tabs();   
         // flatPricingCarousel(); 
         // flatTestimonials();
-        // simpleSlider();       
+        //simpleSlider();       
         // datepicker();
         // ajaxAppointment();
         // ajaxContactForm();
@@ -605,8 +649,9 @@
         // retinaLogos(); 
         // parallax();
         // removePreloader();
-
+        //Carousel_slider_featured();
         clickFunction();
+
    	});
 
 })(jQuery);

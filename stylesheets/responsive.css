@@ -32,7 +32,17 @@
 		display: block ;
 	}
 
+	.three-columns .entry {
+		width: 50%;
+	}
 
+	.four-columns .entry {
+		width: 50%;
+	}
+
+	.five-columns .entry {
+		width: 50%;
+	}
 
 	.button-show-search {
 	    width: 30px;
@@ -62,6 +72,10 @@
 	    margin-right: -28px;
 	}
 
+	.project-item .wrap-desc {
+		border: none;
+	}
+
 }
 
 /* Tablet Landscape */
@@ -88,6 +102,17 @@
 @media only screen and (max-width: 479px) {
 	.top{
 		display: none;
+	}
+	.three-columns .entry {
+		width: 100%;
+	}
+
+	.four-columns .entry {
+		width: 100%;
+	}
+
+	.five-columns .entry {
+		width: 100%;
 	}
 }
 
