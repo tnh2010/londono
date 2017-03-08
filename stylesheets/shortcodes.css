@@ -353,3 +353,53 @@ li.language:before {
     top: -5px;
     z-index: 5;
 }
+
+/*Icon box 
+----------------------------------------------------------------*/
+.icon-box {
+    text-align: center;
+    padding: 20px 50px;
+}
+
+.icon-box img {
+    margin-bottom: 15px;
+}
+
+.icon-box .title {
+    font-size: 22px;
+    color: #082d48;
+    margin-bottom: 20px;
+}
+
+.icon-box .desc a {
+    color: #072c47;
+}
+
+.icon-box.line{
+    position: relative;
+}
+
+.icon-box.line:before{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    content: '';
+    width: 1px;
+    height: 200px;
+    margin-top: -100px;
+    background-image: url(../images/points/line.png);
+}
+
+.icon-box.line:after{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    content: '';
+    width: 1px;
+    height: 200px;
+    margin-top: -100px;
+    background-image: url(../images/points/line.png);
+}
+
+/*Latest Post
+-------------------------------------------------------------------*/

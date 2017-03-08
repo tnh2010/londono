@@ -457,104 +457,10 @@
         }
     }
 
-    var googleMap = function() {
-        if ( $().gmap3 ) {
-            $("#map").gmap3({
-                map:{
-                    options:{
-                        zoom: 14,
-                        mapTypeId: 'medicare_style',
-                        mapTypeControlOptions: {
-                            mapTypeIds: ['medicare_style', google.maps.MapTypeId.SATELLITE, google.maps.MapTypeId.HYBRID]
-                        },
-                        scrollwheel: false
-                    }
-                },
-                getlatlng:{
-                    address:  "151 Charlotte Road, London, UK",
-                    callback: function(results) {
-                        if ( !results ) return;
-                        $(this).gmap3('get').setCenter(new google.maps.LatLng(results[0].geometry.location.lat(), results[0].geometry.location.lng()));
-                        $(this).gmap3({
-                            marker:{
-                                latLng:results[0].geometry.location,
-                                options:{
-                                    icon: 'http://themesflat.com/images/icon/map.png'
-                                }
-                            }
-                        });
-                    }
-                },
-                styledmaptype:{
-                    id: "medicare_style",
-                    options:{
-                        name: "Medicare Map"
-                    },
-                },
-            });
-        }
-    };  
-
+    
     var responsiveVideo= function() {
         if ( $().fitVids ) {
             $('.container').fitVids();
-        }
-    };
-
-    var flatAnimation = function() {
-        if ( isMobile.any() == null ) {
-            $('.hoa-animation').each( function() {
-                var flatElement = $(this),
-                    flatAnimationClass = flatElement.data('animation'),
-                    flatAnimationDelay = flatElement.data('animation-delay'),
-                    flatAnimationOffset = flatElement.data('animation-offset');
-
-                flatElement.css({
-                    '-webkit-animation-delay':  flatAnimationDelay,
-                    '-moz-animation-delay':     flatAnimationDelay,
-                    'animation-delay':          flatAnimationDelay
-                });
-
-                flatElement.waypoint(function() {
-                    flatElement.addClass('animated').addClass(flatAnimationClass);
-                },{
-                    triggerOnce: true,
-                    offset: flatAnimationOffset
-                });
-            });
-        }
-    };
-    
-    var goTop = function() {
-        $(window).scroll(function() {
-            if ( $(this).scrollTop() > 800 ) {
-                $('.go-top').addClass('show');
-            } else {
-                $('.go-top').removeClass('show');
-            }
-        }); 
-
-        $('.go-top').on('click', function() {            
-            $("html, body").animate({ scrollTop: 0 }, 1000 , 'easeInOutExpo');
-            return false;
-        });
-    };
-
-    var retinaLogos = function() {
-      var retina = window.devicePixelRatio > 1 ? true : false;
-
-        if(retina) {
-            $('.header .logo').find('img').attr({src:'./images/logo@2x.png',width:'184',height:'50'});
-            $('.footer-widgets .widget .textwidget').find('img').attr({src:'./images/logo-footer@2x.png',width:'184',height:'50'});
-            
-        }
-    };    
-    
-    var parallax = function() {
-        if ( $().parallax && isMobile.any() == null ) {
-            $('.parallax1').parallax("50%", 0.3);
-            $('.parallax2').parallax("50%", 0.4);  
-            $('.parallax3').parallax("50%", 0.5);            
         }
     };
 
@@ -603,32 +509,124 @@
         });
     };
     
+    var googleMap = function() {
+        if ( $().gmap3 ) {
+            $("#map").gmap3({
+                map:{
+                    options:{
+                        zoom: 14,
+                        mapTypeId: 'nah_style',
+                        mapTypeControlOptions: {
+                            mapTypeIds: ['nah_style', google.maps.MapTypeId.SATELLITE, google.maps.MapTypeId.HYBRID]
+                        },
+                        scrollwheel: false
+                    }
+                },
+                getlatlng:{
+                    address:  "Big Ben Street, E16 3LS, London, United Kingdom",
+                    callback: function(results) {
+                        if ( !results ) return;
+                        $(this).gmap3('get').setCenter(new google.maps.LatLng(results[0].geometry.location.lat(), results[0].geometry.location.lng()));
+                    }
+                },
+                styledmaptype:{
+                    id: "nah_style",
+                    options:{
+                        name: "Nah Map"
+                    },
+                    styles: [
+                        {
+                            "featureType": "water",
+                            "stylers": [
+                                { "color": "#81abff" }
+                            ]
+                        },
+                        
+                        {
+                            "featureType": "road.local",
+                            "stylers": [
+                              { "color": "#edebe3" }
+                            ]
+                        },
+                        {
+                            "featureType": "road.highway",
+                            "stylers": [
+                              { "color": "#e3e3e3" }
+                            ]
+                       },
+                       {
+                            "featureType": "poi.park",
+                            "stylers": [
+                              { "color": "#c0d997" }
+                            ]
+                       }                                              
+                    ]
+                },  
+            });
+        }
+    }; 
 
+    var goTop = function() {
+        $(window).scroll(function() {
+            if ( $(this).scrollTop() > 800 ) {
+                $('.go-top').addClass('show');
+            } else {
+                $('.go-top').removeClass('show');
+            }
+        }); 
+
+        $('.go-top').on('click', function() {            
+            $("html, body").animate({ scrollTop: 0 }, 1000 , 'easeInOutExpo');
+            return false;
+        });
+    };
+
+    var tabGoogleMap = function() {
+        $('.button-rent').click(function() {
+            $('.wrap-map-rent').removeClass('hidden');
+            $('.wrap-map-sale').addClass('hidden');
+            $('.tab-googlemap').find('.active').removeClass('active');
+            $(this).addClass('active');
+        });
+
+        $('.button-sale').click(function() {
+            $('.wrap-map-sale').removeClass('hidden');
+            $('.wrap-map-rent').addClass('hidden');
+            $('.tab-googlemap').find('.active').removeClass('active');
+            $(this).addClass('active');
+        });
+    }
    	// Dom Ready
 	$(function() { 
         $(window).load(function() {
-          $('.flexslider').flexslider({
-            animation: "slide",
-            controlNav: false,
-            directionNav: true ,
-            nextText: '<i class="fa fa-angle-right" aria-hidden="true"></i>',
-            prevText: '<i class="fa fa-angle-left" aria-hidden="true"></i>'
-          });
+              $('.flexslider').flexslider({
+                    animation: "slide",
+                    controlNav: false,
+                    directionNav: true ,
+                    nextText: '<i class="fa fa-angle-right" aria-hidden="true"></i>',
+                    prevText: '<i class="fa fa-angle-left" aria-hidden="true"></i>'
+              });
+        });
 
-          $('.flexslider-profiles').flexslider({
+        $(window).load(function() {
+          $('.flexslider-latest').flexslider({
             animation: "slide",
+            animationLoop: true,
+            directionNav: false ,
             controlNav: false,
-            directionNav: true ,
-            nextText: '<i class="fa fa-angle-right" aria-hidden="true"></i>',
-            prevText: '<i class="fa fa-angle-left" aria-hidden="true"></i>'
+            itemWidth: 270,
+            initDelay: 1, 
+            itemMargin: 30
           });
         });
+
         if ( matchMedia( 'only screen and (min-width: 991px)' ).matches ) {
             headerFixed();
         }             
         // onepage_nav();
         // scrollBtn();        
          responsiveMenu();
+         tabGoogleMap();
         // blogSlider();
         // portfolioIsotope(); 
         // detectViewport();  
@@ -642,9 +640,9 @@
         // ajaxContactForm();
         // alertBox();
         // sectionVideo();
-        // googleMap();        
+        //googleMap();        
         // flatAnimation();
-        // goTop();        
+           goTop();        
         // responsiveVideo();
         // retinaLogos(); 
         // parallax();
