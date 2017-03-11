@@ -2435,11 +2435,10 @@ zoom: 1;
 /* navigation */
 .tp-leftarrow.square,
 .tp-rightarrow.square {
-	width: 60px;
-	height: 60px;
-	border-color: #818485;
-	border-style: solid;
-	border-width: 1px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: #fff;
 	text-align: center;
 	line-height: 20px;
 	-webkit-transition: all 0.3s ease-in-out;
@@ -2454,16 +2453,20 @@ zoom: 1;
 	position: absolute;
 	left: 50%;
 	top: 50%;
-	margin-left: -15px;
-	margin-top: -4px;
-	background: url("../images/icon/icon-prev.png") no-repeat center;
-	content: "";
+	margin-left: -17px;
+    margin-top: -10px;
+	content: "\f104";
+	font-family: "FontAwesome";
+	font-size: 35px;
+	color:#64829a;
 	width: 30px;
 	height: 9px;
+
 }
 
 .tp-rightarrow.square:before {
-	background: url("../images/icon/icon-next.png") no-repeat center;
+	content: "\f105";
+	margin-left: -11px;
 }
 
 .tp-leftarrow.square:hover,
@@ -2474,11 +2477,11 @@ zoom: 1;
 }
 
 .tp-leftarrow.square:hover:before {
-	background: url("../images/icon/icon-prev-white.png") no-repeat center;
+	color: #fff;
 }
 
 .tp-rightarrow.square:hover:before {
-	background: url("../images/icon/icon-next-white.png") no-repeat center;
+	color: #fff;
 }
 
 /* Text slider */

@@ -943,12 +943,12 @@ input[type="color"],
     z-index: 99;
 }
 
-/*Slider profile 
------------------------------------------------------------*/
-.slides-profile.flexslider li img {
-    max-height: 815px;
+.tp-bannertimer {
+    display: none!important;
 }
 
+/*Slider profile 
+-----------------------------------------------------------*/
 .slides-profile.flexslider .flex-direction-nav li a {
     border-radius: 50%;
     width: 50px;
@@ -1340,7 +1340,6 @@ input[type="color"],
 -------------------------------------------------------------- */
 .tp-banner-container{
 	height: 815px !important;
-	width: 100% !important;
 	position: relative;
 	overflow: hidden !important;
 	padding: 0;

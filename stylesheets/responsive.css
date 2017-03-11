@@ -76,6 +76,65 @@
 		border: none;
 	}
 
+
+	.search-in-slide  .title-horder {
+		display: block!important;
+	}
+
+	.search-in-slide {
+	    display: block;
+	    padding: 30px;
+	    background-color: transparent;
+	    text-align: center;
+	    width: 280px !important;
+	    padding: 0 !important;
+	    margin-left: -140px !important;
+	}
+
+	.search-in-slide .wrap-title div.title {
+		float: none;
+	}
+
+	.search-in-slide .wrap-title div.title-option {
+	    float: none !important;
+	    position: absolute;
+	    font-family: "ProximaNova Semibold",sans-serif;
+	    font-size: 13px;
+	    color: #fff;
+	    bottom: 0;
+	    left: 50%;
+	    margin-left: -65px;
+	}
+	.search-in-slide .wrap-input-search .input-search {
+		border: none;
+		width: 100%;
+		height: 37px;
+		padding-right: 40px;
+	}
+
+	.search-in-slide .wrap-input-search .button.button-search {
+	    padding: 5px 10px;
+	    top: 2px !important;
+	}
+
+	.search-in-slide .wrap-input-search .button.button-search i {
+	    font-size: 16px;
+	}
+
+	.search-in-slide .wrap-input-search {
+	    margin-bottom: 55px;
+	}
+
+	.tp-leftarrow.square,
+	.tp-rightarrow.square {
+		background-color: transparent;
+		color: #1c4876;
+	}
+
+	.tp-banner-container{
+		height: 300px !important;
+	}
+
 }
 
 /* Tablet Landscape */
@@ -117,6 +176,8 @@
 }
 
 @media (max-width: 320px) {	
-	
+	.tp-leftarrow.square:hover, .tp-rightarrow.square:hover {
+		background-color: transparent !important;
+	}
 }
 

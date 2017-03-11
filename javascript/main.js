@@ -82,322 +82,7 @@
                 }
             })            
         }   
-    }
-
-    var scrollBtn = function () {
-        $('.hoa-scroll-btn').on( 'click', function() {
-            var anchor = 'about';
-            var largeScreen = matchMedia('only screen and (min-width: 992px)').matches;
-            var headerHeight = 0;
-            headerHeight = $('.header').height();            
-            if ( anchor ) {
-                if ( $('#'+anchor).length > 0 ) {
-                   if ( $('.header-sticky').length > 0 && largeScreen ) {
-                        headerHeight = headerHeight;
-                   } else {
-                        headerHeight = 0;
-                   }                   
-                   var target = $('#'+anchor).offset().top - headerHeight;
-                   $('html,body').animate({scrollTop: target}, 1000, 'easeInOutExpo');
-                }
-            }
-            return false;
-        })
-    }  
-
-    var onepage_nav = function () {
-        $('.page-template-front-page .mainnav > ul > li > a').on('click',function() {           
-            var anchor = $(this).attr('href').split('#')[1];            
-            var largeScreen = matchMedia('only screen and (min-width: 992px)').matches;
-            var headerHeight = 0;
-            headerHeight = $('.header').height();            
-            if ( anchor ) {
-                if ( $('#'+anchor).length > 0 ) {
-                   if ( $('.header-sticky').length > 0 && largeScreen ) {
-                        headerHeight = headerHeight;
-                   } else {
-                        headerHeight = 0;
-                   }                   
-                   var target = $('#'+anchor).offset().top - headerHeight;
-                   $('html,body').animate({scrollTop: target}, 1000, 'easeInOutExpo');
-                }
-            }
-            return false;
-        })
-
-        $('.mainnav ul > li > a').on( 'click', function() {
-            $( this ).addClass('active').parent().siblings().children().removeClass('active');
-        });
     } 
-   
-    var ajaxAppointment = function() {      
-        $('#appointmentform').each(function() {
-            $(this).validate({
-                submitHandler: function( form ) {
-                    var $form = $(form),
-                        str = $form.serialize(),
-                        loading = $('<div />', { 'class': 'loading' });
-
-                    $.ajax({
-                        type: "POST",
-                        url:  $form.attr('action'),
-                        data: str,
-                        beforeSend: function () {
-                            $form.find('.send-wrap').append(loading);
-                        },
-                        success: function( msg ) {
-                            var result, cls;                            
-                            if ( msg == 'Success' ) {                                
-                                result = 'Email Sent Successfully. Thank you, Your application is accepted - we will contact you shortly';
-                                cls = 'msg-success';
-                            } else {
-                                result = 'Error sending email.';
-                                cls = 'msg-error';
-                            }
-
-                            $form.prepend(
-                                $('<div />', {
-                                    'class': 'hoa-alert ' + cls,
-                                    'text' : result
-                                }).append(
-                                    $('<a class="close" href="#"><i class="fa fa-close"></i></a>')
-                                )
-                            );
-
-                            $form.find(':input').not('.submit').val('');
-                        },
-                        complete: function (xhr, status, error_thrown) {
-                            $form.find('.loading').remove();
-                        }
-                    });
-                }
-            });
-        }); // each contactform
-    };   
-
-    var ajaxContactForm = function() {      
-        $('#contactform').each(function() {
-            $(this).validate({
-                submitHandler: function( form ) {
-                    var $form = $(form),
-                        str = $form.serialize(),
-                        loading = $('<div />', { 'class': 'loading' });
-
-                    $.ajax({
-                        type: "POST",
-                        url:  $form.attr('action'),
-                        data: str,
-                        beforeSend: function () {
-                            $form.find('.send-wrap').append(loading);
-                        },
-                        success: function( msg ) {
-                            var result, cls;                            
-                            if ( msg == 'Success' ) {                                
-                                result = 'Email Sent Successfully. Thank you, Your application is accepted - we will contact you shortly';
-                                cls = 'msg-success';
-                            } else {
-                                result = 'Error sending email.';
-                                cls = 'msg-error';
-                            }
-
-                            $form.prepend(
-                                $('<div />', {
-                                    'class': 'hoa-alert ' + cls,
-                                    'text' : result
-                                }).append(
-                                    $('<a class="close" href="#"><i class="fa fa-close"></i></a>')
-                                )
-                            );
-
-                            $form.find(':input').not('.submit').val('');
-                        },
-                        complete: function (xhr, status, error_thrown) {
-                            $form.find('.loading').remove();
-                        }
-                    });
-                }
-            });
-        }); // each contactform
-    };   
-
-    var alertBox = function() {
-        $(document).on('click', '.close', function(e) {
-            $(this).closest('.hoa-alert').remove();
-            e.preventDefault();
-        })     
-    }  
-
-    var blogSlider = function() { 
-        if ( $().flexslider ) {
-            $('.blog-slider').each(function() {
-                var $this = $(this)
-                $this.find('.flexslider').flexslider({
-                    animation      :  "slide",
-                    direction      :  "horizontal", // vertical
-                    pauseOnHover   :  true,
-                    useCSS         :  false,
-                    easing         :  "swing",
-                    animationSpeed :  500,
-                    slideshowSpeed :  5000,
-                    controlNav     :  false,
-                    directionNav   :  true,
-                    slideshow      :  true,
-                    prevText       :  '<i class="fa fa-angle-left"></i>',
-                    nextText       :  '<i class="fa fa-angle-right"></i>',
-                    smoothHeight   :  true
-                }); // flexslider
-            }); // blog-sider
-        }
-    }; 
-
-    var portfolioIsotope = function() {         
-        if ( $().isotope ) {           
-            var $container = $('.portfolio-wrap');
-            $container.imagesLoaded(function(){
-                $container.isotope({
-                    itemSelector: '.item',
-                    transitionDuration: '1s'
-                });
-            });
-
-            $('.portfolio-filter li').on('click',function() {                           
-                var selector = $(this).find("a").attr('data-filter');
-                $('.portfolio-filter li').removeClass('active');
-                $(this).addClass('active');
-                $container.isotope({ filter: selector });
-                return false;
-            });
-
-            $('.hoa-portfolio .load-more a').on('click', function(e) {
-                e.preventDefault();
-
-                var el = $(this),
-                    url = el.attr('href'),
-                    page = parseInt(el.attr('data-page'), 10);
-
-                el.addClass('loading').text('Loading...');
-
-                $.ajax({
-                    type: "GET",
-                    url: url,
-                    dataType: "html",
-                    async: false,   // wait result
-                    data : { page : page }
-                })
-                .done(function (data) {
-                    if ( data != null ) {                      
-                        var newitem = $(data);
-                        $container.append(newitem).isotope('appended', newitem);
-                        el.removeClass('loading').text('Load more');
-                        page = page + 1;
-                        el.attr({'data-page': page, 'href': './ajax/p' + page + '.html'});
-                    }
-                })
-                .fail(function () {
-                    el.text('No more portfolio to load.');
-                })
-            });//bor
-        };
-    };
-
-    var detectViewport = function() {
-        $('[data-waypoint-active="yes"]').waypoint(function() {
-            $(this).trigger('on-appear');
-        }, { offset: '90%', triggerOnce: true });
-
-        $(window).on('load', function() {
-            setTimeout(function() {
-                $.waypoints('refresh');
-            }, 100);
-        });
-    };
-
-    var counter = function() {
-        $('.hoa-counter').on('on-appear', function() {            
-            $(this).find('.numb-count').each(function() { 
-                var to = parseInt( ($(this).attr('data-to')),10 ), speed = parseInt( ($(this).attr('data-speed')),10 );
-                console.log(speed);
-                if ( $().countTo ) {
-                    $(this).countTo({
-                        to: to,
-                        speed: speed
-                    });
-                }
-            });
-       });
-    };
-       
-    var tabs = function() {
-        $('.hoa-tabs').each(function() {
-            $(this).children('.content-tab').children().hide();
-            $(this).children('.content-tab').children().first().show();
-            $(this).find('.menu-tab').children('li').on('click', function(e) {  
-                var liActive = $(this).index(),
-                    contentActive = $(this).siblings().removeClass('active').parents('.hoa-tabs').children('.content-tab').children().eq(liActive);
-
-                contentActive.addClass('active').fadeIn('slow');
-                contentActive.siblings().removeClass('active');
-                $(this).addClass('active').parents('.hoa-tabs').children('.content-tab').children().eq(liActive).siblings().hide();
-                e.preventDefault();
-            });
-        });
-    };
-
-    var flatPricingCarousel = function() {
-        $('.hoa-row').each(function() {
-            if ( $().owlCarousel ) {
-                $(this).find('.hoa-pricing-table').owlCarousel({
-                    loop: true,
-                    margin: 30,
-                    nav: false,
-                    dots: true,                     
-                    autoplay: false,                    
-                    responsive:{
-                        0:{
-                            items: 1
-                        },
-                        767:{
-                            items: 2
-                        },
-                        991:{
-                            items: 3
-                        },
-                        1200: {
-                            items: 3
-                        }
-                    }
-                });
-            }
-        });
-    };
-
-    var flatTestimonials = function() {
-        $('.hoa-row').each(function() {            
-            if ( $().owlCarousel ) {
-                $(this).find('.hoa-testimonials').owlCarousel({
-                    loop: true,
-                    margin: 30,
-                    nav: $('.hoa-testimonials').data('nav'),
-                    dots: $('.hoa-testimonials').data('dots'),                     
-                    autoplay: $('.hoa-testimonials').data('auto'),                    
-                    responsive:{
-                        0:{
-                            items: 1
-                        },
-                        767:{
-                            items: 1
-                        },
-                        991:{
-                            items: 1
-                        },
-                        1200: {
-                            items: $('.hoa-testimonials').data('item')
-                        }
-                    }
-                });
-            }
-        });
-    };
 
     var simpleSlider = function() { 
         if ( $().flexslider ) {
@@ -422,47 +107,7 @@
         }
     };     
 
-    var datepicker = function() {       
-        $( "#datepicker" ).datepicker();
-    }  
-
-    var sectionVideo = function () {
-        if($().YTPlayer) {
-            $(".video-section").YTPlayer( {
-                showControls: false,
-                autoPlay: false
-            }); 
-            var v = $('.video-section');
-            $('#video-controls a')
-            .each(function() {
-                var t = $(this);
-                t.on('click', (function(e) {
-                    e.preventDefault();  
-                    if (t.hasClass('fa-play')) {
-                        t.removeClass('fa-play')
-                            .addClass(
-                                'fa-pause');
-                        v.playYTP();
-                        return false
-                    }                  
-                    if (t.hasClass('fa-pause')) {
-                        t.removeClass(
-                                'fa-pause')
-                            .addClass('fa-play');
-                        v.pauseYTP();
-                        return false
-                    }                    
-                }));
-            });
-        }
-    }
-
     
-    var responsiveVideo= function() {
-        if ( $().fitVids ) {
-            $('.container').fitVids();
-        }
-    };
 
     var removePreloader = function() {        
         $('.loader').fadeOut('slow',function () {
@@ -479,33 +124,6 @@
                 $('.widget-search').addClass('on');
             }
             $('.widget-search').toggle();
-        });
-    };
-
-    var Carousel_slider_featured = function() {
-        $('.slider-entry').each(function(){
-            if ( $().owlCarousel ) {
-                $(this).find('#flat-entry-carousel').owlCarousel({
-                    loop: true,
-                    margin: 30,
-                    auto:true,
-                    nav:true,
-                    responsive:{
-                        0:{
-                            items: 1
-                        },
-                        767:{
-                            items: 2
-                        },
-                        991:{
-                            items: 2
-                        }, 
-                        1200:{
-                            items: 3
-                        }               
-                    }
-                });
-            }
         });
     };
     
@@ -596,7 +214,26 @@
             $(this).addClass('active');
         });
     }
-   	// Dom Ready
+
+    var responsiveHorderSearch = function() {
+        $(window).on('load resize', function() {
+            var currMenuType = 'desktop';
+
+            if ( matchMedia( 'only screen and (max-width: 991px)' ).matches ) {
+                $('.search-in-slide .input-search').attr('placeholder','Search here');
+            }
+            else {
+                $('.search-in-slide .input-search').attr('placeholder','Search by District, Address, MLS ID or Agent');
+            }
+        });
+    }
+
+    var removePreloader = function() {        
+        $('.loader').fadeOut('slow',function () {
+            $(this).remove();
+        });
+    };
+
 	$(function() { 
         $(window).load(function() {
               $('.flexslider').flexslider({
@@ -620,36 +257,16 @@
           });
         });
 
+        responsiveHorderSearch();
+
         if ( matchMedia( 'only screen and (min-width: 991px)' ).matches ) {
             headerFixed();
         }             
-        // onepage_nav();
-        // scrollBtn();        
-         responsiveMenu();
-         tabGoogleMap();
-        // blogSlider();
-        // portfolioIsotope(); 
-        // detectViewport();  
-        // counter(); 
-        // tabs();   
-        // flatPricingCarousel(); 
-        // flatTestimonials();
-        //simpleSlider();       
-        // datepicker();
-        // ajaxAppointment();
-        // ajaxContactForm();
-        // alertBox();
-        // sectionVideo();
-        //googleMap();        
-        // flatAnimation();
-           goTop();        
-        // responsiveVideo();
-        // retinaLogos(); 
-        // parallax();
-        // removePreloader();
-        //Carousel_slider_featured();
+        responsiveMenu();
+        tabGoogleMap();
+        goTop(); 
         clickFunction();
-
+        removePreloader();
    	});
 
 })(jQuery);
