@@ -107,8 +107,6 @@
         }
     };     
 
-    
-
     var removePreloader = function() {        
         $('.loader').fadeOut('slow',function () {
             $(this).remove();
@@ -127,62 +125,7 @@
         });
     };
     
-    var googleMap = function() {
-        if ( $().gmap3 ) {
-            $("#map").gmap3({
-                map:{
-                    options:{
-                        zoom: 14,
-                        mapTypeId: 'nah_style',
-                        mapTypeControlOptions: {
-                            mapTypeIds: ['nah_style', google.maps.MapTypeId.SATELLITE, google.maps.MapTypeId.HYBRID]
-                        },
-                        scrollwheel: false
-                    }
-                },
-                getlatlng:{
-                    address:  "Big Ben Street, E16 3LS, London, United Kingdom",
-                    callback: function(results) {
-                        if ( !results ) return;
-                        $(this).gmap3('get').setCenter(new google.maps.LatLng(results[0].geometry.location.lat(), results[0].geometry.location.lng()));
-                    }
-                },
-                styledmaptype:{
-                    id: "nah_style",
-                    options:{
-                        name: "Nah Map"
-                    },
-                    styles: [
-                        {
-                            "featureType": "water",
-                            "stylers": [
-                                { "color": "#81abff" }
-                            ]
-                        },
-                        
-                        {
-                            "featureType": "road.local",
-                            "stylers": [
-                              { "color": "#edebe3" }
-                            ]
-                        },
-                        {
-                            "featureType": "road.highway",
-                            "stylers": [
-                              { "color": "#e3e3e3" }
-                            ]
-                       },
-                       {
-                            "featureType": "poi.park",
-                            "stylers": [
-                              { "color": "#c0d997" }
-                            ]
-                       }                                              
-                    ]
-                },  
-            });
-        }
-    }; 
+    
 
     var goTop = function() {
         $(window).scroll(function() {
@@ -252,14 +195,6 @@
             nextText: '<span class="nav-home-right"></span>',
             prevText: '<span class="nav-home-left"></span>'
         });
-
-        //  $('.flexslider').flexslider({
-        //     animation: "slide",
-        //     controlNav: false,
-        //     directionNav: true ,
-        //     nextText: '<i class="fa fa-angle-right" aria-hidden="true"></i>',
-        //     prevText: '<i class="fa fa-angle-left" aria-hidden="true"></i>'
-        // });
     }
 
     var SliderLatest = function () {
@@ -283,12 +218,9 @@
         if ( matchMedia( 'only screen and (min-width: 991px)' ).matches ) {
             headerFixed();
         }
-
-        //setInterval(function() {
-            if ( matchMedia( 'only screen and (max-width: 991px)' ).matches ) {
-                SliderFeature();
-            }
-        //}, 100);
+        if ( matchMedia( 'only screen and (max-width: 991px)' ).matches ) {
+            SliderFeature();
+        }
         
         responsiveMenu();
         tabGoogleMap();
