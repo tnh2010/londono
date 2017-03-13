@@ -249,9 +249,17 @@
             animation: "slide",
             controlNav: false,
             directionNav: true ,
-            nextText: '<i class="fa fa-angle-right" aria-hidden="true"></i>',
-            prevText: '<i class="fa fa-angle-left" aria-hidden="true"></i>'
+            nextText: '<span class="nav-home-right"></span>',
+            prevText: '<span class="nav-home-left"></span>'
         });
+
+        //  $('.flexslider').flexslider({
+        //     animation: "slide",
+        //     controlNav: false,
+        //     directionNav: true ,
+        //     nextText: '<i class="fa fa-angle-right" aria-hidden="true"></i>',
+        //     prevText: '<i class="fa fa-angle-left" aria-hidden="true"></i>'
+        // });
     }
 
     var SliderLatest = function () {
