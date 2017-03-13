@@ -32,6 +32,10 @@
 		display: block ;
 	}
 
+	.top{
+		display: none;
+	}
+
 	.three-columns .entry {
 		width: 50%;
 	}
@@ -42,6 +46,22 @@
 
 	.five-columns .entry {
 		width: 50%;
+	}
+
+	.hoa-row {
+		padding:50px;
+	}
+
+	.hoa-divider.divider30 {
+		height: 15px;
+	}
+
+	.hoa-divider.divider50 {
+		height: 30px;
+	}
+
+	.hoa-divider.divider100 {
+		height: 50px;
 	}
 
 	.button-show-search {
@@ -79,6 +99,8 @@
 
 	.search-in-slide  .title-horder {
 		display: block!important;
+		color: #fff;
+    	line-height: 27px;
 	}
 
 	.search-in-slide {
@@ -93,6 +115,7 @@
 
 	.search-in-slide .wrap-title div.title {
 		float: none;
+		font-size: 13px;
 	}
 
 	.search-in-slide .wrap-title div.title-option {
@@ -110,6 +133,8 @@
 		width: 100%;
 		height: 37px;
 		padding-right: 40px;
+		background-color: #0a2538;
+		font-size: 15px;
 	}
 
 	.search-in-slide .wrap-input-search .button.button-search {
@@ -125,14 +150,75 @@
 	    margin-bottom: 55px;
 	}
 
+	.slides-home.flexslider .flex-direction-nav li a {
+	    background-color: transparent !important;
+	    border: none;
+	}
+
+	.slides-home.flexslider .flex-direction-nav li a:hover {
+	    border: none;
+	}
+
+	.slides-home.flexslider .slides:before {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		content: '';
+		z-index: 2;
+		background-color:rgba(28,72,118 ,0.86);
+	}
+
+	.slides-home.flexslider .flex-direction-nav a i {
+	    color: #1d4976;
+	}
+
 	.tp-leftarrow.square,
 	.tp-rightarrow.square {
 		background-color: transparent;
 		color: #1c4876;
 	}
 
-	.tp-banner-container{
-		height: 300px !important;
+	.title-section.style1:before {
+		content: none;
+	}
+
+	.title-section.style1 .title {
+	    color: #1d4976;
+	    font-size: 16px;
+	}
+
+	.slides-home {
+		margin-bottom: 0;
+	}
+
+	.title-section {
+	    margin-bottom: 20px;
+	}
+
+	.project-item {
+	    margin-bottom: 15px;
+	}
+
+	.title-section .title {
+		font-size: 25px;
+	}
+
+	.icon-box.line:before , .icon-box.line:after{
+		content: none;
+	}
+
+	.hoa-row.row-points {
+	    padding-bottom: 40px;
+	}
+
+	.footer-widgets .widget-text {
+	    display: none;
+	}
+
+	.footer-widgets .wrap-logo-footer {
+	    text-align: center;
 	}
 
 }
@@ -149,7 +235,45 @@
 
 /* All Mobile Sizes */
 @media only screen and (max-width: 767px) {
-	
+	.hoa-row {
+		padding:25px 0;
+	}
+
+	.hoa-row.row-featured {
+	    padding:25px 0;
+	}
+
+	.hoa-divider.divider30 {
+		height: 10px;
+	}
+
+	.hoa-divider.divider50 {
+		height: 20px;
+	}
+
+	.hoa-divider.divider100 {
+		height: 30px;
+	}
+
+	.hoa-row.row-points {
+	    padding-bottom: 30px;
+	}
+
+	.wrap-info.wrap-info-profile .desc {
+	    font-size: 26px;
+	}
+
+	.button.but-viewall {
+	    padding: 10px 15px;
+	}
+
+	.tab-googlemap .button {
+	    line-height: 45px;
+	}
+	.tab-googlemap {
+	    margin-top: -45px;
+	    height: 45px;
+	}
 }
 
 /* Mobile Landscape Size */
@@ -159,9 +283,6 @@
 
 /* Mobile Portrait Size */
 @media only screen and (max-width: 479px) {
-	.top{
-		display: none;
-	}
 	.three-columns .entry {
 		width: 100%;
 	}
@@ -173,11 +294,123 @@
 	.five-columns .entry {
 		width: 100%;
 	}
+
+	.wrap-info.wrap-img-profile {
+	    width: 100%;
+	    margin-bottom: 0;
+	}
+	.wrap-info.wrap-info-profile {
+		position: relative;
+    	width: 100%;
+    	float: none;
+    	padding-bottom: 25px;
+    	overflow: hidden;
+    }
+
+    .profile {
+	    background-image: none;
+	    border: 1px solid #a2afb8;
+	}
+
+	#profiles {
+	    padding: 35px 15px;
+	}
+
+	.wrap-info.wrap-info-profile .desc {
+	    font-size: 26px;
+	    line-height: 45px;
+	}
+
+	.wrap-info.wrap-info-profile .desc-sub {
+	    font-size: 14px;
+	}
+
+	.button.but-viewall {
+	    padding: 10px 15px ;
+	    font-size: 11px;
+	    width: 100%;
+	    margin-bottom: 0;
+	}
+
+	.slides-profile.flexslider .flex-direction-nav .flex-next {
+		right: -40px;
+	}
+
+	.slides-profile.flexslider .flex-direction-nav .flex-prev {
+	    left: -40px;
+	}
+
+	.slides-profile.flexslider .flex-direction-nav li a {
+	    background-color: transparent !important;
+	    border: none;
+	}
+
+	.row-map {
+	    position: relative;
+	    text-align: center;
+	    margin: 0;
+	}
+
+	.tab-googlemap {
+	    padding: 0 15px;
+	    width: 100%;
+	    position: absolute;
+	    bottom: 0;
+	}
+
+	.button.button-sale {
+	    margin-right: 10px;
+	}
+
+	.tab-googlemap .button {
+	    line-height: 30px;
+	    padding: 0 10px;
+	    color: #fff;
+	    font-size: 8px;
+	    width: 48%;
+	    background-color: transparent;
+	    border: 1px solid #082d48;
+	    margin-bottom: 0;
+	    border-bottom: 1px solid #082d48;
+	    background-color: #082d48;
+	    float: left;
+	}
+
+	#instagram {
+	    padding: 0 30px;
+	    margin-bottom: 60px;
+	}
+
 }
 
 @media (max-width: 320px) {	
 	.tp-leftarrow.square:hover, .tp-rightarrow.square:hover {
 		background-color: transparent !important;
 	}
+
+	.slides-home.flexslider .search-in-slide {
+	    margin-top: -95px;
+	}
+
+	.slides-home.flexslider .flex-direction-nav .flex-next {
+	    right: 0;
+	}
+
+	.slides-home.flexslider .flex-direction-nav .flex-prev {
+		left: 0;
+	}
+
+	.flexslider-featured .flex-direction-nav .flex-prev {
+	 	left: -8px;
+	}
+
+	.flexslider-featured .flex-direction-nav .flex-next {
+	 	right: -10px;
+	}
+
+	.hoa-row.row-points {
+	    padding-bottom: 10px;
+	}
+
 }
 

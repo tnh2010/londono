@@ -613,22 +613,34 @@ input[type="color"],
     padding-top: 5px;
     margin-top: 15px;
     position: absolute;
+    color: #fff;
     display: none;
 }
 
 .widget-search.on {
     position: absolute;
     right: 0;
-    top: 100%;
+    top: 85%;
 }
 
 .widget-search.on .input-search {
     width: 200px;
     color: #424d59;
+    background-color: #fff;
+    z-index: 1;
+    position: relative;
+    padding: 0 20px 0 10px;
+    border-radius: 3px;
+    border: none;
 }
 
 .widget-search.on .button.button-search i {
     color: #424d59;
+}
+
+.widget-search.on .button.button-search {
+    right: 0;
+    top: 19px;
 }
 
 .header.style1 #mainnav > ul > li.home > a:before,
@@ -881,7 +893,10 @@ input[type="color"],
 -----------------------------------------------------------*/
 .slides-home.flexslider li img {
     max-height: 815px;
+    min-height: 300px;
 }
+
+
 
 .slides-home.flexslider .flex-direction-nav li a {
     border-radius: 50%;
@@ -891,6 +906,7 @@ input[type="color"],
     opacity: 1 !important;
     margin-top: -25px;
     border: 2px solid #2a3a58;
+    z-index: 99;
 }
 
 .slides-home.flexslider .flex-direction-nav li a:hover {
@@ -915,6 +931,7 @@ input[type="color"],
 
 .slides-home.flexslider .flex-direction-nav .flex-next i {
     padding-left: 5px;
+    transition: 0.3s;
 }
 
 .slides-home.flexslider .flex-direction-nav .flex-prev i {
@@ -1003,7 +1020,7 @@ input[type="color"],
 }
 
 .button.button-folio {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     margin-right: 3.5px;
     width: 220px;
     line-height: 50px;
@@ -1018,12 +1035,70 @@ input[type="color"],
     color: #fff;
 }
 
+
+.flexslider-featured .flex-direction-nav li a {
+    z-index: 99;
+    background-color: transparent;
+}
+
+.flexslider-featured .flex-direction-nav .flex-next {
+    right: 5%;
+    top: 35%;
+}
+
+.flexslider-featured .flex-direction-nav a i {
+    color: #fff;
+    font-size: 35px;
+    line-height: 46px;
+}
+
+.flexslider-featured .flex-direction-nav a:hover i {
+    color: #fff;
+}
+
+.flexslider-featured .flex-direction-nav .flex-next:before {
+    content: '';
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    background-repeat: no-repeat;
+    background-image: url('../images/icon/nav-right.png');
+}
+
+.flexslider-featured .flex-direction-nav .flex-prev:before {
+    content: '';
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    background-repeat: no-repeat;
+    background-image: url('../images/icon/nav-left.png');
+}
+
+
+.flexslider-featured .flex-direction-nav .flex-prev {
+    right: 60px;
+    left: 5%;
+    top: 35%;
+}
+
+
+.flexslider-featured  .slides > li {
+    position: relative;
+    text-align: center;
+}
 /* Profile
 -------------------------------------------------------------- */
 .hoa-row.row-folio {
     background-image: url(../images/profiles/bgf1.jpg);
 }
 
+.slides-profile.flexslider {
+    background-color: transparent;
+}
 .hoa-row.row-folio:before {
     content: '';
     position: absolute;
@@ -1046,6 +1121,18 @@ input[type="color"],
 .button.but-viewall:hover {
     background-color: #ddd;
     color: #000;
+}
+
+.flexslider-featured.points .flex-direction-nav .flex-next {
+    top: 58%;
+}
+
+.flexslider-featured.points .flex-direction-nav .flex-prev {
+    top: 58%;
+}
+
+.hoa-row.row-points {
+    padding-bottom: 80px;
 }
 /* Google map 
 -------------------------------------------------------------- */
@@ -1348,7 +1435,7 @@ input[type="color"],
     background-position: center center !important;
 }
 
-.tp-bullets.simplebullets.navbar {
+/*.tp-bullets.simplebullets.navbar {
 	height: 35px;
 	padding: 0px 0px;
 }
@@ -1401,5 +1488,5 @@ input[type="color"],
 	height: 30px !important;
 	border: 0 !important;
 }
-
+*/
 
