@@ -383,6 +383,7 @@ input[type="color"],
 -------------------------------------------------------------- */
 #header {
     background-color: #111e2e;
+    max-width: 100%;
 }
 
 .header-inner .wrap-menu {
@@ -411,7 +412,7 @@ input[type="color"],
 #header.upscrolled {
     opacity: 1;
     top: 0;	  
-    max-width: 1920px;     
+    max-width: 100%;
 	margin: 0 auto;
 	z-index: 999999;
 }
@@ -574,6 +575,7 @@ input[type="color"],
 .widget-search .input-search {
     color: #fff;
     width: 175px;
+    text-transform: uppercase;
     border: 0;
     border-bottom: 1px solid #424d59;
 }
@@ -632,6 +634,7 @@ input[type="color"],
     padding: 0 20px 0 10px;
     border-radius: 3px;
     border: none;
+    text-transform: none;
 }
 
 .widget-search.on .button.button-search i {

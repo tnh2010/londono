@@ -271,6 +271,10 @@
 	.flexslider-featured .flex-direction-nav li a {
 	    opacity: 1;
 	}
+
+	.widget-search.on {
+	    right: 10px;
+	}
 }
 
 /* Tablet Landscape */
