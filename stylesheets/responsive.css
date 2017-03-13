@@ -267,6 +267,10 @@
 	.button.button-open {
 	    margin-bottom: 20px;
 	}
+
+	.flexslider-featured .flex-direction-nav li a {
+	    opacity: 1;
+	}
 }
 
 /* Tablet Landscape */
@@ -319,6 +323,10 @@
 	.tab-googlemap {
 	    margin-top: -45px;
 	    height: 45px;
+	}
+
+	#logo a {
+		margin-left: 0;
 	}
 }
 
