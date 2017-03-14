@@ -268,12 +268,21 @@
 	    margin-bottom: 20px;
 	}
 
-	.flexslider-featured .flex-direction-nav li a {
+	.flexslider-featured .flex-direction-nav li a ,
+	.flexslider-points .flex-direction-nav li a {
 	    opacity: 1;
 	}
 
 	.widget-search.on {
 	    right: 10px;
+	}
+
+	.flexslider-featured.mobile {
+		display: block !important;
+	}
+
+	.flexslider-featured.desktop {
+		display: none !important;
 	}
 }
 

@@ -182,6 +182,16 @@
             animation: "slide",
             controlNav: false,
             directionNav: true ,
+            nextText: '<span ></span>',
+            prevText: '<span ></span>'
+        });
+    }
+
+    var SliderPoints = function () {
+        $('.flexslider-points').flexslider({
+            animation: "slide",
+            controlNav: false,
+            directionNav: true ,
             nextText: '<span class="nav-right" ></span>',
             prevText: '<span class="nav-left" ></span>'
         });
@@ -218,9 +228,12 @@
         if ( matchMedia( 'only screen and (min-width: 991px)' ).matches ) {
             headerFixed();
         }
+
         if ( matchMedia( 'only screen and (max-width: 991px)' ).matches ) {
-            SliderFeature();
+            SliderPoints();
         }
+
+        SliderFeature();
         
         responsiveMenu();
         tabGoogleMap();

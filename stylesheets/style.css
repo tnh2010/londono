@@ -9,11 +9,6 @@
 @import url("owl.carousel.css");
 @import url("shortcodes.css");
 @import url("font-face.css");
-/*@import url("datepicker.css");
-@import url("revolution-slider.css");
-@import url("simple-line-icons.css");
-@import url("material-design-iconic-font.min.css");
-@import url("material-icons.css");*/
 
 /* Reset
 -------------------------------------------------------------- */
@@ -1089,6 +1084,10 @@ input[type="color"],
     padding: 50px 0 100px 0;
 }
 
+.flexslider-featured.desktop.flexslider {
+    margin: 0 -15px;
+}
+
 .button.button-folio {
     margin-bottom: 10px;
     margin-right: 3.5px;
@@ -1160,6 +1159,39 @@ input[type="color"],
     position: relative;
     text-align: center;
 }
+
+
+.flexslider-featured.desktop .flex-direction-nav .flex-next {
+    right: -38px;
+    top: 50%;
+    margin-top: -41px;
+    border-radius: 50%;
+    background-color: #eeeeee;
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+}
+
+.flexslider-featured.desktop .flex-direction-nav .flex-next:before {
+    top: 14px;
+    left: 20px;
+}
+
+.flexslider-featured.desktop .flex-direction-nav .flex-prev {
+    left: -38px;
+    top: 50%;
+    margin-top: -41px;
+    border-radius: 50%;
+    background-color: #eeeeee;
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+}
+
+.flexslider-featured.desktop .flex-direction-nav .flex-prev:before {
+    top: 14px;
+    left: 20px;
+}
 /* Profile
 -------------------------------------------------------------- */
 .hoa-row.row-folio {
@@ -1193,12 +1225,59 @@ input[type="color"],
     color: #000;
 }
 
-.flexslider-featured.points .flex-direction-nav .flex-next {
-    top: 58%;
+.flexslider-points .flex-direction-nav li a {
+    z-index: 99;
+    background-color: transparent;
 }
 
-.flexslider-featured.points .flex-direction-nav .flex-prev {
-    top: 58%;
+.flexslider-points .flex-direction-nav .flex-next {
+    right: 5%;
+    top: 62%;
+}
+
+.flexslider-points .flex-direction-nav a i {
+    color: #fff;
+    font-size: 35px;
+    line-height: 46px;
+}
+
+.flexslider-points .flex-direction-nav a:hover i {
+    color: #fff;
+}
+
+.flexslider-points .flex-direction-nav .flex-next:before {
+    content: '';
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    background-repeat: no-repeat;
+    background-image: url('../images/icon/nav-right.png');
+}
+
+.flexslider-points .flex-direction-nav .flex-prev:before {
+    content: '';
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    background-repeat: no-repeat;
+    background-image: url('../images/icon/nav-left.png');
+}
+
+
+.flexslider-points .flex-direction-nav .flex-prev {
+    right: 60px;
+    left: 5%;
+    top: 62%;
+}
+
+
+.flexslider-points  .slides > li {
+    position: relative;
+    text-align: center;
 }
 
 .hoa-row.row-points {
@@ -1421,16 +1500,11 @@ input[type="color"],
     position: fixed !important;
     right: -35px;
     bottom: 15px;   
-    width: 32px;
-    height: 32px;
-    -webkit-border-radius: 2px;
-       -moz-border-radius: 2px;
-        -ms-border-radius: 2px;
-         -o-border-radius: 2px;
-            border-radius: 2px;
+    width: 50px;
     cursor: pointer;   
-    background-color: #00bac9;
-    line-height: 32px;
+    background-color: #fff;
+    height: 50px;
+    line-height: 50px;
     text-align: center;     
     -webkit-transition: all 0.3s ease-in-out;
        -moz-transition: all 0.3s ease-in-out;
@@ -1449,17 +1523,17 @@ input[type="color"],
     filter: alpha(opacity=100);
     opacity: 1;
     visibility: visible;
+    border-radius: 50%;
 }
 
 .go-top i {
-    font-size: 14px;
-    color: #fff;
-    font-weight: 600;
-    padding-bottom: 3px;    
+    font-size: 33px;
+    color: #202020;
+    line-height: 45px;
 }
 
 .go-top:hover {
-    background-color: #333;
+    background-color: #202020;
 }
 
 .go-top:hover i {
