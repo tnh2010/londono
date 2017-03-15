@@ -966,7 +966,7 @@ input[type="color"],
 
 .slides-home.flexslider .flex-direction-nav .flex-next {
     right: 5%;
-    top: 50%;
+    top: 55%;
 }
 
 .slides-home.flexslider .flex-direction-nav a i {
@@ -992,7 +992,7 @@ input[type="color"],
 .slides-home.flexslider .flex-direction-nav .flex-prev {
     right: 60px;
     left: 5%;
-    top: 50%;
+    top: 55%;
 }
 
 

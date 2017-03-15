@@ -1,7 +1,9 @@
 /* Media Queries
 -------------------------------------------------------------- */
 @media only screen and (max-width: 1366px) {
-	
+	.slides-profile.flexslider {
+	    margin: 0 50px;
+	}
 }
 
 /* Smaller than standard 1200 */
@@ -21,6 +23,27 @@
 	.header-inner .wrap-menu {
 		margin: 0;
 	}
+
+	.project-item .desc {
+	    font-size: 13px;
+	}
+
+	.flexslider-featured .flex-direction-nav li a {
+	    background-color: transparent !important;
+	}
+
+	.flexslider-featured.desktop .flex-direction-nav .flex-prev {
+    	left: -20px;
+	}
+
+	.flexslider-featured.desktop .flex-direction-nav .flex-next {
+	    right: -20px;
+	}
+
+	.slides-profile.flexslider {
+	    margin: 0 50px;
+	}
+
 }
 
 /* Smaller than standard 992 */
@@ -49,7 +72,7 @@
 	}
 
 	.hoa-row {
-		padding:50px;
+		padding:50px 0;
 	}
 
 	.hoa-divider.divider30 {
@@ -92,9 +115,7 @@
 	    margin-right: -28px;
 	}
 
-	.project-item .wrap-desc {
-		border: none;
-	}
+	
 
 
 	.search-in-slide  .title-horder {
@@ -284,11 +305,21 @@
 	.flexslider-featured.desktop {
 		display: none !important;
 	}
+
+	.slides-profile.flexslider {
+	    margin: 0 70px;
+	}
+
+	.wrap-info.wrap-info-profile {
+	    margin-top:3%;
+	}
 }
 
 /* Tablet Landscape */
  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-
+ 	.wrap-info.wrap-info-profile {
+	    margin-top:9%;
+	}
 }
 
 /* Tablet Portrait Size */
@@ -345,11 +376,15 @@
 
 /* Mobile Landscape Size */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-	
+	.wrap-info.wrap-info-profile {
+	    margin-top: 3%;
+	    padding: 10px 0;
+	}
 }
 
 /* Mobile Portrait Size */
 @media only screen and (max-width: 479px) {
+
 	.three-columns .entry {
 		width: 100%;
 	}
@@ -373,6 +408,14 @@
     	padding-bottom: 25px;
     	overflow: hidden;
     }
+
+    .wrap-info.wrap-info-profile {
+	    margin-top: 2%;
+	}
+
+    .slides-profile.flexslider {
+	    margin:0;
+	}
 
     .profile {
 	    background-image: none;
@@ -464,6 +507,14 @@
 	    margin-right: -15px;
 	}
 
+	.flexslider-featured.mobile .flex-direction-nav .flex-prev {
+	    left: -16px !important;
+	}
+
+	.flexslider-featured.mobile .flex-direction-nav .flex-next {
+	    right: -16px !important;
+	}
+
 }
 
 @media (max-width: 320px) {	
@@ -494,6 +545,11 @@
 	.hoa-row.row-points {
 	    padding-bottom: 10px;
 	}
+
+	.flexslider .flex-direction-nav li a span {
+	    top: 0;
+	}
+
 
 }
 
