@@ -365,13 +365,13 @@
 	    padding: 10px 15px;
 	}
 
-	.tab-googlemap .button {
+	/*.tab-googlemap .button {
 	    line-height: 45px;
 	}
 	.tab-googlemap {
 	    margin-top: -45px;
 	    height: 45px;
-	}
+	}*/
 
 	#logo a {
 		margin-left: 0;
@@ -384,6 +384,15 @@
 	    margin-top: 3%;
 	    padding: 10px 0;
 	}
+
+	.tab-googlemap {
+	    margin-top: -45px;
+	    height: 45px;
+	}
+
+	.tab-googlemap .button {
+    	line-height: 45px;
+    }
 }
 
 /* Mobile Portrait Size */
@@ -477,30 +486,20 @@
 	}
 
 	.tab-googlemap {
-	    padding: 0 15px;
+	    padding: 0 30px;
 	    width: 100%;
 	    position: absolute;
-	    bottom: 0;
-	}
-
-	.button.button-sale {
-	    margin-right: 10px;
+	    top: 75px;
 	}
 
 	.tab-googlemap .button {
-	    line-height: 30px;
-	    padding: 0 10px;
+		width: 100%;
+	    line-height: 45px;
 	    color: #fff;
-	    font-size: 7px;
-	    width: 48%;
-	    background-color: transparent;
 	    border: 1px solid #082d48;
-	    margin-bottom: 0;
 	    border-bottom: 1px solid #082d48;
 	    background-color: #082d48;
-	    float: left;
 	}
-
 	#instagram {
 	    padding: 0 30px;
 	    margin-bottom: 60px;
