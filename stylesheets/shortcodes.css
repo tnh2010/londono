@@ -204,6 +204,10 @@ li.language:before {
     color: #101a2b;
 }
 
+.title-section.style1.color-101a2b:before {
+    background: ##b6c3cf;
+}
+
 .title-section.style1:before {
     content: '';
     width: 100%;
@@ -253,6 +257,10 @@ li.language:before {
     margin-bottom: 20px;
 }
 
+.title-section.style4 .title a {
+    color: #101b2b;
+}
+
 /*Title section style5
 ---------------------------------------------------*/
 .title-section.style5 .title {
@@ -281,6 +289,17 @@ li.language:before {
     right: 0;
 }
 
+/* Button mobile
+-----------------------------------------------------*/
+.button.vn-button.bt-background {
+    background: #082d48;
+    color: #fff !important;
+}
+
+.button.bt-mobile {
+    display: none;
+}
+
 /*Project item 
 -----------------------------------------------------*/
 .project-item {
@@ -297,6 +316,7 @@ li.language:before {
     position: relative;
     cursor: pointer;
     display: inline-block;
+    overflow: hidden;
 }
 .project-item .wrap-img .wrap-images{
     position: relative;
@@ -697,6 +717,14 @@ li.language:before {
     background-image: url(../images/points/line.png);
 }
 
+.image-profile {
+    text-align: center;
+}
+
+.image-profile .hideinpc {
+    display: none;
+}
+
 /* Testimonials
 ----------------------------------------------------------*/
 .row-testimonial {
@@ -705,6 +733,10 @@ li.language:before {
 }
 .hoa-testimonial {
     text-align: center;
+}
+
+.hoa-testimonial .content-say {
+    padding: 0 170px;
 }
 
 .hoa-testimonial .content-say p {
@@ -911,6 +943,35 @@ li.language:before {
 .hoa-team .team-item .avatar {
     float: left;
     margin-right: 15px;
+}
+
+.hoa-team .team-item .avatar a {
+    position: relative;
+    display: block;
+}
+
+.hoa-team .team-item .avatar a:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.39);
+    -webkit-transition: all 0.2s ease-in-out;
+       -moz-transition: all 0.2s ease-in-out;
+        -ms-transition: all 0.2s ease-in-out;
+         -o-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+       opacity: 0;
+        filter: alpha(opacity=0); 
+}
+
+.hoa-team .team-item:hover .avatar a:before {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+        filter: alpha(opacity=100);
+    opacity: 1;
 }
 
 .hoa-team .team-item .name {

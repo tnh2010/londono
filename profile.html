@@ -61,7 +61,7 @@
                                         <li class="mn"><a href="#">FREE EVALUATION </a>
                                         </li>
                                         <li class="mn active"><a href="#">CONTACT ME</a></li>
-                                        <li class="language">
+                                        <li class="language mobile">
                                             <select >
                                                 <option value="EN">EN</option>
                                                 <option value="VI">VI</option>
@@ -70,8 +70,8 @@
                                     </ul><!-- /.menu -->
                                 </nav><!-- /.mainnav -->
                             </div><!-- /.nav-wrap -->
-                            <!-- <div class="button-show-search"><i class="fa fa-search" aria-hidden="true"></i></div>
-                            <div class="widget-search">
+                            <!-- <div class="button-show-search"><i class="fa fa-search" aria-hidden="true"></i></div> -->
+                            <!-- <div class="widget-search">
                                 <input class="input-search" type="text" placeholder="Search" name="input-search">
                                 <div class="button button-search"><i class="fa fa-search" aria-hidden="true"></i></div>
                             </div> -->
@@ -86,12 +86,13 @@
         <!-- Entry Page -->
         <div class="entry-page">
             <!-- Introduce profile -->
-            <section class="introduce-profile">
+            <section class="introduce-profile mobile">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4">
                             <div class="image-profile">
-                                <img src="images/ProfileInfo/name.png" alt="images">
+                                <img class="hideinmobile" src="images/ProfileInfo/name.png" alt="images">
+                                <img class="hideinpc" src="images/ProfileInfo/name-mb.png" alt="images">
                             </div>
                         </div><!-- /.col-md-4 -->
                         <div class="col-md-1"></div>
@@ -99,7 +100,7 @@
                             <div class="profile-info">
                                 <h4 class="profile-title">REAL ESTATE BROKER</h4>
                                 <h2 class="profile-name">Tatiana Londono </h2>
-                                <p class="content">Tatiana Londono is the Founder & CEO of Londono Realty Group Inc,<br>one of the largest residential brokerage firms in Montreal</p>
+                                <p class="content">Tatiana Londono is the Founder & CEO of Londono Realty Group Inc, one of the largest residential brokerage firms in Montreal</p>
                                 <div class="social">
                                     <a href="#"><span><img src="images/ProfileInfo/fb.png" alt="images"></span></a>
                                     <a href="#"><span><img src="images/ProfileInfo/in.png" alt="images"></span></a>
@@ -121,7 +122,7 @@
                     <div class="row">
                         <div class="col-md-3">
                             <div class ='title-section style4'>
-                                <div class="title">Contact Info</div>
+                                <div class="title"><a href="#">Contact Info</a></div>
                             </div>
                             <div class="hoa-contact">
                                 <div class="phone"><span>Office:</span> 514-937-1717</div>
@@ -140,7 +141,7 @@
                         </div><!-- /.col-md-3 -->
                         <div class="col-md-9">
                             <div class ='title-section style4'>
-                                <div class="title">About</div>
+                                <div class="title"><a href="#">About</a></div>
                             </div>
                             <div class="hoa-about">
                                 <div class="content">
@@ -149,7 +150,7 @@
                                     <p>With her drive, down to earth business sense, combined with impressive sales skills, Tatiana dreams big! She hopes to turn Londono Realty Group into a multi-million dollar empire with agencies all over the country, if not the world! </p>
                                 </div><!-- /.content -->                                
                             </div><!-- /.hoa-about -->
-                            <div class ='title-section style4'>
+                            <div class ='title-section style4 title-hideinmobile'>
                                 <div class="title">Team</div>
                             </div>
                             <div class="hoa-team">
@@ -187,17 +188,93 @@
             </section><!-- /.aboutandcontact -->
 
             <!-- Featured -->
-            <section id="profiles" class="hoa-row row-featured style1 background-efeff1">
+            <section id="profiles" class="hoa-row row-featured style1 background-efeff1 vn-responsive">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <div class ='title-section style1 style2'>
+                            <div class ="title-section title-section-mobile style1 style2">
                                 <div class="title">Recent listings</div>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-12">                            
+                        <div class="col-md-12"> 
+                            <div class="flexslider-featured vn-but bg-fff mobile" style="display: none;">
+                                <ul class="slides">
+                                    <li>
+                                        <div class="col-md-3">
+                                            <div class="project-item">
+                                                <div class="wrap-img">
+                                                    <div class="wrap-images">
+                                                        <img src="images/featured/1.jpg">
+                                                    </div>
+                                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                                        <div class="wrap-desc">
+                                                        <div class="title">$1,149,000.00</div>
+                                                        <div class="desc">255 Brighton Drive<br>Beaconsfield<br>MLS #: 21852740</div>
+                                                        <a href="#" class="button button-project-item">open house</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="col-md-3">
+                                            <div class="project-item">
+                                                <div class="wrap-img">
+                                                    <div class="wrap-images">
+                                                        <img src="images/featured/2.jpg">
+                                                    </div>
+                                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                                    <div class="wrap-desc">
+                                                        <div class="title">$589,000.00</div>
+                                                        <div class="desc">1225 Boul. Robert-Bourassa #607<br>Ville-Marie (Montréal)<br>MLS #: 17139321</div>
+                                                        <a href="#" class="button button-project-item">open house</a>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div> 
+                                    </li>
+                                    <li>
+                                        <div class="col-md-3">
+                                            <div class="project-item">
+                                                <div class="wrap-img">
+                                                    <div class="wrap-images">
+                                                        <img src="images/featured/3.jpg">
+                                                    </div>
+                                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                                    <div class="wrap-desc">
+                                                        <div class="title">$1,398,000.00</div>
+                                                        <div class="desc">40 Ch. de Hombourg<br>Lorraine<br>MLS #: 24807194</div>
+                                                        <a href="#" class="button button-project-item">open house</a>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="col-md-3">
+                                            <div class="project-item">
+                                                <div class="wrap-img">
+                                                    <div class="wrap-images">
+                                                        <img src="images/featured/4.jpg">
+                                                    </div>
+                                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                                    <div class="wrap-desc">
+                                                        <div class="title">$749,000.00</div>
+                                                        <div class="desc">333 Henri-Jarry Street<br>Beaconsfield<br>MLS #: 27821133</div>
+                                                        <a href="#" class="button button-project-item">open house</a>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </li>
+                                    
+                                </ul>
+                            </div>                           
                             <div class="flexslider-featured vn-but bg-fff desktop">
                                 <ul class="slides">
                                     <li>
@@ -336,24 +413,103 @@
                         </div><!-- /.col-md-12 --> 
                         <div class="hoa-divider divider30"></div>
                         <div class="col-md-12 text-center">
-                            <a href="#" class="button vn-button button-folio viewall">VIEW ALL</a>
+                            <a href="#" class="button vn-button button-folio viewall hideinmobile">VIEW ALL</a>
+                        </div>
+                        <div class="col-md-12 text-center">
+                            <a href="#" class="button vn-button button-folio viewall bt-mobile">VIEW ALL PROPERTIES</a>
+                            <a href="#" class="button vn-button bt-background button-folio viewall bt-mobile">SEE OPEN HOUSES</a>
                         </div>                       
                     </div><!-- /.row -->
                 </div><!-- /.container -->
             </section>
 
             <!-- Featured 1 -->
-            <section id="profiles" class="hoa-row row-featured style1">
+            <section id="profiles" class="hoa-row row-featured style1 vn-responsive respon-style">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <div class ='title-section style1 color-101a2b'>
+                            <div class ="title-section style1 color-101a2b title-section-mobile">
                                 <div class="title">Sold properties</div>
                             </div>
                         </div><!-- /.col-md-12 -->
                     </div><!-- /.row -->
                     <div class="row">
-                        <div class="col-md-12">                            
+                        <div class="col-md-12"> 
+                            <div class="flexslider-featured mobile" style="display: none;">
+                                <ul class="slides">
+                                    <li>
+                                        <div class="col-md-3">
+                                            <div class="project-item">
+                                                <div class="wrap-img">
+                                                    <div class="wrap-images">
+                                                        <span class="sold">sold</span>
+                                                        <img src="images/featured/1.jpg">
+                                                    </div>
+                                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                                        <div class="wrap-desc">
+                                                        <div class="title">$1,149,000.00</div>
+                                                        <div class="desc">255 Brighton Drive<br>Beaconsfield<br>MLS #: 21852740</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>                              
+                                    </li>
+                                    <li>
+                                        <div class="col-md-3">
+                                            <div class="project-item">
+                                                <div class="wrap-img">
+                                                    <div class="wrap-images">
+                                                        <span class="sold">sold</span>
+                                                        <img src="images/featured/2.jpg">
+                                                    </div>
+                                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                                    <div class="wrap-desc">
+                                                        <div class="title">$589,000.00</div>
+                                                        <div class="desc">1225 Boul. Robert-Bourassa #607<br>Ville-Marie (Montréal)<br>MLS #: 17139321</div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="col-md-3">
+                                            <div class="project-item">
+                                                <div class="wrap-img">
+                                                    <div class="wrap-images">
+                                                        <span class="sold">sold</span>
+                                                        <img src="images/featured/3.jpg">
+                                                    </div>
+                                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                                    <div class="wrap-desc">
+                                                        <div class="title">$1,398,000.00</div>
+                                                        <div class="desc">40 Ch. de Hombourg<br>Lorraine<br>MLS #: 24807194</div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="col-md-3">
+                                            <div class="project-item">
+                                                <div class="wrap-img">
+                                                    <div class="wrap-images">
+                                                        <span class="sold">sold</span>
+                                                        <img src="images/featured/4.jpg">
+                                                    </div>
+                                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                                    <div class="wrap-desc">
+                                                        <div class="title">$749,000.00</div>
+                                                        <div class="desc">333 Henri-Jarry Street<br>Beaconsfield<br>MLS #: 27821133</div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div><!-- /.flexslider-featured -->                           
                             <div class="flexslider-featured desktop">
                                 <ul class="slides">
                                     <li>
@@ -498,7 +654,7 @@
             </section>
 
             <!-- Testimonial -->
-            <section id="profiles" class="hoa-row row-testimonial">
+            <section id="profiles" class="hoa-row row-testimonial show-next-prev-mobile">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -512,8 +668,8 @@
                                     <li>
                                         <div class="hoa-testimonial">
                                             <div class="content-say">
-                                                <p><span class="quote-icon">&nbsp;</span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</br>Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an</br>unknown printer took a galley of type and scrambled it to make a type specimen book. It has</br>survived not only five centuries, but also the leap into electronic typesetting, remaining</br>essentially unchanged.</p>
-                                                <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum</br>passages, and more recently with desktop publishing software like Aldus PageMaker including</br>versions of Lorem Ipsum.<span class="quote-icon1">&nbsp;</span></p>
+                                                <p><span class="quote-icon">&nbsp;</span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                                                <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<span class="quote-icon1">&nbsp;</span></p>
                                             </div>
                                             <div class="clients">
                                                 <div class="name">Joseph Baker</div>
@@ -526,8 +682,8 @@
                                     <li>
                                         <div class="hoa-testimonial">
                                             <div class="content-say">
-                                                <p><span class="quote-icon">&nbsp;</span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</br>Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an</br>unknown printer took a galley of type and scrambled it to make a type specimen book. It has</br>survived not only five centuries, but also the leap into electronic typesetting, remaining</br>essentially unchanged.</p>
-                                                <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum</br>passages, and more recently with desktop publishing software like Aldus PageMaker including</br>versions of Lorem Ipsum.<span class="quote-icon1">&nbsp;</span></p>
+                                                <p><span class="quote-icon">&nbsp;</span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                                                <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<span class="quote-icon1">&nbsp;</span></p>
                                             </div>
                                             <div class="clients">
                                                 <div class="name">Joseph Baker</div>
@@ -540,8 +696,8 @@
                                     <li>
                                         <div class="hoa-testimonial">
                                             <div class="content-say">
-                                                <p><span class="quote-icon">&nbsp;</span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</br>Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an</br>unknown printer took a galley of type and scrambled it to make a type specimen book. It has</br>survived not only five centuries, but also the leap into electronic typesetting, remaining</br>essentially unchanged.</p>
-                                                <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum</br>passages, and more recently with desktop publishing software like Aldus PageMaker including</br>versions of Lorem Ipsum.<span class="quote-icon1">&nbsp;</span></p>
+                                                <p><span class="quote-icon">&nbsp;</span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                                                <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<span class="quote-icon1">&nbsp;</span></p>
                                             </div>
                                             <div class="clients">
                                                 <div class="name">Joseph Baker</div>
@@ -559,11 +715,11 @@
             </section>
 
             <!-- Flat Custom -->
-            <section id="profiles" class="hoa-row row-custom">
+            <section id="profiles" class="hoa-row row-custom show-next-prev-mobile">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <div class ="title-section style3"><!-- /.row -->
+                            <div class ="title-section style3">
                                 <div class="title">CUSTOM TITLE ONE</div>
                             </div>
                         </div>
@@ -617,7 +773,7 @@
             </section>
 
             <!-- Latest post -->
-            <section id="instagram" class="hoa-row row-latest-post text-center">
+            <section id="instagram" class="hoa-row row-latest-post text-center instagram-responsive">
                 <div class="title"><span class="icon-instagram"></span></div>
                 <div class="sub-title">@londonorealtygroup</div>
                 <div class="lastest-post flexslider-latest">

@@ -36,7 +36,7 @@
             if ( currMenuType !== menuType ) {
                 menuType = currMenuType;
 
-                if ( currMenuType === 'mobile' ) {
+                if ( currMenuType === 'mobile') {
                     var $mobileMenu = $('#mainnav').attr('id', 'mainnav-mobi').hide();
                     var hasChildMenu = $('#mainnav-mobi').find('li:has(ul)');
 
