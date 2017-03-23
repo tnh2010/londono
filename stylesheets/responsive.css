@@ -11,6 +11,18 @@
 
 /* Smaller than standard 1200 */
 @media only screen and (max-width: 1199px) {
+	.mainnav.mainnav-footer ul li a {
+		padding: 10px 5px;
+	}
+
+	.mainnav.mainnav-footer {
+		padding-left: 125px;
+	}
+
+	.wrap-icon-footer div {
+		margin: 0 4px;
+	}
+
 	.button-show-search {
 		display: inline-block;
 	}
@@ -75,6 +87,23 @@
 
 /* Smaller than standard 992 */
 @media only screen and (max-width: 991px) {
+	.image-profile {
+		text-align: center;
+	}
+
+	.image-profile .hideinpc {
+		display: inline-block;
+		text-align: center;
+	}
+
+	.image-profile .hideinmobile {
+		display: none;
+	}
+
+	.button.vn-button.button-folio.viewall.bt-mobile {
+		padding: 0;
+	}
+
 	.hoa-contact,
 	.hoa-about,
 	.hoa-team,
