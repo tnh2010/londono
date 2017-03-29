@@ -45,6 +45,10 @@
     padding-top: 45px;
 }
 
+.padding-top77px {
+    padding-top: 77px;
+}
+
 .padding-bottom30px {
     padding-bottom: 10px;
 }
@@ -518,7 +522,7 @@ li.language:before {
     margin-bottom: 0;
     text-transform: uppercase;
     font-weight: 400;
-    letter-spacing: 0.5
+    letter-spacing: 0.5px;
 }
 
 .introduce-profile .profile-info .profile-name {
@@ -582,6 +586,53 @@ li.language:before {
     font-weight: 600;
     font-size: 22px;
     letter-spacing: 1px;
+}
+
+/* Introduce Profile details
+----------------------------------------------------------*/
+.vnp-details-profile .introduce-profile .profile-info .profile-title {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.vnp-details-profile .introduce-profile .profile-info {
+    padding-top: 45px;
+    padding-right: 200px;
+}
+
+.vnp-details-profile .introduce-profile .profile-info .profile-name {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.vnp-details-profile .introduce-profile .profile-info .content {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.vnp-details-profile .introduce-profile .profile-info .phone, 
+.vnp-details-profile .introduce-profile .profile-info .mail {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.vnp-details-profile .introduce-profile .profile-info .phone span, 
+.vnp-details-profile .introduce-profile .profile-info .mail span {
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.vnp-details-profile .introduce-profile .profile-info .content {
+    margin-bottom: 20px;
+}
+
+.vnp-details-profile .introduce-profile .profile-info .social span {
+    margin-right: 10px;
+}
+
+.vnp-details-profile .introduce-profile .profile-info .social {
+    margin-bottom: 20px;
 }
 
 /*Widget search in slide 
