@@ -11,7 +11,6 @@
 @import url("font-face.css");
 @import url("https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i");
 
-
 /* Reset
 -------------------------------------------------------------- */
 	html {
@@ -346,6 +345,7 @@ input[type="color"],
 	        box-shadow: none;
 	color: #777777;
 }
+
 
 .button {
     overflow: hidden;
@@ -1578,3 +1578,773 @@ input[type="color"],
     background-position: center center !important;
 }
 
+/* Details profile
+-------------------------------------------------------------- */
+.back-search {
+	float: left;
+}
+
+.back-search a {
+	font-size: 13px;
+	font-family: "Proxima Nova", sans-serif;
+	color: #777777;
+	position: relative;
+	padding-left: 15px;
+}
+
+.back-search a:before {
+	position: absolute;
+	left: 0;
+	top: -5px;
+	content: "\f104";
+	font-family: "FontAwesome";
+	font-size: 13px;
+	color: #777777;
+}
+
+.next-prev {
+	float: right;
+}
+
+.next-prev a {
+	font-size: 13px;
+	font-family: "Proxima Nova", sans-serif;
+	color: #777777;
+	position: relative;
+	padding-left: 15px;
+}
+
+.next-prev a:hover,
+.back-search a:hover {
+	color: #b28500;
+}
+
+.next-prev a.prev:before {
+	position: absolute;
+	left: 0;
+	top: -5px;
+	content: "\f104";
+	font-family: "FontAwesome";
+	font-size: 13px;
+	color: #777777;
+}
+
+.next-prev a.next {
+	padding-right: 15px;
+}
+
+.next-prev a.next:before {
+	position: absolute;
+	right: 0;
+	top: -5px;
+	content: "\f105";
+	font-family: "FontAwesome";
+	font-size: 13px;
+	color: #777777;
+}
+
+.next-prev a.next:after {
+	position: absolute;
+    left: 5px;
+    top: 0px;
+    content: "";
+    width: 1px;
+    height: 10px;
+    background: #777777;
+}
+
+.vn-line hr {
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+.details-profile-content-left .details-title {
+	font-size: 30px;
+    line-height: 40px;
+    font-family: "Droid Serif", sans-serif;
+    font-style: italic;
+    color: #121e2a;
+    font-weight: 400;
+    padding: 28px 0;
+    margin-bottom: 5px;
+}
+
+/* Flat tabs
+-------------------------------------------------------------- */
+.flat-tabs {
+    margin: 0;
+    overflow: visible;
+}
+
+.flat-tabs ul.menu-tabs {
+    /*background-color: #21242b;*/
+    margin: 0;
+    overflow: inherit;
+    padding: 0;
+}
+
+.flat-tabs ul.menu-tabs li {
+    position: relative;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.flat-tabs ul.menu-tabs li a {
+    font-weight: 700;
+    padding: 15px 25px;
+    background: #ededed;
+    border: none;
+    text-transform: uppercase;
+    color: #062c46;
+    position: relative;
+}
+
+.flat-tabs ul.menu-tabs li > a {
+    padding: 10px 55px;
+    display: block;
+    font-family: "ProximaNova Semibold", sans-serif;
+    font-size: 14px;
+}
+
+.flat-tabs ul.menu-tabs li.active a {
+    color: #fff;
+    background-color: #062b46;
+}
+
+/* flat tabs style1 */
+.flat-tabs.style1 > ul.menu-tabs {
+	position: absolute;
+	left: 30px;
+	top: -48px;
+}
+.flat-tabs.style1 ul.menu-tabs li {
+	margin-right: 3px;
+}
+
+.flat-tabs.style1 > ul.menu-tabs > li > a {
+	padding: 10px 48px;
+}
+
+.flat-tabs.style1 .content-tab .description .ms,
+.flat-tabs.style1 .content-tab .details .ms {
+	margin-top: 32px;
+	font-family: "Open Sans", sans-serif;
+	font-size: 15px;
+	color: #777777;
+}
+
+.flat-tabs.style1 .content-tab .description .price,
+.flat-tabs.style1 .content-tab .details .price {
+	font-size: 30px;
+	color: #b28500;
+	font-family: "Droid Serif", sans-serif;
+	font-style: italic;
+	line-height: 60px;
+	margin-bottom: 21px;
+}
+
+.hoa-tabs ul.menu-tab li {
+    position: relative;
+    display: inline-block;
+    font-size: 13px;
+    font-family: "Proxima Nova", sans-serif;
+    color: #777777;
+    padding-left: 35px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+.hoa-tabs ul.menu-tab li.b1:before {
+	position: absolute;
+    left: 0;
+    top: 4px;
+    content: "";
+    background: url(../images/icon/lich.png);
+    background-repeat: no-repeat;
+    background-position: left -2px;
+    width: 30px;
+    height: 25px;
+}
+
+.hoa-tabs ul.menu-tab li.b2 {
+	padding-left: 60px;
+}
+
+.hoa-tabs ul.menu-tab li.b2:before {
+	position: absolute;
+    left: 25px;
+    top: 4px;
+    content: "";
+    background: url(../images/icon/mess.png);
+    background-repeat: no-repeat;
+    background-position: left -2px;
+    width: 30px;
+    height: 25px;
+}
+
+.hoa-tabs ul.menu-tab li.b3 {
+	padding-left: 60px;
+}
+
+.hoa-tabs ul.menu-tab li.b3:before {
+	position: absolute;
+    left: 25px;
+    top: 2px;
+    content: "";
+    background: url(../images/icon/share.png);
+    background-repeat: no-repeat;
+    background-position: left -2px;
+    width: 30px;
+    height: 25px;
+}
+
+.hoa-tabs .content-tabs .content-request {
+	background-color: #efefef;
+	overflow: hidden;
+	padding: 20px;
+	margin-top: 10px;
+	position: relative;
+}
+
+.hoa-tabs .content-tabs .content-request .adv_close {
+	position: absolute;
+    right: 30px;
+    top: 25px;
+    width: 20px;
+    height: 20px;
+    background: #082d48;
+    color: #fff;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.hoa-tabs .content-tabs .content-request.chedule {
+	background: #e5f0f4;
+}
+
+.hoa-tabs .content-tabs .content-request.send-friend {
+	background: #f3f7e6;
+}
+
+.hoa-tabs .content-tabs .content-request.send-friend .title {
+	margin-bottom: 0;
+}
+
+.hoa-tabs .content-tabs .content-request.send-friend .des {
+	margin-bottom: 20px;
+}
+
+.hoa-tabs .content-tabs .content-request.share {
+	background: #f7f4e5;
+}
+
+.hoa-tabs .content-tabs .content-request.share .title {
+	margin-bottom: 0;
+}
+
+.hoa-tabs .content-tabs .content-request.share .des {
+	margin-bottom: 50px;
+}
+
+.hoa-tabs .content-tabs .content-request.share .social {
+	margin-bottom: 50px;
+	padding-left: 10px;
+}
+
+.hoa-tabs .content-tabs .content-request.share .social .line1 {
+	padding-bottom: 10px;
+}
+
+.hoa-tabs .content-tabs .content-request.share .social a {
+	padding-right: 7px;
+}
+
+.hoa-tabs .content-tabs .content-request .title.has-background {
+    background: url(../images/icon/request.png);
+    background-repeat: no-repeat;
+    background-position: right -2px;
+}
+
+.hoa-tabs .content-tabs .content-request .title {
+	font-family: "ProximaNova Semibold", sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #082d48;
+	display: inline-block;
+    padding-right: 30px;
+}
+
+.hoa-tabs .content-tabs .content-request .profile-form input,
+.hoa-tabs .content-tabs .content-request .profile-form select {
+	float: none;
+	background: #fff;
+	color: #666666;
+}
+
+.hoa-tabs .content-tabs .content-request .profile-form input.submit {
+	width: 150px;
+	height: 35px;
+	float: right;
+	margin-top: 10px;
+	font-size: 12px;
+	font-family: "ProximaNova Semibold", sans-serif;
+	color: #fff;
+	background: #062b46;
+}
+
+.hoa-tabs .content-tabs .content-request .profile-form input.submit:hover {
+	background: #fff;
+	color: #777777;
+	border: 1px solid #062b46;
+}
+
+.hoa-tabs .content-tabs .content-request .profile-form input.name,
+.hoa-tabs .content-tabs .content-request .profile-form input.email {
+	margin-right: 10px;
+}
+
+.hoa-tabs .content-tabs .content-request .profile-form select {
+	font-family: "Proxima Nova", sans-serif;
+	width: 100%;
+	background: #fff;
+	background-image: url(../images/icon/button-cl666.png);
+    background-position: 96% center;
+    background-repeat: no-repeat;
+}
+
+.hoa-tabs .content-tabs .content-request .profile-form {
+	padding: 0;
+}
+
+.hoa-tabs .content-tabs .content-request .profile-form  textarea {
+	height: 80px;
+	padding: 5px 10px;
+	color: #666666;
+	background: #fff;
+	border: none;
+}
+
+.tab-chedule-detail ,
+.tab-friend-detail,
+.tab-share-detail {
+    display: none;
+}
+
+.hoa-carousel-owl {
+	padding: 0 25px;
+}
+
+.details-profile-content-right .desc-content {
+	clear: both;
+}
+
+.details-profile-content-right .desc-content .title {
+	font-size: 14px;
+	font-family: "Proxima Nova", sans-serif;
+	color: #082d48;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-bottom: 7px;
+}
+
+.details-profile-content-right .key-features .title {
+	font-size: 14px;
+	font-family: "Proxima Nova", sans-serif;
+	color: #082d48;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-bottom: 7px;
+}
+
+.details-profile-content-right .hr-style {
+	text-align: right;
+}
+
+.details-profile-content-right .hr-style a {
+	position: relative;
+	display: inline-block;
+}
+
+.details-profile-content-right .hr-style a:before {
+	position: absolute;
+	left: -15px;
+	top: 50%;
+	content: "";
+	width: 15px;
+	height: 1px;
+	background: #062b46;
+}
+
+.details-profile-content-right .hr-style a:after {
+	position: absolute;
+	left: -8px;
+    top: 3px;
+	content: "";
+	height: 15px;
+	width: 1px;
+	background: #062b46;
+}
+
+.details-profile-content-right .key-features ul.total-price li {
+	display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 7px 0 7px 0px;
+}
+
+.details-profile-content-right .key-features ul.total-price li:last-child {
+	border-bottom: none;
+}
+
+.details-profile-content-right .key-features ul.total-price li strong {
+	float: right;
+	text-align: right;
+	font-family: "ProximaNova Semibold", sans-serif;
+	font-size: 15px;
+	color: #0d161e;
+}
+
+.hoa-carousel-owl.owl-theme .owl-controls .owl-nav div {
+	width: 25px;
+	height: 100%;
+	top: 20px;
+	line-height: 70px;
+	background: #ededed;
+}
+
+.hoa-carousel-owl.owl-theme .owl-controls .owl-nav div.owl-prev {
+	left: 15px;
+}
+
+.hoa-carousel-owl.owl-theme .owl-controls .owl-nav div.owl-next {
+	right: 15px;
+}
+
+.hoa-carousel-owl.owl-theme .owl-controls .owl-nav div.owl-prev:before, 
+.hoa-carousel-owl.owl-theme .owl-controls .owl-nav div.owl-next:before {
+	color: #000;
+}
+
+/* Accordion */
+.flat-accordion {
+	background: #062b46;
+	padding: 30px;
+	overflow: hidden;
+}
+
+.flat-accordion .flat-toggle .toggle-title {
+	font-size: 20px;
+	font-family: "Droid Serif", sans-serif;
+	font-style: italic;
+	font-weight: 400;
+	color: #fff;
+	padding: 15px 0 15px 50px;
+	cursor: pointer;
+	background: url(../images/profiles/icon1.jpg);
+	background-repeat: no-repeat;
+	background-position: left;
+	position: relative;
+}
+
+.flat-accordion .flat-toggle .toggle-title.active {
+	margin-bottom: 5px;
+}
+
+.flat-accordion .flat-toggle .toggle-title:before {
+    font-family: "FontAwesome";
+    position: absolute;
+    font-size: 22px;
+    content: "\f107";
+    right: 0;
+    top: 50%;
+    margin-top: -16px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 32px;
+    color: #fff;
+    font-style: normal;
+}
+
+.flat-accordion .flat-toggle .toggle-title.active:after {
+    font-family: "FontAwesome";
+    position: absolute;
+    font-size: 22px;
+    content: "\f106";
+    right: 0;
+    top: 50%;
+    margin-top: -16px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 32px;
+    color: #fff;
+    font-style: normal;
+}
+
+.flat-accordion .flat-toggle .toggle-title.active:before {
+    display: none;
+}
+
+.profile-form {
+	padding: 0 60px 0 50px;
+}
+
+.profile-form p {
+	overflow: hidden;
+}
+
+.profile-form label {
+	color: #bababa;
+}
+
+.profile-form input,
+.profile-form select {
+	width: 250px;
+	float: right;
+	margin-bottom: 10px;
+	padding: 0 10px;
+	background: #1f4159;
+    border: none;
+    height: 30px;
+    color: #fff;
+}
+
+.profile-form input.calendar {
+	width: 100%;
+	background-image: url(../images/icon/calendar.jpg) !important;
+    background-position: 98% center !important;
+    background-repeat: no-repeat !important;
+}
+
+.profile-form input.calculate {
+	background: transparent;
+	border: 1px solid #fff;
+	color: #fff;
+}
+
+.profile-form input.calculate:hover {
+	background-color: #1f4159;
+	border: 1px solid #1f4159;
+}
+
+.profile-form input.amount {
+	background: transparent;
+	border: 1px solid #1f4159;
+}
+
+.profile-form select {
+    font-family: "ProximaNova Semibold", sans-serif;
+    font-size: 14px;
+    line-height: 100%;
+    outline: 0;
+    background-image: url(../images/icon/buttom.png);
+    background-position: 96% center;
+    background-repeat: no-repeat;
+    position: relative;
+    text-indent: 0.01px;
+    text-overflow: '';
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
+}
+
+.favorites {
+    position: absolute;
+    bottom: -170px;
+    right: 15px;
+    width: 900px;
+    height: 170px;
+    background-color: #fff;
+    z-index: 99999999;
+    padding: 20px 30px;
+}
+
+.favorites .title-content {
+	margin-bottom: 10px;
+}
+
+.title.sw-click {
+    background-color: #fff;
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 170px;
+    width: 325px;
+    height: 45px;
+    line-height: 55px;
+    outline: 0;
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    cursor: pointer;
+    color: #082d48;
+    margin-bottom: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    -webkit-transition: all 0.3s ease-in-out;
+       -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+         -o-transition: all 0.3s ease-in-out;
+    		transition: all 0.3s ease-in-out;
+}
+
+.title.sw-click i {
+	font-size: 18px;
+	color: #b20000;
+	padding-right: 10px;
+	padding-left: 20px;
+}
+
+.title.sw-click i.fa-angle-down {
+	position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 24px;
+    color: #082d48;
+}
+
+.favorites-carousel-owl.owl-theme .owl-controls .owl-nav div.owl-prev {
+	left: 805px;
+	top: 30px;
+	width: 30px;
+	height: 30px;
+	background-color: #082d48;
+}
+
+.favorites-carousel-owl.owl-theme .owl-controls .owl-nav div.owl-next {
+	right: 30px;
+	top: 30px;
+	width: 30px;
+	height: 30px;
+	background-color: #082d48;
+}
+
+.favorites-carousel-owl.owl-theme .owl-controls .owl-nav div.owl-prev:before, 
+.favorites-carousel-owl.owl-theme .owl-controls .owl-nav div.owl-next:before {
+	line-height: 32px;
+}
+
+/* Member */
+.vnp-member .avatar {
+	float: left;
+	margin-right: 30px;
+}
+
+.vnp-member .content {
+	overflow: hidden;
+}
+
+.vnp-member .content .title {
+	font-size: 13px;
+	font-family: "Proxima Nova", sans-serif;
+	color: #666666;
+	font-weight: 400;
+	margin-bottom: 0;
+	line-height: 16px;
+}
+
+.vnp-member .content .name {
+	font-family: "Droid Serif", sans-serif;
+	font-size: 24px;
+	color: #666666;
+	font-style: italic;
+	font-weight: 400;
+	margin-bottom: 5px;
+}
+
+.vnp-member .content .phone {
+	margin-bottom: 7px;
+}
+
+.vnp-member .content .phone i {
+	font-size: 18px;
+	color: #666666;
+	padding-right: 7px;
+}
+
+.vnp-member .content .phone a {
+	font-weight: 400;
+	font-family: "Proxima Nova", sans-serif;
+	font-size: 14px;
+	color: #666666;
+}
+
+.vnp-member .content .vnp-but a {
+	font-size: 13px;
+	line-height: 26px;
+	display: inline-block;
+	font-family: "Proxima Nova", sans-serif;
+	color: #082d48;
+	padding: 7px 15px;
+	background-color: #efefef;
+	margin-right: 5px;
+}
+
+.vnp-member .content .vnp-but a:hover {
+	background-color: #082d48;
+	color: #fff;
+}
+
+/* Details */
+.details .details-content {
+	background-color: #f7f3f0;
+	padding: 30px 20px 30px 30px;
+}
+
+.details .details-content .title {
+	color: #0d161e;
+    font-family: "ProximaNova Semibold", sans-serif;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.details .details-content ul.list-details li {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 7px 0 7px 0px;
+    color: #0d161e;
+    font-family: "ProximaNova Semibold", sans-serif;
+    font-size: 15px;
+}
+
+.details .details-content ul.list-details li span {
+    float: right;
+    text-align: right;
+    font-family: "ProximaNova Semibold", sans-serif;
+    font-size: 15px;
+    color: #0d161e;
+}
+
+.vnp-table th {
+	font-family: "ProximaNova Semibold", sans-serif;
+    font-size: 17px;
+    color: #0d161e;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 7px 0;
+}
+
+.vnp-table td {
+    border-bottom: 1px solid #e6e6e6;
+    padding: 5px 0;
+    font-family: "ProximaNova Semibold", sans-serif;
+    font-size: 15px;
+    color: #0d161e;
+}
+
+.vnp-table tr th:nth-child(3),
+.vnp-table tr td:nth-child(3) {
+	text-align: right;
+}
+
+.vnp-table tr th:nth-child(2),
+.vnp-table tr td:nth-child(2) {
+	padding-left: 77px;
+}

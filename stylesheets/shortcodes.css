@@ -41,12 +41,32 @@
     padding: 100px 0;
 }
 
+.padding-top45px {
+    padding-top: 45px;
+}
+
+.padding-bottom30px {
+    padding-bottom: 10px;
+}
+
+.padding-left30px {
+    padding-left: 30px;
+}
+
+.padding-right30px {
+    padding-right: 30px;
+}
+
 /* Divider
 -------------------------------------------------------------- */
 .hoa-divider {
 	position: relative;
 	width: 100%;
     overflow: hidden;
+}
+
+.hoa-divider.divider15{
+    height: 15px;
 }
 
 .hoa-divider.divider20{
@@ -56,6 +76,11 @@
 .hoa-divider.divider30{
 	height: 30px;
 }
+
+.hoa-divider.divider35{
+    height: 35px;
+}
+
 .hoa-divider.divider50{
 	height: 50px;
 }

@@ -59,6 +59,42 @@
 	    margin: 0 50px;
 	}
 
+	.flat-tabs.style1 > ul.menu-tabs > li > a {
+	    padding: 10px 30px;
+	}
+
+	.flat-tabs ul.menu-tabs li > a {
+		padding: 10px 35px;
+	}
+
+	.hoa-tabs ul.menu-tab li {
+		padding-left: 30px;
+	}
+
+	.hoa-tabs ul.menu-tab li.b2:before {
+		left: 10px;
+	}
+
+	.hoa-tabs ul.menu-tab li.b2 {
+	    padding-left: 40px;
+	}
+
+	.hoa-tabs ul.menu-tab li.b3 {
+	    padding-left: 40px;
+	}
+
+	.hoa-tabs ul.menu-tab li.b3:before {
+		left: 10px;
+	}
+
+	.profile-form input, .profile-form select {
+		width: 100%;
+	}
+
+	.vnp-member .content .vnp-but a {
+		padding: 5px 7px;
+	}
+
 }
 
 @media only screen and (min-width: 991px) and (max-width: 1200px) {
@@ -87,6 +123,18 @@
 
 /* Smaller than standard 992 */
 @media only screen and (max-width: 991px) {
+	.title.sw-click {
+		width: 230px;
+	}
+
+	.favorites {
+		width: 100%;
+	}
+
+	.favorites-carousel-owl.owl-theme .owl-controls .owl-nav div.owl-prev {
+		left: 87%;
+	}
+
 	.image-profile {
 		text-align: center;
 	}
@@ -462,6 +510,24 @@
 
 	.language.mobile {
 		display: none;
+	}
+
+	.padding-left30px {
+		padding-left: 15px;
+	}
+
+	.padding-right30px {
+		padding-right: 15px;
+	}
+
+	.details-profile-content-right {
+		margin-top: 30px;
+	}
+
+	.flat-tabs.style1 > ul.menu-tabs {
+		position: relative;
+		left: 0;
+		top: 0;
 	}
 }
 
@@ -943,6 +1009,18 @@
 		padding: 0 25px;
 		margin-bottom: 25px;
 	}
+
+	.favorites-carousel-owl.owl-theme .owl-controls .owl-nav div.owl-prev {
+	    left: 80%;
+	}
+
+	.details .details-content {
+		padding: 7px;
+	}
+
+	.vnp-table td {
+		font-size: 13px;
+	}
 }
 
 /* Mobile Portrait Size */
@@ -1264,6 +1342,51 @@
 
 	.introduce-profile.mobile {
 		background: url(../images/bg1-mobi.jpg);
+	}
+
+	.next-prev {
+	    float: left;
+	}
+
+	.flat-tabs ul.menu-tabs li > a {
+	    padding: 7px 12px;
+	}
+
+	.flat-accordion {
+		padding: 7px;
+	}
+
+	.flat-accordion .flat-toggle .toggle-title {
+		margin-bottom: 10px;
+	}
+
+	.profile-form {
+	    padding: 0 7px;
+	}
+
+	.flat-tabs.style1 > ul.menu-tabs > li > a {
+	    padding: 7px 7px;
+	    font-size: 12px;
+	}
+
+	.vnp-member {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	.vnp-member .avatar {
+		float: none;
+		margin-right: 0;
+		margin-bottom: 5px;
+	}
+
+	.favorites-carousel-owl.owl-theme .owl-controls .owl-nav div.owl-prev {
+	    left: 70%;
+	}
+
+	.vnp-table tr th:nth-child(2),
+	.vnp-table tr td:nth-child(2) {
+		padding-left: 30px;
 	}
 }
 

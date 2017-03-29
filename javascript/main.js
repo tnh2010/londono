@@ -219,6 +219,151 @@
         });
     }
 
+    var flatTabs = function () {
+        $('.flat-tabs').each(function() {
+
+            $(this).children('.content-tab').children().hide();
+            $(this).children('.content-tab').children().first().show();
+
+            $(this).find('.menu-tabs').children('li').on('click', function(e) {
+                var liActive = $(this).index(),
+                    contentActive = $(this).siblings().removeClass('active').parents('.flat-tabs').children('.content-tab').children().eq(liActive);
+
+                contentActive.addClass('active').fadeIn('slow');
+                contentActive.siblings().removeClass('active');
+                $(this).addClass('active').parents('.flat-tabs').children('.content-tab').children().eq(liActive).siblings().hide();
+                e.preventDefault();
+            });
+        });
+    };
+
+    var hoaTabs = function () {
+        $(".tab-chedule").click(function(){
+            $('.tab-default-detail').hide();
+            $(".tab-friend-detail").hide();
+            $(".tab-share-detail").hide();
+            $(".tab-chedule-detail").show();
+        });
+
+        $(".tab-friend").click(function(){
+            $('.tab-default-detail').hide();
+            $(".tab-friend-detail").hide();
+            $(".tab-chedule-detail").hide();
+            $(".tab-friend-detail").show();
+        });
+
+        $(".tab-share").click(function(){
+            $('.tab-default-detail').hide();
+            $(".tab-friend-detail").hide();
+            $(".tab-chedule-detail").hide();
+            $(".tab-share-detail").show();
+        });
+
+        $(".adv_close").click(function(){
+            $(this).parent().parent().hide();
+            $('.tab-default-detail').show();
+        });
+    };
+
+    var carouselImg = function() {
+        $('.hoa-row').each(function() {               
+            if ( $().owlCarousel ) {
+                $(this).find('.hoa-carousel-owl').owlCarousel({
+                    loop: true,
+                    margin: 5,
+                    nav: true,
+                    dots: false,                     
+                    autoplay: false,                    
+                    responsive:{
+                        0:{
+                            items: 2
+                        },
+                        480:{
+                            items: 3
+                        },
+                        767:{
+                            items: 5
+                        },
+                        991:{
+                            items: 5
+                        },
+                        1200: {
+                            items: 5
+                        }
+                    }
+                });
+            }
+        });
+    };
+
+    var LondonoAccordion = function() {
+        var args = {duration: 600};
+        $('.flat-toggle .toggle-title.active').siblings('.toggle-content').hide();
+
+        $('.flat-toggle.enable .toggle-title').on('click', function() {
+            $(this).closest('.flat-toggle').find('.toggle-content').slideToggle(args);
+            $(this).toggleClass('active');
+        }); // toggle 
+
+        $('.flat-accordion .toggle-title').on('click', function () {
+            if( !$(this).is('.active') ) {
+                $(this).closest('.flat-accordion').find('.toggle-title.active').toggleClass('active').next().slideToggle(args);
+                $(this).toggleClass('active');
+                $(this).next().slideToggle(args);
+            } else {
+                $(this).toggleClass('active');
+                $(this).next().slideToggle(args);
+            }     
+        }); // accordion
+    };
+
+   
+
+    var favoritesNP = function() {
+        $(".sw-click").on('click',function() {
+            $(this).addClass('active');
+             var t = $(".favorites");
+
+            if (t.css("bottom") === "-170px") {
+                $(".favorites").animate({ bottom: "0"}, 300 )
+            } else {
+                $(this).removeClass('active');
+                $(".favorites").animate({ bottom: "-170px" }, 300)
+            }
+        });
+    };
+
+    var Fsavoritescarousel = function() {
+        $('.favorites').each(function() {               
+            if ( $().owlCarousel ) {
+                $(this).find('.favorites-carousel-owl').owlCarousel({
+                    loop: false,
+                    margin: 15,
+                    nav: true,
+                    dots: false,                     
+                    autoplay: false,                    
+                    responsive:{
+                        0:{
+                            items: 2
+                        },
+                        480:{
+                            items: 4
+                        },
+                        767:{
+                            items: 4
+                        },
+                        991:{
+                            items: 5
+                        },
+                        1200: {
+                            items: 6
+                        }
+                    }
+                });
+            }
+        });
+    };
+
 	$(function() { 
         
         SlidesHome();
@@ -232,9 +377,13 @@
         if ( matchMedia( 'only screen and (max-width: 991px)' ).matches ) {
             SliderPoints();
         }
-
         SliderFeature();
-        
+        flatTabs();
+        hoaTabs();
+        carouselImg();
+        Fsavoritescarousel();
+        LondonoAccordion();
+        favoritesNP();
         responsiveMenu();
         tabGoogleMap();
         goTop(); 
