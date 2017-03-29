@@ -127,10 +127,6 @@
 		display: none;
 	}
 
-	.vnp-details-londono .vnp-member {
-		display: block;
-	}
-
 	.title.sw-click {
 		width: 230px;
 	}
@@ -724,6 +720,10 @@
 	.image-profile .hideinpc {
 		display: inline-block;
 	}
+
+	.flat-tabs.style1 > ul.menu-tabs > li > a {
+	    padding: 10px 20px;
+	}
 }
 
 /* Mobile Landscape Size */
@@ -844,7 +844,7 @@
 	}
 
 	.flat-tabs ul.menu-tabs li > a {
-	    padding: 7px 23px;
+	    padding: 7px 20px;
 	}
 
 	.hoa-carousel-owl.owl-carousel.owl-theme.owl-loaded {
@@ -1528,7 +1528,7 @@
 	}
 
 	.flat-tabs.style1 > ul.menu-tabs > li > a {
-	    padding: 7px 18px;
+	    padding: 7px 15px;
 	    font-size: 12px;
 	}
 
@@ -1552,7 +1552,7 @@
 	}
 
 	.vnp-details-profile .next-prev a.prev:before {
-		left: 27px;
+		left: 8px;
 	}
 
 	.vnp-details-profile .next-prev a {
@@ -1560,7 +1560,7 @@
 	}
 
 	.vnp-details-profile .next-prev a.prev {
-		padding-left: 35px;
+		padding-left: 20px;
 	}
 
 	.vnp-details-profile .next-prev a.next {
@@ -1632,7 +1632,7 @@
 	}
 
 	.flat-tabs ul.menu-tabs li > a {
-	    padding: 7px 23px;
+	    padding: 7px 20px;
 	}
 
 	.hoa-carousel-owl.owl-carousel.owl-theme.owl-loaded {
