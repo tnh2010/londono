@@ -1,5 +1,5 @@
 /*
- * jQuery FlexSlider v2.6.0
+ * jQuery FlexSlider v2.6.2
  * http://www.woothemes.com/flexslider/
  *
  * Copyright 2012 WooThemes
@@ -73,8 +73,9 @@ html[xmlns] .flexslider .slides {
  * DEFAULT THEME
  * ====================================================================================================================*/
 .flexslider {
-  margin: 0 0 20px;
-  background: #ffffff;  
+  margin: 0 0 60px;
+  background: #fff;
+  border: 4px solid #fff;
   position: relative;
   zoom: 1;
   -webkit-border-radius: 4px;
@@ -119,7 +120,7 @@ html[xmlns] .flexslider .slides {
   top: 50%;
   z-index: 10;
   overflow: hidden;
-  opacity: 1;
+  opacity: 0;
   cursor: pointer;
   color: rgba(0, 0, 0, 0.8);
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
@@ -138,14 +139,25 @@ html[xmlns] .flexslider .slides {
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
 }
 .flex-direction-nav a.flex-next:before {
-  content: '';
+  content: '\f002';
+}
+.flex-direction-nav .flex-prev {
+  left: -50px;
 }
 .flex-direction-nav .flex-next {
   right: -50px;
-  text-align: center;
+  text-align: right;
+}
+.flexslider:hover .flex-direction-nav .flex-prev {
+  opacity: 0.7;
+  left: 10px;
 }
 .flexslider:hover .flex-direction-nav .flex-prev:hover {
   opacity: 1;
+}
+.flexslider:hover .flex-direction-nav .flex-next {
+  opacity: 0.7;
+  right: 10px;
 }
 .flexslider:hover .flex-direction-nav .flex-next:hover {
   opacity: 1;
@@ -261,41 +273,3 @@ html[xmlns] .flexslider .slides {
     right: 10px;
   }
 }
-
-/* customizer */
-.flex-direction-nav a {
-  width: 35px;
-  height: 35px;
-  text-align: center;
-  line-height: 35px;
-  background-color: #000000;  
-  position: absolute;
-  top: 100%;
-  margin-top: -55px;  
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
-    filter: alpha(opacity=20);
-    opacity: 0.2; 
-}
-
-.flex-direction-nav a:hover {
-  background-color: #2bb0ef;
-}
-
-.flex-direction-nav a i {
-  color: #fff;
-  font-size: 16px;
-}
-
-.flex-direction-nav a:before {
-  content: "";
-}
-
-.flex-direction-nav .flex-prev {
-  right: 60px;
-}
-
-.flex-direction-nav .flex-next {
-  right: 20px;  
-}
-
-

@@ -9,6 +9,8 @@
 @import url("owl.carousel.css");
 @import url("shortcodes.css");
 @import url("font-face.css");
+@import url("slick-theme.css");
+@import url("slick.css");
 @import url("https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i");
 
 /* Reset
@@ -1440,7 +1442,12 @@ input[type="color"],
 .mainnav.mainnav-footer {
     overflow: hidden;
     margin-bottom: 17px;
-    padding-left: 196px;
+    /*padding-left: 196px;*/
+    float: right;
+}
+
+.mainnav.mainnav-footer > ul > li {
+	display: inline-block;
 }
 
 .wrap-icon-footer div {
@@ -1468,6 +1475,7 @@ input[type="color"],
 
 .wrap-icon-footer {
     margin-bottom: 30px;
+    clear: both;
 }
 
 .wrap-info-footer .description {
@@ -1518,7 +1526,8 @@ input[type="color"],
     background-color: #fff;
     height: 50px;
     line-height: 50px;
-    text-align: center;     
+    text-align: center; 
+    z-index: 999999999;    
     -webkit-transition: all 0.3s ease-in-out;
        -moz-transition: all 0.3s ease-in-out;
         -ms-transition: all 0.3s ease-in-out;
@@ -1700,7 +1709,7 @@ input[type="color"],
 }
 
 .flat-tabs ul.menu-tabs li > a {
-    padding: 10px 55px;
+    padding: 10px 50px;
     display: block;
     font-family: "ProximaNova Semibold", sans-serif;
     font-size: 14px;
@@ -1722,7 +1731,7 @@ input[type="color"],
 }
 
 .flat-tabs.style1 > ul.menu-tabs > li > a {
-	padding: 10px 48px;
+	padding: 10px 40px;
 }
 
 .flat-tabs.style1 .content-tab .description .ms,
@@ -1986,6 +1995,21 @@ input[type="color"],
 	height: 15px;
 	width: 1px;
 	background: #062b46;
+}
+
+.morecontent span {
+    display: none;
+}
+
+.morelink {
+    display: block;
+    text-align: right;
+    font-size: 35px;
+    color: #062b46;
+}
+
+.morelink:hover {
+	color: #062b46;
 }
 
 .details-profile-content-right .key-features ul.total-price li {
@@ -2347,4 +2371,128 @@ input[type="color"],
 .vnp-table tr th:nth-child(2),
 .vnp-table tr td:nth-child(2) {
 	padding-left: 77px;
+}
+
+/* About */
+.hoa-row.vnp-about-slider {
+	padding: 0;
+}
+
+.vnp-about-slider {
+	background: url(../images/slides/about.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.vnp-about-slider .slides-about.flexslider {
+	background: transparent;
+	text-align: center;
+	padding: 230px 0 10px 0;
+}
+
+.vnp-about-slider .slides-about.flexslider .flex-direction-nav {
+	display: none;
+}
+
+.vnp-about-slider .slides-about.flexslider ul.slides li .title {
+	font-family: "Droid Serif", sans-serif;
+	font-size: 36px;
+	line-height: 45px;
+	font-style: italic;
+	color: #ffffff;
+	margin-bottom: 25px;
+}
+
+.vnp-about-slider .slides-about.flexslider ul.slides li .content {
+	font-size: 18px;
+	font-family: "Proxima Nova", sans-serif;
+	color: #fff;
+	letter-spacing: 1px;
+}
+
+.vnp-about-slider .slides-about.flexslider ul.slides li div span {
+	display: block;
+}
+
+.vnp-about-slider .slides-about.flexslider ul.slides li .button-slides a {
+	color: #fff;
+    font-size: 25px;
+    background: #0b141c;
+    -webkit-border-radius: 100%;
+	   -moz-border-radius: 100%;
+		 -o-border-radius: 100%;
+			border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    line-height: 30px;
+    margin-top: 10px;
+}
+
+.vnp-about-slider .slides-about.flexslider ul.slides li .button-slides a:hover {
+	background-color: #fff;
+	color: #0b141c;
+}
+
+.vnp-about-slider .slides-about.flexslider ul.slides li .button-slides1 {
+	padding-top: 210px;
+	padding-bottom: 30px;
+}
+
+.vnp-about-slider .slides-about.flexslider ul.slides li .button-slides1 a i {
+	font-size: 50px;
+	color: #fff;
+}
+
+/* Flexslider details profile */
+.flexslider-vnp .flex-control-thumbs {
+	padding: 0 25px;
+}
+
+.flexslider-vnp .flex-control-thumbs li {
+	width: 20%;
+	padding: 0 2px;
+}
+
+.flexslider-vnp .flex-direction-nav {
+	position: relative;
+}
+
+.flexslider-vnp .flex-direction-nav .flex-prev {
+	left: 0px;
+    top: -18px;
+}
+
+.flexslider-vnp .flex-direction-nav .flex-next {
+    right: 0;
+    top: -18px;
+}
+
+.flexslider-vnp .flex-direction-nav a {
+	width: 25px;
+    height: 72px;
+    opacity: 1;
+    background-color: #ededed;
+}
+
+.flexslider-vnp .flex-direction-nav a.flex-prev:before {
+	content: "\f104";
+    font-family: FontAwesome;
+    font-size: 21px;
+    color: #062b46;
+    position: absolute;
+    top: 50%;
+    left: 9px;
+    margin-top: -18px;
+}
+
+.flexslider-vnp .flex-direction-nav a.flex-next:before {
+	content: "\f105";
+	font-family: FontAwesome;
+    font-size: 21px;
+    color: #062b46;
+    position: absolute;
+    top: 50%;
+    left: 9px;
+    margin-top: -18px;
 }

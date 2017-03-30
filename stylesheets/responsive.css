@@ -15,10 +15,6 @@
 		padding: 10px 5px;
 	}
 
-	.mainnav.mainnav-footer {
-		padding-left: 125px;
-	}
-
 	.wrap-icon-footer div {
 		margin: 0 4px;
 	}
@@ -95,6 +91,11 @@
 		padding: 5px 7px;
 	}
 
+	.flat-tabs.style1 > ul.menu-tabs > li > a,
+	.flat-tabs ul.menu-tabs li > a {
+	    padding: 10px 20px;
+	}
+
 }
 
 @media only screen and (min-width: 991px) and (max-width: 1200px) {
@@ -123,6 +124,13 @@
 
 /* Smaller than standard 992 */
 @media only screen and (max-width: 991px) {
+
+	.flexslider-vnp .flex-viewport ul li img,
+	.adv img {
+		width: 100%;
+		height: auto;
+	}
+
 	.vnp-member {
 		display: none;
 	}
@@ -433,6 +441,11 @@
 
 	.mainnav.mainnav-footer {
 	    padding-left: 0;
+	    float: none;
+	}
+
+	.mainnav.mainnav-footer > ul > li {
+		display: block;
 	}
 
 	.mainnav.mainnav-footer ul li a {
@@ -621,8 +634,56 @@
 	}
 }
 
+@media only screen and (max-width: 768px) {
+	.flat-tabs.style1 .content-tab .description .ms, 
+	.flat-tabs.style1 .content-tab .details .ms,
+	.flat-tabs.style1 .content-tab .description .price, 
+	.flat-tabs.style1 .content-tab .details .price,
+	.details-profile-content-left .details-title {
+		text-align: center;
+	}
+
+	.vnp-details-profile .introduce-profile .profile-info .profile-name{
+	    font-size: 26px;
+	    line-height: 30px;
+	    margin-bottom: 15px;
+	}
+
+	.vnp-details-profile .introduce-profile .profile-info .social {
+	    margin-bottom: 12px;
+	}
+}
+
 /* All Mobile Sizes */
 @media only screen and (max-width: 767px) {
+	.w33 {
+		width: 33%;
+	}
+
+	.w30 {
+		width: 30%;
+	}
+
+	.w37 {
+		width: 37%;
+	}
+
+	.flat-tabs.style1 ul.menu-tabs li,
+	.flat-tabs ul.menu-tabs li {
+	    margin-right: -5px;
+	    text-align: center;
+	}
+
+	.adv {
+		display: none;
+	}
+
+	.flat-tabs.style1 .content-tab .description .ms, 
+	.flat-tabs.style1 .content-tab .details .ms,
+	.flat-tabs.style1 .content-tab .description .price, 
+	.flat-tabs.style1 .content-tab .details .price {
+		text-align: center;
+	}
 	.hoa-row {
 		padding:25px 0;
 	}
@@ -768,8 +829,12 @@
 		line-height: 18px;
 	}
 
-	.introduce-profile .profile-info .social span {
-		margin-right: 15px;
+	.vnp-details-profile .introduce-profile .profile-info {
+		overflow: hidden;
+	}
+
+	.vnp-details-profile .introduce-profile .profile-info .social span {
+		margin-right: 0;
 	}
 
 	.introduce-profile .profile-info .social span img {
@@ -785,6 +850,79 @@
 }
 
 @media only screen and (max-width: 480px) {
+	.flat-tabs ul.menu-tabs li > a {
+		font-size: 12px;
+	}
+
+	.flat-accordion, 
+	.flat-tabs ul.menu-tabs, 
+	.flat-tabs .content-tab .content-inner .img,
+	.vnp-slider,
+	.vnp-details-profile .flat-tabs.style1 > ul.menu-tabs {
+	    margin: 0 -15px;
+	}
+
+	.morelink {
+		text-align: left;
+		margin: 15px 0;
+	}
+
+	.flexslider-vnp .flex-direction-nav .flex-prev,
+	.flexslider-vnp .flex-direction-nav .flex-next {
+		top: -5px;
+	}
+
+	.flexslider-vnp .flex-direction-nav a {
+		height: 60px;
+	}
+
+	.flat-tabs ul.menu-tabs li {
+	    position: relative;
+	    display: inline-block;
+	    margin-right: -5px;
+	}
+
+	.hoa-tabs ul.menu-tab li.b2 {
+	    padding-left: 90px;
+	}
+
+	.hoa-tabs ul.menu-tab li.b2:before {
+	    left: 55px;
+	}
+
+	.hoa-tabs ul.menu-tab li {
+		font-size: 11px;
+		line-height: 12px;
+	}
+
+	.hoa-tabs ul.menu-tab li.b1 span {
+		display: block;
+	}
+
+	.hoa-tabs ul.menu-tab li.b2 span {
+		display: block;
+	}
+
+	.hoa-tabs ul.menu-tab li.b3 {
+	    padding-top: 10px;
+	    position: absolute;
+	    right: 0;
+	    top: 0;
+	}
+
+	.hoa-tabs ul.menu-tab {
+		position: relative;
+	}
+
+	.flat-tabs.style1 > ul.menu-tabs > li > a {
+	    padding: 7px 15px;
+	    font-size: 12px;
+	}
+
+	.vnp-details-profile .flat-tabs.style1 ul.menu-tabs li {
+	    margin-right: -5px;
+	}
+
 	.vnp-details-profile .back-search a,
 	.vnp-details-profile .next-prev a,
 	.vnp-details-profile .next-prev a {
@@ -819,13 +957,17 @@
 		margin-top: -5px;
 	}
 
-	.flat-tabs.style1 .content-tab .description .ms {
+	.flat-tabs.style1 .content-tab .description .ms,
+	.flat-tabs.style1 .content-tab .description .ms, 
+	.flat-tabs.style1 .content-tab .details .ms {
 		font-size: 13px;
 		text-align: center;
 		margin-top: 10px;
 	}
 
-	.flat-tabs.style1 .content-tab .description .price {
+	.flat-tabs.style1 .content-tab .description .price,
+	.flat-tabs.style1 .content-tab .description .price, 
+	.flat-tabs.style1 .content-tab .details .price {
 		font-size: 18px;
 		line-height: 30px;
 		text-align: center;
@@ -989,12 +1131,16 @@
 	}
 
 	.vnp-details-profile .introduce-profile .profile-info {
-		padding-top: 30;
+		padding-top: 15px;
 		padding-bottom: 0;
 	}
 
 	.introduce-profile .col-md-7 {
 		background-color: #294560;
+	}
+
+	.vnp-details-profile .introduce-profile .profile-info .profile-title {
+		font-size: 13px;
 	}
 
 	.introduce-profile .profile-info .profile-title {
@@ -1027,12 +1173,19 @@
 		height: 33px;
 	}
 
+	.vnp-details-profile .introduce-profile .profile-info .social span img {
+	    width: 27px;
+	    height: 27px;
+	}
+
 	.title-section.style5 .title {
 		font-size: 15px;
 	}
 
 	.introduce-profile .profile-info .phone, .introduce-profile .profile-info .mail,
-	.introduce-profile .profile-info .phone span, .introduce-profile .profile-info .mail span {
+	.introduce-profile .profile-info .phone span, .introduce-profile .profile-info .mail span,
+	.vnp-details-profile .introduce-profile .profile-info .phone, 
+	.vnp-details-profile .introduce-profile .profile-info .mail {
 		font-size: 16px;
 		line-height: 18px;
 	}
@@ -1144,6 +1297,23 @@
 
 	.vnp-table td {
 		font-size: 13px;
+	}
+
+	.vnp-details-profile .introduce-profile .profile-info .profile-name {
+		margin-bottom: 5px;
+		font-size: 20px;
+	}
+
+	.w33 {
+		width: 33%;
+	}
+
+	.w30 {
+		width: 30%;
+	}
+
+	.w37 {
+		width: 37%;
 	}
 
 }
@@ -1276,6 +1446,14 @@
 }
 
 @media (max-width: 320px) {	
+	.hoa-tabs ul.menu-tab li.b2 {
+	    padding-left: 40px;
+	}
+
+	.hoa-tabs ul.menu-tab li.b2:before {
+	    left: 10px;
+	}
+
 	.header.style1 {
 		padding: 2px 0;
 		height: 65px;
@@ -1342,7 +1520,7 @@
 	.vnp-details-profile .introduce-profile .profile-info .profile-name {
 		font-size: 20px;
 		line-height: 24px;
-		margin-bottom: 10px;
+		margin-bottom: 5px;
 	}
 
 	.vnp-details-profile .introduce-profile .profile-info .social span img {
@@ -1371,7 +1549,7 @@
 	}
 
 	.vnp-details-profile .introduce-profile .profile-info .social {
-	    margin-bottom: 10px;
+	    margin-bottom: 3px;
 	}
 
 	.introduce-profile .profile-info .social span {
@@ -1528,7 +1706,7 @@
 	}
 
 	.flat-tabs.style1 > ul.menu-tabs > li > a {
-	    padding: 7px 15px;
+	    padding: 7px 10px;
 	    font-size: 12px;
 	}
 
@@ -1632,7 +1810,7 @@
 	}
 
 	.flat-tabs ul.menu-tabs li > a {
-	    padding: 7px 20px;
+	    padding: 7px 10px;
 	}
 
 	.hoa-carousel-owl.owl-carousel.owl-theme.owl-loaded {
@@ -1652,7 +1830,7 @@
 	}
 
 	.vnp-details-profile .introduce-profile .profile-info {
-	    padding-top: 0;
+	    padding-top: 10px;
 	    padding-bottom: 0;
 	}
 
@@ -1693,6 +1871,19 @@
 
 	.vnp-details-londono .vnp-member {
 		margin-bottom: 20px;
+	}
+
+	.flexslider-vnp .flex-direction-nav a {
+		height: 38px;
+	}
+
+	.flexslider-vnp .flex-direction-nav .flex-prev, 
+	.flexslider-vnp .flex-direction-nav .flex-next {
+		top: 17px;
+	}
+
+	.vnp-slider {
+		margin: 0 -15px;
 	}
 	
 }
