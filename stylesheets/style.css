@@ -1427,10 +1427,10 @@ input[type="color"],
 
 .mainnav.mainnav-footer ul li a {
     float: left;
-    padding: 10px 15px;
+    padding: 10px 12px;
     color: #fff;
     font-size: 13px;
-    font-family: ProximaNova Semibold;
+    font-family: "ProximaNova Semibold";
 }
 .mainnav.mainnav-footer ul li a:hover {
     color: #b28500;
@@ -1520,7 +1520,7 @@ input[type="color"],
 .go-top {
     position: fixed !important;
     right: -35px;
-    bottom: 15px;   
+    bottom:15px;   
     width: 50px;
     cursor: pointer;   
     background-color: #fff;
@@ -1731,7 +1731,7 @@ input[type="color"],
 }
 
 .flat-tabs.style1 > ul.menu-tabs > li > a {
-	padding: 10px 40px;
+	   padding: 10px 43px;
 }
 
 .flat-tabs.style1 .content-tab .description .ms,
@@ -1741,6 +1741,7 @@ input[type="color"],
 	font-size: 15px;
 	color: #777777;
 }
+
 
 .flat-tabs.style1 .content-tab .description .price,
 .flat-tabs.style1 .content-tab .details .price {
@@ -1886,6 +1887,33 @@ input[type="color"],
     padding-right: 30px;
 }
 
+.tab-default-detail {
+    position: relative;
+}
+
+.tab-default-detail .btn-show-more-tabdefault {
+    font-family: "FontAwesome";
+    position: absolute;
+    font-size: 22px;
+    content: "\f107";
+    right: 15px;
+    top: 30px;
+    margin-top: -16px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 32px;
+    color: #062b46;
+    font-style: normal;
+    width: 30px;
+    height: 30px;
+    z-index: 99;
+    display: none;
+}
+
+.tab-default-detail .btn-show-more-tabdefault.noshow .fa-angle-down:before {
+    content: "\f106";
+}
+
 .hoa-tabs .content-tabs .content-request .profile-form input,
 .hoa-tabs .content-tabs .content-request .profile-form select {
 	float: none;
@@ -2011,6 +2039,23 @@ input[type="color"],
 .morelink:hover {
 	color: #062b46;
 }
+
+.wrap-morelink {
+    display: block;
+    overflow: hidden;
+}
+
+.wrap-morelink a {
+    display: inline-block;
+    float: right;
+    color: #062b46;
+}
+
+
+.wrap-morelink a.morelink.less {
+     font-size: 55px; 
+}
+
 
 .details-profile-content-right .key-features ul.total-price li {
 	display: inline-block;
@@ -2226,6 +2271,15 @@ input[type="color"],
 	padding-left: 20px;
 }
 
+.title.sw-click i.fa-angle-down:before {
+    content: "\f106";
+}
+
+.title.sw-click.active i.fa-angle-down:before {
+    content: "\f107";
+}
+
+
 .title.sw-click i.fa-angle-down {
 	position: absolute;
     right: 10px;
@@ -2253,6 +2307,17 @@ input[type="color"],
 .favorites-carousel-owl.owl-theme .owl-controls .owl-nav div.owl-prev:before, 
 .favorites-carousel-owl.owl-theme .owl-controls .owl-nav div.owl-next:before {
 	line-height: 32px;
+    position: absolute;
+    top: -1px;
+    
+}
+
+.favorites-carousel-owl.owl-theme .owl-controls .owl-nav div.owl-prev:before{
+    left: 10px;
+}
+
+.favorites-carousel-owl.owl-theme .owl-controls .owl-nav div.owl-next:before {
+    left: 13px;
 }
 
 /* Member */
@@ -2373,6 +2438,10 @@ input[type="color"],
 	padding-left: 77px;
 }
 
+.video img , .street img{
+    width: 100%;
+}
+
 /* About */
 .hoa-row.vnp-about-slider {
 	padding: 0;
@@ -2448,6 +2517,10 @@ input[type="color"],
 .flexslider-vnp .flex-control-thumbs {
 	padding: 0 25px;
 }
+.flexslider-vnp .flex-control-thumbs li img {
+    min-height: 73px;
+}
+
 
 .flexslider-vnp .flex-control-thumbs li {
 	width: 20%;

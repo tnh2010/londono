@@ -114,6 +114,10 @@
 	.introduce-profile .profile-info {
 	    padding-top: 40px;
 	}
+
+	.mainnav.mainnav-footer ul li a {
+		padding: 10px 5px;
+	}
 }
 
 @media only screen and (max-width: 1024px) {
@@ -124,6 +128,50 @@
 
 /* Smaller than standard 992 */
 @media only screen and (max-width: 991px) {
+
+	.vn-line {
+		display: none;
+	}
+
+	.hoa-tabs .content-tabs .content-request {
+	    padding-bottom: 0;
+	}
+
+	.tab-default-detail .content-request .profile-form {
+		display: none;
+	}
+
+	.btn-show-more-tabdefault {
+		display: inline-block !important;
+		cursor: pointer;	
+	}
+
+	.flat-tabs ul.menu-tabs li {
+	    margin-right: 0;
+	    width: 32.97%;
+	    text-align: center;
+	}
+
+	.details-profile-content-left .details-title {
+	    text-align: center;
+	}
+
+	.flat-tabs.style1 ul.menu-tabs li {
+	    margin-right: 0;
+	    width: 33.33%;
+	    float: left;
+	}
+
+	.flat-tabs.style1 .content-tab .description .ms, 
+	.flat-tabs.style1 .content-tab .details .ms, 
+	.flat-tabs.style1 .content-tab .description .price, 
+	.flat-tabs.style1 .content-tab .details .price {
+	    text-align: center;
+	}
+
+	.flex-control-thumbs , .flexslider-vnp .flex-direction-nav {
+	    display: none;
+	}
 
 	.flexslider-vnp .flex-viewport ul li img,
 	.adv img {
@@ -571,14 +619,34 @@
 		padding-right: 15px;
 	}
 
-	.details-profile-content-right {
-		margin-top: 30px;
-	}
-
 	.flat-tabs.style1 > ul.menu-tabs {
 		position: relative;
 		left: 0;
-		top: 0;
+		top: -25px;
+	}
+
+	.hoa-divider.divider35 {
+		height: 10px;
+	}
+
+
+	.flat-tabs.style1 ul.menu-tabs li:first-child,
+	.flat-tabs ul.menu-tabs li:first-child {
+	    width: 30% !important;
+	}
+
+	.flat-tabs.style1 ul.menu-tabs li:nth-child(2),
+	.flat-tabs ul.menu-tabs li:nth-child(2) {
+	    width: 30% !important; 
+	}
+
+	.flat-tabs.style1 ul.menu-tabs li:last-child,
+	.flat-tabs ul.menu-tabs li:last-child {
+	    width: 38.9% !important;
+	}
+
+	.adv {
+		display: none;
 	}
 }
 
@@ -670,8 +738,8 @@
 
 	.flat-tabs.style1 ul.menu-tabs li,
 	.flat-tabs ul.menu-tabs li {
-	    margin-right: -5px;
 	    text-align: center;
+	    margin-right: -5px;
 	}
 
 	.adv {
@@ -692,10 +760,10 @@
 	    padding:25px 0;
 	}
 
-	.hoa-divider.divider30,
-	.hoa-divider.divider35 {
+	.hoa-divider.divider30{
 		height: 10px;
 	}
+	
 
 	.hoa-divider.divider50 {
 		height: 20px;
@@ -715,6 +783,10 @@
 
 	.button.but-viewall {
 	    padding: 10px 15px;
+	}
+
+	.content-tabs {
+	    margin: 0 -15px;
 	}
 
 	/*.tab-googlemap .button {
@@ -854,6 +926,14 @@
 		font-size: 12px;
 	}
 
+	.flat-tabs.style1 > ul.menu-tabs {
+	    top: -5px;
+	}
+
+	.flat-tabs.style1 ul.menu-tabs li{
+	    margin-right: 0;
+	}
+
 	.flat-accordion, 
 	.flat-tabs ul.menu-tabs, 
 	.flat-tabs .content-tab .content-inner .img,
@@ -917,10 +997,6 @@
 	.flat-tabs.style1 > ul.menu-tabs > li > a {
 	    padding: 7px 15px;
 	    font-size: 12px;
-	}
-
-	.vnp-details-profile .flat-tabs.style1 ul.menu-tabs li {
-	    margin-right: -5px;
 	}
 
 	.vnp-details-profile .back-search a,
@@ -1320,6 +1396,17 @@
 
 /* Mobile Portrait Size */
 @media only screen and (max-width: 479px) {
+	.go-top {
+	    bottom:50px;   
+	}
+	.flat-tabs.style1 ul.menu-tabs li:last-child,
+	.flat-tabs ul.menu-tabs li:last-child {
+	    width: 40% !important;
+	}
+
+	.flat-tabs.style1 > ul.menu-tabs {
+	    top: -5px;
+	}
 
 	.three-columns .entry {
 		width: 100%;
@@ -1751,14 +1838,6 @@
 
 	.vnp-details-profile .flat-tabs.style1 > ul.menu-tabs {
 		margin: 0 -15px;
-	}
-
-	.vnp-details-profile .flat-tabs.style1 ul.menu-tabs li {
-		margin-right: -5px;
-	}
-
-	.details-profile-content-right {
-		margin-top: -5px;
 	}
 
 	.flat-tabs.style1 .content-tab .description .ms {
