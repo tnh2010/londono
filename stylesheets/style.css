@@ -2276,9 +2276,9 @@ input[type="color"],
 }
 
 .favorites {
-    position: absolute;
+    position: fixed;
     bottom: -170px;
-    right: 15px;
+    right: 90px;
     width: 900px;
     height: 170px;
     background-color: #fff;

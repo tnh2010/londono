@@ -184,6 +184,7 @@ li.language:before {
 
 .header.style1 li.language select option {
     color: #000;
+    background-color: #fff;
 }
 
 .top-info li.phone a:before {

@@ -722,6 +722,14 @@
 	.adv {
 		display: none;
 	}
+
+	.favorites {
+	    right: 15px;
+	}
+
+	.go-top {
+	    bottom:50px;   
+	}
 }
 
 /* Tablet Landscape */
@@ -1549,9 +1557,12 @@
 
 /* Mobile Portrait Size */
 @media only screen and (max-width: 479px) {
-	.go-top {
-	    bottom:50px;   
+
+	.vnp-member .content .vnp-but a:last-child {
+	    margin-right: 0;
 	}
+
+	
 	.flat-tabs.style1 ul.menu-tabs li:last-child,
 	.flat-tabs ul.menu-tabs li:last-child {
 	    width: 40% !important;
