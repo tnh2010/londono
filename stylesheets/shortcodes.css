@@ -69,6 +69,10 @@
     overflow: hidden;
 }
 
+.hoa-divider.divider10{
+    height: 10px;
+}
+
 .hoa-divider.divider15{
     height: 15px;
 }
@@ -88,6 +92,11 @@
 .hoa-divider.divider50{
 	height: 50px;
 }
+
+.hoa-divider.divider90{
+    height: 90px;
+}
+
 .hoa-divider.divider100{
 	height: 100px;
 }

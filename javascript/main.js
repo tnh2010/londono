@@ -217,6 +217,34 @@
         });
     }
 
+    // var MobileFlexsliderAbout = function () {
+    //     $('.flexslider-vnp-mobile').flexslider({
+    //         animation: "slide",
+    //     });
+    // }
+
+    var MobileFlexsliderAbout = function() {  
+        $('.flat-tabs').each(function() {
+            $('.owl-carousel-vnphat').owlCarousel({
+                loop:true,
+                margin:0,
+                nav:false,
+                dots: false,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:1
+                    },
+                    1000:{
+                        items:1
+                    }
+                }
+            });
+        });
+    };
+
     var SliderLatest = function () {
         $('.flexslider-latest').flexslider({
             animation: "slide",
@@ -272,37 +300,6 @@
         $(".adv_close").click(function(){
             $(this).parent().parent().hide();
             $('.tab-default-detail').show();
-        });
-    };
-
-    var carouselImg = function() {
-        $('.hoa-row').each(function() {               
-            if ( $().owlCarousel ) {
-                $(this).find('.hoa-carousel-owl').owlCarousel({
-                    loop: true,
-                    margin: 5,
-                    nav: true,
-                    dots: false,                     
-                    autoplay: false,                    
-                    responsive:{
-                        0:{
-                            items: 2
-                        },
-                        480:{
-                            items: 3
-                        },
-                        767:{
-                            items: 5
-                        },
-                        991:{
-                            items: 5
-                        },
-                        1200: {
-                            items: 5
-                        }
-                    }
-                });
-            }
         });
     };
 
@@ -420,10 +417,88 @@
         })
     };
 
+    var onepage_nav = function () {
+        $('a.button-scroll').on('click',function() {           
+            var anchor = $(this).attr('href').split('#')[1];            
+            var largeScreen = matchMedia('only screen and (min-width: 992px)').matches;
+            var headerHeight = 0;
+            headerHeight = $('.header').height();            
+            if ( anchor ) {
+                if ( $('#'+anchor).length > 0 ) {
+                   if ( $('.header-sticky').length > 0 && largeScreen ) {
+                        headerHeight = headerHeight;
+                   } else {
+                        headerHeight = 0;
+                   }                   
+                   var target = $('#'+anchor).offset().top - headerHeight;
+                   $('html,body').animate({scrollTop: target}, 1000, 'easeInOutExpo');
+                }
+            }
+            return false;
+        })
+
+        $('a.button-scroll').on( 'click', function() {
+            $( this ).addClass('active').parent().siblings().children().removeClass('active');
+        });
+    }
+
+    var slickTeam =  function() {
+        $('.hoa-carousel-owl').each(function() {
+            $(".center").slick({
+                dots: false,
+                infinite: true,
+                centerMode: true,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                centerPadding: '0px',
+                responsive: [
+                    {
+                      breakpoint: 1200,
+                      settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                      }
+                    },
+                    {
+                      breakpoint: 991,
+                      settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                      }
+                    },
+                    {
+                      breakpoint: 767,
+                      settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                      }
+                    },
+                    {
+                      breakpoint: 480,
+                      settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                      }
+                    },
+                    {
+                      breakpoint: 0,
+                      settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                      }
+                    }
+                ]
+            }); 
+        });
+    };
+
 	$(function() { 
         
         SlidesHome();
         FlexsliderAbout();
+        MobileFlexsliderAbout();
         SliderLatest();
         
         responsiveHorderSearch();
@@ -434,11 +509,12 @@
         if ( matchMedia( 'only screen and (max-width: 991px)' ).matches ) {
             SliderPoints();
         }
+        onepage_nav();
         LondonoReadmore();
         SliderFeature();
         flatTabs();
         hoaTabs();
-        carouselImg();
+        slickTeam();
         Fsavoritescarousel();
         LondonoAccordion();
         favoritesNP();

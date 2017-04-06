@@ -128,6 +128,73 @@
 
 /* Smaller than standard 992 */
 @media only screen and (max-width: 991px) {
+	.vnp-about-slider .slides-about.flexslider ul.slides li div span {
+	    display: initial;
+	}
+
+	.vnp-about-slider .slides-about.flexslider {
+		padding-top: 30px;
+	}
+
+	.vnp-about-slider .slides-about.flexslider ul.slides li .title {
+		font-size: 26px;
+    	line-height: 30px;
+	}
+
+	.vnp-about-slider .slides-about.flexslider ul.slides li .button-slides1 {
+	    padding-top: 30px;
+	    padding-bottom: 15px;
+	}
+
+	.slick-prev {
+	    left: -10px;
+	}
+
+	.slick-next {
+	    right: -10px;
+	}
+
+	.hoa-divider.divider90 {
+		height: 20px;
+	}
+
+	.vnp-slider {
+	    display: inline-block;
+	    overflow: hidden;
+	}
+
+	.vnphat-hoa {
+		overflow: hidden;
+	}
+
+	.vnp-slider .owl-carousel .owl-item img,
+	.vnp-slider .owl-carousel .owl-item .item {
+		width: 768px;
+		height: auto;
+	}
+
+	.hoa-hidemobile {
+		display: none !important;
+	}
+
+	.flat-accordion.style1 .flat-toggle .toggle-title.active, 
+	.flat-accordion.style1 .flat-toggle .toggle-title {
+		    background-position: 277px 3px;
+		    padding-bottom: 0;
+	}
+
+	.hoa-hidedesktop {
+		display: block !important;
+	}
+
+	.flat-accordion.style1 {
+		margin-top: -7px;
+		padding: 17px;
+	}
+
+	.flat-accordion {
+		padding: 10px;
+	}
 
 	.vn-line {
 		display: none;
@@ -152,8 +219,10 @@
 	    text-align: center;
 	}
 
-	.details-profile-content-left .details-title {
+	.details-profile-content-left .details-title,
+	.details-title {
 	    text-align: center;
+	    padding-top: 0;
 	}
 
 	.flat-tabs.style1 ul.menu-tabs li {
@@ -181,6 +250,10 @@
 
 	.vnp-member {
 		display: none;
+	}
+
+	.vnp-details-londono .vnp-member {
+		display: block;
 	}
 
 	.title.sw-click {
@@ -623,6 +696,7 @@
 		position: relative;
 		left: 0;
 		top: -25px;
+		margin-top: 0;
 	}
 
 	.hoa-divider.divider35 {
@@ -719,6 +793,27 @@
 
 	.vnp-details-profile .introduce-profile .profile-info .social {
 	    margin-bottom: 12px;
+	}
+
+	.vnp-slider .owl-carousel .owl-item img,
+	.vnp-slider .owl-carousel .owl-item .item {
+		width: 720px;
+		height: auto;
+	}
+
+	.wrap-morelink {
+	    border-bottom: 1px solid #e6e6e6;
+	    margin-bottom: 7px;
+	}
+
+	.wrap-morelink a {
+	    float: none;
+	}
+
+	.morelink {
+	    text-align: left;
+	    margin: 15px 0 0 0;
+	    padding-bottom: 7px;
 	}
 }
 
@@ -921,7 +1016,65 @@
 	}
 }
 
+@media only screen and (max-width: 568px) {
+	.vnp-slider .owl-carousel .owl-item img, .vnp-slider .owl-carousel .owl-item .item {
+	    width: 538px;
+	    height: auto;
+	}
+}
+
 @media only screen and (max-width: 480px) {
+	.slick-next,
+	.slick-prev {
+		background-color: transparent;
+	}
+
+	.slick-prev {
+	    left: -25px;
+	}
+
+	.slick-next {
+	    right: -25px;
+	}
+
+	.slick-slide {
+	    padding: 0;
+	}
+
+	.vnp-about-slider .slides-about.flexslider ul.slides li .title {
+	    font-size: 18px;
+	    line-height: 22px;
+	    margin-bottom: 10px;
+	}
+
+	.vnp-about-slider .slides-about.flexslider ul.slides li .content {
+	    font-size: 16px;
+	    line-height: 20px;
+	    font-family: "Proxima Nova", sans-serif;
+	    color: #fff;
+	    letter-spacing: 0.3px;
+	}
+
+	.button-slides1 .button-scroll {
+	    width: 30px;
+	    height: 20px;
+	}
+
+	.vnphat-hoa {
+		overflow: inherit;
+	}
+
+	.vnp-slider .owl-carousel .owl-item img, 
+	.vnp-slider .owl-carousel .owl-item .item {
+	    width: 480px;
+	    height: 359px;
+	}
+
+	.flat-accordion.style1 .flat-toggle .toggle-title.active, 
+	.flat-accordion.style1 .flat-toggle .toggle-title {
+		    background-position: 215px 3px;
+	}
+
 	.flat-tabs ul.menu-tabs li > a {
 		font-size: 12px;
 	}
@@ -940,11 +1093,6 @@
 	.vnp-slider,
 	.vnp-details-profile .flat-tabs.style1 > ul.menu-tabs {
 	    margin: 0 -15px;
-	}
-
-	.morelink {
-		text-align: left;
-		margin: 15px 0;
 	}
 
 	.flexslider-vnp .flex-direction-nav .flex-prev,
@@ -1054,9 +1202,10 @@
 		position: relative;
 	}
 
-	.details-profile-content-left .details-title {
+	.details-profile-content-left .details-title,
+	.details-title {
 		font-size: 18px;
-		line-height: 30px;
+		line-height: 26px;
 		padding: 10px 0;
 		text-align: center;
 	}
@@ -1077,6 +1226,10 @@
 
 	.flat-accordion {
 		margin: 0 -15px;
+	}
+
+	.flat-accordion.style1 {
+		padding: 7px;
 	}
 
 	.introduce-profile.mobile {
@@ -1532,7 +1685,29 @@
 
 }
 
+@media only screen and (max-width: 375px) {
+	.vnp-slider .owl-carousel .owl-item img, .vnp-slider .owl-carousel .owl-item .item {
+	    width: 375px;
+	    height: auto;
+	}
+}
+
 @media (max-width: 320px) {	
+	.vnp-about-slider .slides-about.flexslider {
+	    padding-top: 0px;
+	    margin-bottom: 0;
+	}
+
+	.vnp-about-slider .slides-about.flexslider ul.slides li .button-slides1 {
+		padding-bottom: 0;
+	}
+
+	.vnp-slider .owl-carousel .owl-item img, 
+	.vnp-slider .owl-carousel .owl-item .item {
+	    width: 320px;
+	    height: 240px;
+	}
+
 	.hoa-tabs ul.menu-tab li.b2 {
 	    padding-left: 40px;
 	}
@@ -1850,7 +2025,7 @@
 		font-size: 18px;
 		line-height: 30px;
 		text-align: center;
-		margin-bottom: 5px;
+		margin-bottom: 0px;
 	}
 
 	.hoa-tabs ul.menu-tab li {
@@ -1962,7 +2137,18 @@
 	}
 
 	.vnp-slider {
+	    margin: 0 -15px;
+	    display: inline-block;
+	}
+
+	.flat-tabs .content-inner .video,
+	.flat-tabs .content-inner .street {
 		margin: 0 -15px;
+	}
+
+	.hoa-carousel-owl {
+	    padding: 0 15px;
+	    text-align: center;
 	}
 	
 }
