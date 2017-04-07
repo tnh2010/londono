@@ -2530,7 +2530,11 @@ input[type="color"],
 	letter-spacing: 1px;
 }
 
-.vnp-about-slider .slides-about.flexslider ul.slides li div span {
+.vnp-about-slider .slides-about.flexslider ul.slides li .content .mores {
+	padding: 0 177px;
+}
+
+.vnp-about-slider .slides-about.flexslider ul.slides li div span.bl {
 	display: block;
 }
 
@@ -2778,4 +2782,173 @@ input[type="color"],
 
 .slick-slide {
 	padding: 0 40px;
+}
+
+/* Brokes page title
+-------------------------------------------------------------- */
+.brokers-background-page-title {
+	background: url(../images/bg-brokes.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.brokes-page-title {
+	text-align: center;
+}
+
+.brokes-page-title .page-title {
+	font-family: "Droid Serif", sans-serif;
+	font-size: 36px;
+	font-style: italic;
+	color: #fff;
+	font-weight: 400;
+}
+
+.brokes-page-title .desc {
+	font-size: 18px;
+	color: #fff;
+	font-family: "Proxima Nova", sans-serif;
+
+}
+
+.brokes-page-title .desc span {
+	display: block;
+}
+
+.brokers-form-search {
+	padding: 30px 70px;
+	background-color: #efefef;
+	margin-top: -50px;
+}
+
+.brokers-form-search .title {
+	font-family: "Droid Serif", sans-serif;
+	font-size: 16px;
+	font-style: italic;
+	color: #0d161e;
+}
+
+.brokers-form-search .title img {
+	padding-right: 15px;
+}
+
+.brokers-form-search .ip-search {
+	padding-right: 7px;
+	padding-left: 15px;
+}
+
+.brokers-form-search .ip-search input {
+	width: 490px;
+	height: 40px;
+	background-color: #fff;
+	padding: 5px 20px;
+	font-family: "Droid Serif", sans-serif;
+	font-size: 14px;
+	font-style: italic;
+	color: #0c151d;
+}
+
+.brokers-form-search .lang {
+	padding-right: 15px;
+}
+
+.brokers-form-search .lang select {
+	width: 160px;
+	height: 40px;
+	background-color: #fff;
+	padding: 5px 20px;
+	font-family: "Droid Serif", sans-serif;
+	font-size: 14px;
+	font-style: italic;
+	color: #0c151d;
+	cursor: pointer;
+	background-image: url(../images/icon/button-cl666.png);
+    background-position: 96% center;
+    background-repeat: no-repeat;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+    -webkit-box-shadow: none;
+}
+
+.brokers-form-search .sub input {
+	width: 140px;
+	height: 40px;
+	font-family: "ProximaNova Bold", sans-serif;
+	font-size: 13px;
+	color: #fff;
+	background-color: #0c151d;
+}
+
+.brokers-form-search .sub input:hover {
+	color: #0c151d;
+	background-color: #fff;
+	border: 1px solid #0c151d;
+}
+
+/* Brokers team */
+.brokers-team .brokers-profile .avatar {
+	float: left;
+	margin-right: 25px;
+}
+
+.brokers-team .brokers-profile .content {
+	overflow: hidden;
+}
+
+.brokers-team .brokers-profile .content .title {
+	font-size: 13px;
+	font-family: "ProximaNova Semibold", sans-serif;
+	color: #111d2b;
+	margin-top: 10px;
+}
+
+.brokers-team .brokers-profile .content .name {
+	font-family: "Droid Serif", sans-serif;
+	font-style: italic;
+	font-size: 24px;
+	color: #111d2b;
+	margin-bottom: 15px;
+}
+
+.brokers-team .brokers-profile .content .phone a {
+	font-size: 14px;
+	font-family: "ProximaNova Semibold", sans-serif;
+	color: #111d2b;
+}
+
+.brokers-team .brokers-profile .content .phone a i {
+	font-size: 20px;
+	padding-right: 7px;
+}
+
+/* Brokes filter
+-------------------------------------------------------------- */
+.brokers ul.brokers-filter {
+  padding: 0;
+  margin: 0 0 40px 0;
+  overflow: hidden;
+}
+.brokers ul.brokers-filter li {
+  list-style: none;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.brokers ul.brokers-filter li.active {
+    border-color: #32bfc0;
+}
+
+.brokers ul.brokers-filter li a {
+  display: block;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #21242b;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.brokers ul.brokers-filter li.active a {
+    background-color: #32bfc0;
 }

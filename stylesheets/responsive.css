@@ -128,8 +128,12 @@
 
 /* Smaller than standard 992 */
 @media only screen and (max-width: 991px) {
-	.vnp-about-slider .slides-about.flexslider ul.slides li div span {
+	.vnp-about-slider .slides-about.flexslider ul.slides li div span.bl {
 	    display: initial;
+	}
+
+	.vnp-about-slider .slides-about.flexslider ul.slides li .content .mores {
+		padding: 0;
 	}
 
 	.vnp-about-slider .slides-about.flexslider {
