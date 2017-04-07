@@ -2886,6 +2886,21 @@ input[type="color"],
 }
 
 /* Brokers team */
+.brokers .brokers-team {
+	margin: 0 -35px;
+}
+.brokers .brokers-team .brokers-item {
+	width: 50%;
+	padding: 0 35px;
+	margin-bottom: 50px;
+}
+
+.brokers-team .brokers-profile {
+	background: #f6f6f6;
+	position: relative;
+	border: 1px solid #ccc;
+}
+
 .brokers-team .brokers-profile .avatar {
 	float: left;
 	margin-right: 25px;
@@ -2910,6 +2925,10 @@ input[type="color"],
 	margin-bottom: 15px;
 }
 
+.brokers-team .brokers-profile .content .phone {
+	margin-bottom: 3px;
+}
+
 .brokers-team .brokers-profile .content .phone a {
 	font-size: 14px;
 	font-family: "ProximaNova Semibold", sans-serif;
@@ -2921,18 +2940,96 @@ input[type="color"],
 	padding-right: 7px;
 }
 
+.brokers-team .brokers-profile  .vnp-but {
+	display: block;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
+
+.brokers-team .brokers-profile  .vnp-but a {
+	padding: 10px 20px;
+    background: #fff;
+    font-size: 12px;
+    font-family: "ProximaNova Bold", sans-serif;
+    text-transform: uppercase;
+    color: #0d161e;
+}
+
+.brokers-team .brokers-profile  .vnp-but a:hover {
+	background: #0d161e;
+	color: #fff;
+}
+
+.brokers-team .brokers-info {
+	background-color: #0c263b;
+	padding: 20px 15px;
+	overflow: hidden;
+}
+
+.brokers-team .brokers-info .group-buttom {
+	float: left;
+	margin-top: 5px;
+}
+
+.brokers-team .brokers-info .group-buttom a {
+	padding: 7px 15px;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 11.5px;
+	font-family: "ProximaNova Bold", sans-serif;
+	border: 1px solid #333e4a;
+}
+
+.brokers-team .brokers-info .group-buttom a:hover {
+	background-color: #fff;
+	color: #0c263b;
+}
+
+.brokers-team .brokers-info .social {
+	float: right;
+}
+
+.brokers-team .brokers-info .social a {
+	display: inline-block;
+}
+
+.brokers-team .brokers-info .social a:hover {
+    -webkit-transform: translateY(-3px);
+    -moz-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    -o-transform: translateY(-3px);
+    transform: translateY(-3px);
+}
+
 /* Brokes filter
 -------------------------------------------------------------- */
 .brokers ul.brokers-filter {
   padding: 0;
-  margin: 0 0 40px 0;
+  margin: 25px 0 70px 0;
   overflow: hidden;
+  text-align: center;
 }
+
 .brokers ul.brokers-filter li {
   list-style: none;
-  float: left;
+  display: inline-block;
   margin-right: 10px;
-  margin-bottom: 10px;
+  position: relative;
+}
+
+.brokers ul.brokers-filter li:after {
+	position: absolute;
+    right: -7px;
+    top: 7px;
+    content: "";
+    width: 1px;
+    height: 15px;
+    background: #444444;
+}
+
+.brokers ul.brokers-filter li:last-child:after {
+	background: transparent;
 }
 
 .brokers ul.brokers-filter li.active {
@@ -2940,15 +3037,18 @@ input[type="color"],
 }
 
 .brokers ul.brokers-filter li a {
-  display: block;
-  font-weight: bold;
-  padding: 10px 20px;
-  text-transform: uppercase;
-  color: #fff;
-  background-color: #21242b;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+	font-size: 18px;
+	font-family: "Proxima Nova", sans-serif;
+  	display: block;
+  	padding: 5px 7px;
+  	text-transform: uppercase;
+  	color: #444444;
+  	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 .brokers ul.brokers-filter li.active a {
-    background-color: #32bfc0;
+    background-color: #0c151d;
+    color: #fff;
+    font-family: "ProximaNova Bold", sans-serif;
+    padding: 5px 12px;
 }

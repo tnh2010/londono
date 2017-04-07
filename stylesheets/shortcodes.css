@@ -93,6 +93,10 @@
 	height: 50px;
 }
 
+.hoa-divider.divider80{
+    height: 80px;
+}
+
 .hoa-divider.divider90{
     height: 90px;
 }

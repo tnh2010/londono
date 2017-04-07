@@ -128,6 +128,32 @@
 
 /* Smaller than standard 992 */
 @media only screen and (max-width: 991px) {
+	.brokes-page-title .desc span {
+	    display: initial;
+	}
+
+	.brokers-form-search {
+	    padding: 30px;
+	    margin-top: 20px;
+	    text-align: center;
+	}
+
+	.brokers-form-search .ip-search input {
+		width: 459px;
+	}
+
+	.brokers-form-search label {
+		margin-bottom: 7px;
+	}
+
+	.brokers ul.brokers-filter {
+		margin-bottom: 40px;
+	}
+
+	.brokers .brokers-team .brokers-item {
+		width: 100%;
+	}
+
 	.vnp-about-slider .slides-about.flexslider ul.slides li div span.bl {
 	    display: initial;
 	}
@@ -789,6 +815,10 @@
 }
 
 @media only screen and (max-width: 768px) {
+	.brokers .brokers-team .brokers-item {
+		margin-bottom: 30px;
+	}
+
 	.flat-tabs.style1 .content-tab .description .ms, 
 	.flat-tabs.style1 .content-tab .details .ms,
 	.flat-tabs.style1 .content-tab .description .price, 
@@ -1036,6 +1066,18 @@
 }
 
 @media only screen and (max-width: 480px) {
+	.brokers-form-search {
+		padding: 15px;
+	}
+
+	.brokers .brokers-team .brokers-item {
+	    margin-bottom: 20px;
+	}
+
+	.brokers-team .brokers-profile .content .name {
+		font-size: 20px;
+	}
+
 	.slick-next,
 	.slick-prev {
 		background-color: transparent;
@@ -1708,6 +1750,75 @@
 }
 
 @media (max-width: 320px) {	
+	.brokers-form {
+		margin: 0 -15px;
+	}
+
+	.brokers-form-search {
+		margin-top: 0;
+	}
+
+	.brokers-form-search .ip-search,
+	.brokers-form-search .lang  {
+		padding: 0;
+	}
+
+	.brokers-form-search label,
+	.brokers-form-search .lang select,
+	.brokers-form-search label.sub {
+		width: 100%;
+	}
+
+	.brokers-team .brokers-profile .avatar {
+		margin-right: 10px;
+	}
+
+	.brokers-team .brokers-info .group-buttom {
+	    float: none;
+	    margin-bottom: 15px;
+	}
+
+	.brokers-team .brokers-info .social {
+	    float: none;
+	    text-align: center;
+	}
+
+	.brokers-team .brokers-info .group-buttom a {
+		padding: 7px;
+		margin-right: 11px;
+	}
+
+	.brokers-team .brokers-profile .vnp-but {
+	    right: 5px;
+	    top: 100%;
+	    margin-top: 16px;
+	}
+
+	.brokers-team .brokers-profile .vnp-but a {
+	    padding: 7px;
+	    background: transparent;
+	    font-size: 11.5px;
+	    color: #fff;
+	    border: 1px solid #333e4a;
+	}
+
+	.brokers-team .brokers-profile .content .title {
+		font-size: 11.5px;
+	}
+
+	.brokers-team .brokers-profile .content .name {
+	    font-size: 16px;
+	}
+
+	.brokers-team .brokers-profile .vnp-but a:hover {
+		background-color: #fff;
+		color: #0c263b;
+	}
+
+	.brokers-team .brokers-info {
+	    padding: 10px 5px;
+	}
+
 	.vnp-about-slider .slides-about.flexslider {
 	    padding-top: 0px;
 	    margin-bottom: 0;
