@@ -3052,3 +3052,462 @@ input[type="color"],
     font-family: "ProximaNova Bold", sans-serif;
     padding: 5px 12px;
 }
+
+/* Contact
+-------------------------------------------------------------- */
+.hoa-row.vnphat-contact {
+	padding-top: 230px;
+	padding-bottom: 230px;
+}
+
+.background-contact {
+	background: url(../images/bg-contact.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.vnphat-contact .contact-info {
+	margin-bottom: 50px;
+	padding-left: 15px;
+}
+
+.vnphat-contact .contact-info.style1 {
+	margin-bottom: 25px;
+}
+
+.vnphat-contact .contact-info.style2 {
+	padding-left: 73px;
+}
+
+.vnphat-contact .contact-info .img {
+	float: left;
+	margin-right: 25px;
+}
+
+.vnphat-contact .contact-info .address-contact {
+	overflow: hidden;
+}
+
+.vnphat-contact .contact-info .address-contact .add-title {
+	font-family: "ProximaNova Bold", sans-serif;
+	font-size: 18px;
+	color: #fff;
+	line-height: 32px;
+}
+
+.vnphat-contact .contact-info .address-contact .content {
+	color: #fff;
+	font-family: "Proxima Nova", sans-serif;
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.vnphat-contact-form {
+	padding-left: 180px;
+}
+
+.vnphat-contact-form .contact-title {
+	font-family: "ProximaNova Bold", sans-serif;
+	font-size: 18px;
+	color: #fff;
+	line-height: 32px;
+	margin-bottom: 20px;
+}
+
+.vnphat-contact-form input {
+	padding: 7px 15px;
+}
+
+.vnphat-contact-form input,
+.vnphat-contact-form textarea {
+	color: #fff;
+}
+
+.vnphat-contact-form textarea {
+	margin-bottom: 16px;
+	padding: 7px 15px;
+	resize: none;
+}
+
+.vnphat-contact-form textarea {
+    position: relative;
+    z-index: 1;
+}
+.vnphat-contact-form .wrap {
+    position: relative;
+}
+.vnphat-contact-form .wrap:after {
+    content:"";
+    border-top: 10px solid #eeeeee;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    -webkit-transform: rotate(-45deg);
+    z-index: 1;
+    position: absolute;
+    right: 2px;
+    bottom: 30px;
+    pointer-events: none;
+}
+
+.vnphat-contact-form input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #eeeeee;
+}
+.vnphat-contact-form input::-moz-placeholder { /* Firefox 19+ */
+  color: #eeeeee;
+}
+.vnphat-contact-form input:-ms-input-placeholder { /* IE 10+ */
+  color: #eeeeee;
+}
+.vnphat-contact-form input:-moz-placeholder { /* Firefox 18- */
+  color: #eeeeee;
+}
+
+.vnphat-contact-form textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #eeeeee;
+}
+.vnphat-contact-form textarea::-moz-placeholder { /* Firefox 19+ */
+  color: #eeeeee;
+}
+.vnphat-contact-form textarea:-ms-input-placeholder { /* IE 10+ */
+  color: #eeeeee;
+}
+.vnphat-contact-form textarea:-moz-placeholder { /* Firefox 18- */
+  color: #eeeeee;
+}
+
+.vnphat-contact-form .contact-form input.first-name,
+.vnphat-contact-form .contact-form input.last-name,
+.vnphat-contact-form .contact-form input.email,
+.vnphat-contact-form .contact-form input.phone {
+	width: 290px;
+	float: left;
+	margin-bottom: 10px;
+
+}
+
+.vnphat-contact-form .contact-form input.subject {
+	margin-bottom: 10px;
+}
+
+.vnphat-contact-form .contact-form input.first-name,
+.vnphat-contact-form .contact-form input.email {
+	margin-right: 10px;
+}
+
+.vnphat-contact-form .form-submit {
+	float: right;
+}
+
+.vnphat-contact-form .form-submit input {
+	background-color: #072c47;
+	color: #fff;
+	border: 1px solid #072c47;
+	padding: 10px 30px;
+	font-size: 12px;
+	font-family: "ProximaNova Semibold", sans-serif;
+}
+
+/* Profile listing
+-------------------------------------------------------------- */
+.profile-listing-search {
+	padding-top: 35px;
+	padding-bottom: 20px;
+}
+
+.profile-listing-form-search .submit-search {
+	background: url(../images/icon/icon-search-listing.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.profile-listing-form-search .submit-search input[type="submit"] {
+	padding: 10px 15px;
+    border: 1px solid transparent;
+}
+
+.profile-listing-form-search .submit-search input[type="submit"]:hover {
+	border: 1px solid #ededed;
+}
+
+.profile-listing-form-search .title {
+	font-size: 16px;
+	font-family: "Proxima Nova", sans-serif;
+	color: #0d161e;
+	margin-bottom: 15px;
+	margin-left: 5px;
+}
+
+.profile-listing-form-search .title input[type="text"] {
+	font-size: 16px;
+	font-family: "Proxima Nova", sans-serif;
+	color: #0d161e;
+	border: transparent;
+}
+
+.profile-listing-form-search .title img {
+	padding-right: 15px;
+}
+
+.profile-listing-form-search .vnphat-select select {
+	width: 225px;
+	height: 40px;
+    background-color: #fff;
+    padding: 10px 20px;
+    font-family: "DroidSerif", sans-serif;
+    font-size: 12px;
+    color: rgba(12, 21, 29, 0.79);
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-right: 5px;
+    background-color: #ededed;
+    background-image: url(../images/icon/button-cl666.png);
+    background-position: 96% center;
+    background-repeat: no-repeat;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
+}
+
+.profile-listing-form-search .vnphat-select select option {
+	padding: 7px 20px;
+	border: none;
+	-webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
+}
+
+.profile-listing-search .more-options .more {
+	margin-right: 10px;
+	margin-top: 7px;
+}
+
+.profile-listing-search .more-options .more select {
+	width: 140px;
+    height: 40px;
+    background-color: transparent;
+    padding: 10px 20px;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 13px;
+    color: #0c151d;
+    cursor: pointer;
+    margin-right: 5px;
+    border: none;
+    background-image: url(../images/icon/button-cl666.png);
+    background-position: 96% center;
+    background-repeat: no-repeat;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-box-shadow: none;
+}
+
+.profile-listing-search .more-options .more select option {
+	padding: 5px 10px;
+}
+
+/* Pagination */
+.profile-listing {
+	padding-bottom: 35px;
+}
+
+.profile-listing-pagination {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.profile-listing-pagination .listing-pagination {
+    display: inline-block;
+    width: auto;
+}
+
+.profile-listing-pagination .listing-pagination .pagination-button {
+    padding: 3px 10px;
+    float: left;
+    width: auto;
+    display: block;
+    border: 1px solid #b7b7b7;
+    margin-right: 5px;
+    font-size: 15px;
+    font-family: "Proxima Nova", sans-serif;
+    color: #b7b7b7;
+}
+
+.profile-listing-pagination .listing-pagination .pagination-button:hover,
+.profile-listing-pagination .listing-pagination .pagination-button.active {
+	color: rgba(74, 74, 74, 0.8);
+	background-color: #efefef;
+	border: 1px solid #efefef;
+}
+
+/* Profile listing item */
+.profile-listing-item {
+	margin: 0 -15px;
+}
+
+.profile-listing-item .project-item {
+    margin-bottom: 30px;
+    width: 25%;
+    float: left;
+    padding: 0 15px;
+}
+
+/* Profile listing drop */
+#sizelist ul{
+	list-style-type:none;
+}
+#sizelist li{
+	display:inline;
+	width:auto;
+	overflow:hidden;
+}
+#sizelist li a{
+	display:block;
+	border-bottom:1px solid rgba(204, 204, 204, 0.4);
+	padding:5px 6px 5px 6px;
+}
+
+.vnp-size-form {
+	position: relative;
+	width: 225px;
+	float: left;
+	margin-right: 11px;
+}
+
+.vnp-size-form:last-child {
+	margin-right: 0;
+}
+
+.vnp-size-form input[type="button"] {
+	width: 225px;
+    height: 40px;
+    text-align: left;
+    background-color: #fff;
+    padding: 10px 20px;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.86);
+    font-weight: 400;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-right: 5px;
+    background-color: #ededed;
+    background-image: url(../images/icon/button-cl666.png);
+    background-position: 96% center;
+    background-repeat: no-repeat;
+}
+
+#sizelist {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    background-color: #ebebeb;
+    z-index: 9999;
+}
+#sizelist li {
+    display: none;
+}
+
+#sizelist li a {
+	padding: 7px 20px;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 13px;
+    color: #444444;
+}
+
+#sizelist li a:hover {
+	background: rgba(204, 204, 204, 0.4);
+	color: #000;
+}
+
+.profile-listing-search .more-options .vnp-size-form {
+	float: right;
+	width: 145px;
+}
+
+.profile-listing-search .more-options .vnp-size-form input[type="button"] {
+	width: 140px;
+    height: 40px;
+    background-color: transparent;
+    padding: 10px 20px;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 13px;
+    color: rgba(68, 68, 68, 0.64);
+    cursor: pointer;
+    margin-right: 0px;
+    border: none;
+    text-transform: capitalize;
+    background-image: url(../images/icon/button-cl666.png);
+    background-position: 96% center;
+    background-repeat: no-repeat;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-box-shadow: none;
+}
+
+/* Language */
+.vnp-language {
+	position: relative;
+    width: 40px;
+    height: 100%;
+    float: left;
+}
+
+.vnp-language .lang {
+	cursor: pointer;
+	border: none;
+	color: #fff;
+}
+
+.vnp-language input[type="button"] {
+	padding: 0px 15px 0 0;
+    width: 30px;
+    height: 30px;
+}
+
+.lag1 {
+	width: 30px !important;
+    position: absolute !important;
+    left: 0 !important;
+    top: 50px !important;
+    background-color: #fff !important;
+    z-index: 99999999;
+    opacity: 1 !important;
+    visibility: initial !important;
+    transform: none !important;
+}
+
+.lag1 .la1 {
+    display: none;
+    border: none !important;
+}
+
+.lag1 .la1 {
+	line-height: 20px !important;
+	    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.lag1 .la1:hover {
+	background-color: rgba(204, 204, 204, 0.4) !important;
+}
+
+/*.lag1 .la1:hover a {
+	color: #fff !important;
+}*/
+
+.lag1 .la1 a {
+	line-height: 7px !important;
+	padding: 7px !important;
+	color: #000 !important;
+}

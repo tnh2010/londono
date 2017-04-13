@@ -551,6 +551,148 @@
         };
     };
 
+    var dropProfilelisting = function() {
+        $(document).on('click', function(e) {   
+            var clickID = e.target.id;   
+            if ( ( clickID != 'sizevalue' ) ) {
+                $('li').removeClass('show');                
+            } 
+        });
+
+        $(".sizelist1").on("click", "a", function(e){
+            e.preventDefault();
+            var $this = $(this).parent();
+            $this.addClass("select").siblings().removeClass("select");
+            $(".sizevalue1").val($this.data("value"));
+        });
+        
+        $(".sizevalue1").on('click', function(e){
+            if(!$('.li1').hasClass( "show" )){
+                $('.li1').addClass('show');
+            }
+            else {
+                $('.li1').removeClass('show');
+            }
+            event.stopPropagation();
+        });
+
+        // 2
+        $(".sizelist2").on("click", "a", function(e){
+            e.preventDefault();
+            var $this = $(this).parent();
+            $this.addClass("select").siblings().removeClass("select");
+            $(".sizevalue2").val($this.data("value"));
+        });
+        
+        $(".sizevalue2").on('click', function(e){
+            if(!$('.li2').hasClass( "show" )){
+                $('.li2').addClass('show');
+            }
+            else {
+                $('.li2').removeClass('show');
+            }
+            event.stopPropagation();
+        });
+
+        // 3
+        $(".sizelist3").on("click", "a", function(e){
+            e.preventDefault();
+            var $this = $(this).parent();
+            $this.addClass("select").siblings().removeClass("select");
+            $(".sizevalue3").val($this.data("value"));
+        });
+        
+        $(".sizevalue3").on('click', function(e){
+            if(!$('.li3').hasClass( "show" )){
+                $('.li3').addClass('show');
+            }
+            else {
+                $('.li3').removeClass('show');
+            }
+            event.stopPropagation();
+        });
+
+        // 4
+        $(".sizelist4").on("click", "a", function(e){
+            e.preventDefault();
+            var $this = $(this).parent();
+            $this.addClass("select").siblings().removeClass("select");
+            $(".sizevalue4").val($this.data("value"));
+        });
+        
+        $(".sizevalue4").on('click', function(e){
+            if(!$('.li4').hasClass( "show" )){
+                $('.li4').addClass('show');
+            }
+            else {
+                $('.li4').removeClass('show');
+            }
+            event.stopPropagation();
+        });
+
+        // 5
+        $(".sizelist5").on("click", "a", function(e){
+            e.preventDefault();
+            var $this = $(this).parent();
+            $this.addClass("select").siblings().removeClass("select");
+            $(".sizevalue5").val($this.data("value"));
+        });
+        
+        $(".sizevalue5").on('click', function(e){
+            if(!$('.li5').hasClass( "show" )){
+                $('.li5').addClass('show');
+            }
+            else {
+                $('.li5').removeClass('show');
+            }
+            event.stopPropagation();
+        });
+
+        // 6
+        $(".sizelist6").on("click", "a", function(e){
+            e.preventDefault();
+            var $this = $(this).parent();
+            $this.addClass("select").siblings().removeClass("select");
+            $(".sizevalue6").val($this.data("value"));
+        });
+        
+        $(".sizevalue6").on('click', function(e){
+            if(!$('.li6').hasClass( "show" )){
+                $('.li6').addClass('show');
+            }
+            else {
+                $('.li6').removeClass('show');
+            }
+            event.stopPropagation();
+        });
+    }
+
+     var dropLanguage = function() {
+        $(document).on('click', function(e) {   
+            var clickID = e.target.id;   
+            if ( ( clickID != 'vnla' ) ) {
+                $('.la1').removeClass('show');                
+            } 
+        });
+
+        $(".lag1").on("click", "a", function(e){
+            e.preventDefault();
+            var $this = $(this).parent();
+            $this.addClass("select").siblings().removeClass("select");
+            $(".lang").val($this.data("value"));
+        });
+        
+        $(".lang").on('click', function(e){
+            if(!$(".la1").hasClass( "show" )){
+                $(".la1").addClass("show");
+            }
+            else {
+                $(".la1").removeClass("show");
+            }
+            event.stopPropagation();
+        });
+    }
+
 	$(function() { 
         
         SlidesHome();
@@ -566,6 +708,8 @@
         if ( matchMedia( 'only screen and (max-width: 991px)' ).matches ) {
             SliderPoints();
         }
+        dropLanguage();
+        dropProfilelisting();
         brokersIsotope();
         onepage_nav();
         LondonoReadmore();

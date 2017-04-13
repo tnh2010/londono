@@ -11,6 +11,10 @@
 
 /* Smaller than standard 1200 */
 @media only screen and (max-width: 1199px) {
+	.vnp-size-form {
+		width: 179px;
+	}
+	
 	.mainnav.mainnav-footer ul li a {
 		padding: 10px 5px;
 	}
@@ -128,6 +132,69 @@
 
 /* Smaller than standard 992 */
 @media only screen and (max-width: 991px) {
+	.profile-listing-form-search .vnphat-select select,
+	.profile-listing-search .more-options .more select,
+	.vnp-size-form input[type="text"] {
+		width: 100%;
+	}
+
+	.vnp-size-form input[type="button"] {
+	    width: 100%;
+	}
+
+	.vnp-size-form {
+		width: 100%;
+		margin-bottom: 7px;
+	}
+
+	#sizelist li a {
+		color: #fff;
+	}
+
+	#sizelist {
+		    background-color: rgb(0, 107, 146);
+	}
+
+	.profile-listing-form-search .vnphat-select label {
+		display: block;
+		margin-bottom: 5px;
+	}
+
+	.profile-listing-search .more-options {
+		text-align: left;
+	}
+
+	.profile-listing-item .project-item {
+		width: 50%;
+	}
+
+	.vnphat-contact .contact-info.style2 {
+	    padding-left: 60px;
+	}
+	
+	.hoa-row.vnphat-contact {
+		padding-top: 30px;
+    	padding-bottom: 30px;
+	}
+
+	.vnphat-contact .contact-info {
+		margin-bottom: 25px;
+		padding-left: 0;
+	}
+
+	.vnphat-contact-form {
+	    padding-left: 0;
+	}
+
+	.vnphat-contact-form .contact-form input.first-name, 
+	.vnphat-contact-form .contact-form input.last-name, 
+	.vnphat-contact-form .contact-form input.email, 
+	.vnphat-contact-form .contact-form input.phone {
+	    width: 355px;
+	    float: left;
+	    margin-bottom: 10px;
+	}
+
 	.brokes-page-title .desc span {
 	    display: initial;
 	}
@@ -861,6 +928,14 @@
 
 /* All Mobile Sizes */
 @media only screen and (max-width: 767px) {
+
+	.vnphat-contact-form .contact-form input.first-name, 
+	.vnphat-contact-form .contact-form input.last-name, 
+	.vnphat-contact-form .contact-form input.email, 
+	.vnphat-contact-form .contact-form input.phone {
+	    width: 100%;
+	}
+
 	.w33 {
 		width: 33%;
 	}
@@ -1062,6 +1137,13 @@
 	.vnp-slider .owl-carousel .owl-item img, .vnp-slider .owl-carousel .owl-item .item {
 	    width: 538px;
 	    height: auto;
+	}
+
+	.vnphat-contact-form .contact-form input.first-name, 
+	.vnphat-contact-form .contact-form input.last-name, 
+	.vnphat-contact-form .contact-form input.email, 
+	.vnphat-contact-form .contact-form input.phone {
+	    width: 100%;
 	}
 }
 
@@ -1750,6 +1832,10 @@
 }
 
 @media (max-width: 320px) {	
+	.profile-listing-item .project-item {
+		width: 100%;
+	}
+
 	.brokers-form {
 		margin: 0 -15px;
 	}
