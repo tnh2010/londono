@@ -41,10 +41,13 @@
                 <div class="row">
                     <ul class="top-info">
                         <li class="language">
-                            <select >
-                                <option value="EN">EN</option>
-                                <option value="VI">VI</option>
-                            </select>
+                            <form name="size-form" class="vnp-language">
+                                <input id="vnla" class="lang" size="15" value="English" name="" type="button">
+                                <div class="lag1">
+                                    <p class="la1" data-value="English"><a href="#">English</a></p>
+                                    <p class="la1" data-value="Français"><a href="#">Français</a></p>
+                                </div>
+                            </form>
                         </li>
                         <li class="phone">
                             <a href="#">514 937 1717</a>
@@ -137,9 +140,9 @@
                             <div class="contact-info style2">                                
                                 <div class="address-contact">                                   
                                     <div class="content">
-                                        <div><strong>Phone / Fax:</strong> 514-937-1717</div>
-                                        <div><strong>info@londonogroup.com</strong></div>
-                                        <div><strong>www.londonogroup.com</strong></div>
+                                        <div><strong>Phone / Fax:</strong> <a href="#">514-937-1717</a></div>
+                                        <div><strong><a href="#">info@londonogroup.com</a></strong></div>
+                                        <div><strong><a href="www.londonogroup.com">www.londonogroup.com</a></strong></div>
                                     </div>
                                 </div>
                             </div><!-- /.contact-info -->
@@ -147,21 +150,23 @@
                         <div class="col-md-8">
                             <div class="vnphat-contact-form">
                                 <div class="contact-title">SEND US A MESSAGE</div>
-                                <div class="contact-form">
-                                    <span><input class="first-name" name="" type="text" value="" placeholder="First Name" required="required"></span>
+                                <form id="contactform" method="post" action="../contact/contact-process.php">
+                                    <div class="contact-form">
+                                        <span><input class="first-name" name="" type="text" value="" placeholder="First Name" ></span>
 
-                                    <span><input class="last-name" name="" type="text" value="" placeholder="Last Name" required="required"></span>
+                                        <span><input class="last-name" name="" type="text" value="" placeholder="Last Name"></span>
 
-                                    <span><input class="email" name="" type="text" value="" placeholder="Email*" required="required"></span>
+                                        <span class="email-error"><input class="email" name="email" type="text" value="" placeholder="Email*" required="required"></span>
 
-                                    <span><input class="phone" type="text" value="" placeholder="Phone*" required="required"></span>
-                                    
-                                    <p><span><input class="subject" type="text" class="calendar" value="" placeholder="Subject" required="required"></span></p>
+                                        <span class="phone-error"><input class="phone" name="phone" type="text" value="" placeholder="Phone*" required="required"></span>
+                                        
+                                        <p><span><input class="subject" type="text" class="calendar" value="" placeholder="Subject"></span></p>
 
-                                    <p><span><div class="wrap"><div class="pull-tab"></div><textarea placeholder="Message" name="textarea" type="textarea" id="textarea" class="textarea" value=""></textarea></div></span></p>
+                                        <p><span><div class="wrap"><div class="pull-tab"></div><textarea placeholder="Message" name="" type="textarea" id="textarea" class="textarea" value=""></textarea></div></span></p>
 
-                                    <p><span class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="SEND MESSAGE"></span></p>
-                                </div><!-- /.contact-form -->
+                                        <p><span class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="SEND MESSAGE"></span></p>
+                                    </div><!-- /.contact-form -->
+                                </form>
                             </div><!-- /.hoa-form-contact -->
                         </div><!-- /.col-md-8 -->
                     </div><!-- /.row -->
@@ -237,6 +242,7 @@
     <script type="text/javascript" src="javascript/imagesloaded.min.js"></script>
     <script type="text/javascript" src="javascript/jquery.flexslider-min.js"></script>
     <script type="text/javascript" src="javascript/owl.carousel.js"></script>
+    <script type="text/javascript" src="javascript/jquery-validate.js"></script>
     <script type="text/javascript" src="javascript/jquery.royalslider.min.js"></script>
     <script type="text/javascript" src="javascript/slick.js"></script>
     <script type="text/javascript" src="javascript/main.js"></script>

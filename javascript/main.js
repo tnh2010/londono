@@ -479,6 +479,51 @@
         });
     }
 
+    var ajaxContactForm = function() {  
+        $('#contactform').each(function() {
+            $(this).validate({
+                submitHandler: function( form ) {
+                    var $form = $(form),
+                        str = $form.serialize(),
+                        loading = $('<div />', { 'class': 'loading' });
+
+                    $.ajax({
+                        type: "POST",
+                        url:  $form.attr('action'),
+                        data: str,
+                        beforeSend: function () {
+                            $form.find('.submit-wrap').append(loading);
+                        },
+                        success: function( msg ) {
+                            var result, cls;                            
+                            if ( msg == 'Success' ) {                                
+                                result = 'Message Sent Successfully To Email Administrator. ( You can change the email management a very easy way to get the message of customers in the user manual )';
+                                cls = 'msg-success';
+                            } else {
+                                result = 'Error sending email.';
+                                cls = 'msg-error';
+                            }
+
+                            $form.prepend(
+                                $('<div />', {
+                                    'class': 'flat-alert ' + cls,
+                                    'text' : result
+                                }).append(
+                                    $('<a class="close" href="#"><i class="fa fa-close"></i></a>')
+                                )
+                            );
+
+                            $form.find(':input').not('.submit').val('');
+                        },
+                        complete: function (xhr, status, error_thrown) {
+                            $form.find('.loading').remove();
+                        }
+                    });
+                }
+            });
+        }); // each contactform
+    };
+
     var slickTeam =  function() {
         $('.hoa-carousel-owl').each(function() {
             $(".center").slick({
@@ -559,6 +604,7 @@
             } 
         });
 
+        // 1
         $(".sizelist1").on("click", "a", function(e){
             e.preventDefault();
             var $this = $(this).parent();
@@ -665,6 +711,114 @@
             }
             event.stopPropagation();
         });
+
+        // 7
+        $(".sizelist7").on("click", "a", function(e){
+            e.preventDefault();
+            var $this = $(this).parent();
+            $this.addClass("select").siblings().removeClass("select");
+            $(".sizevalue7").val($this.data("value"));
+        });
+        
+        $(".sizevalue7").on('click', function(e){
+            if(!$('.li7').hasClass( "show" )){
+                $('.li7').addClass('show');
+            }
+            else {
+                $('.li7').removeClass('show');
+            }
+            event.stopPropagation();
+        });
+
+        // 8
+        $(".sizelist8").on("click", "a", function(e){
+            e.preventDefault();
+            var $this = $(this).parent();
+            $this.addClass("select").siblings().removeClass("select");
+            $(".sizevalue8").val($this.data("value"));
+        });
+        
+        $(".sizevalue8").on('click', function(e){
+            if(!$('.li8').hasClass( "show" )){
+                $('.li8').addClass('show');
+            }
+            else {
+                $('.li8').removeClass('show');
+            }
+            event.stopPropagation();
+        });
+
+        // 9
+        $(".sizelist9").on("click", "a", function(e){
+            e.preventDefault();
+            var $this = $(this).parent();
+            $this.addClass("select").siblings().removeClass("select");
+            $(".sizevalue9").val($this.data("value"));
+        });
+        
+        $(".sizevalue9").on('click', function(e){
+            if(!$('.li9').hasClass( "show" )){
+                $('.li9').addClass('show');
+            }
+            else {
+                $('.li9').removeClass('show');
+            }
+            event.stopPropagation();
+        });
+
+        // 10
+        $(".sizelist10").on("click", "a", function(e){
+            e.preventDefault();
+            var $this = $(this).parent();
+            $this.addClass("select").siblings().removeClass("select");
+            $(".sizevalue10").val($this.data("value"));
+        });
+        
+        $(".sizevalue10").on('click', function(e){
+            if(!$('.li10').hasClass( "show" )){
+                $('.li10').addClass('show');
+            }
+            else {
+                $('.li10').removeClass('show');
+            }
+            event.stopPropagation();
+        });
+
+        // 11
+        $(".sizelist11").on("click", "a", function(e){
+            e.preventDefault();
+            var $this = $(this).parent();
+            $this.addClass("select").siblings().removeClass("select");
+            $(".sizevalue11").val($this.data("value"));
+        });
+        
+        $(".sizevalue11").on('click', function(e){
+            if(!$('.li11').hasClass( "show" )){
+                $('.li11').addClass('show');
+            }
+            else {
+                $('.li11').removeClass('show');
+            }
+            event.stopPropagation();
+        });
+
+        // 12
+        $(".sizelist12").on("click", "a", function(e){
+            e.preventDefault();
+            var $this = $(this).parent();
+            $this.addClass("select").siblings().removeClass("select");
+            $(".sizevalue12").val($this.data("value"));
+        });
+        
+        $(".sizevalue12").on('click', function(e){
+            if(!$('.li12').hasClass( "show" )){
+                $('.li12').addClass('show');
+            }
+            else {
+                $('.li12').removeClass('show');
+            }
+            event.stopPropagation();
+        });
     }
 
      var dropLanguage = function() {
@@ -693,6 +847,51 @@
         });
     }
 
+    var showContactinfo = function() {
+        $(".aboutandcontact .title-contact").on('click', function(e) {
+            if(!$(".aboutandcontact .hoa-contact").hasClass( "show" )){
+                $(".aboutandcontact .hoa-contact").addClass("show");
+            }
+            else {
+                $(".aboutandcontact .hoa-contact").removeClass("show");
+            }
+            event.stopPropagation();
+        });
+    }
+
+    var showAbout = function() {
+        $(".aboutandcontact .title-about").on('click', function(e) {
+            if(!$(".aboutandcontact .hoa-about").hasClass( "show" )){
+                $(".aboutandcontact .hoa-about").addClass("show");
+            }
+            else {
+                $(".aboutandcontact .hoa-about").removeClass("show");
+            }
+            event.stopPropagation();
+        });
+    }
+
+    var selectAccordion = function() {
+        $('.vnphat-accordion .toggle-title').on('click', function(){
+            if(!$(".toggle-content").hasClass( "np-show" )){
+                $(".toggle-content").addClass("np-show");
+            }
+            else {
+                $(".toggle-content").removeClass("np-show");
+            }
+        });
+    }
+    var selectAccordionadd = function() {
+        $('.vnphat-accordion .toggle-title').on('click', function(){
+            if(!$('.np-title').hasClass( "active" )) {
+                $('.np-title').addClass("active");
+            }
+            else {
+                $('.np-title').removeClass("active");
+            }
+        });
+    }
+
 	$(function() { 
         
         SlidesHome();
@@ -708,6 +907,18 @@
         if ( matchMedia( 'only screen and (max-width: 991px)' ).matches ) {
             SliderPoints();
         }
+
+        if ( matchMedia( 'only screen and (max-width: 991px)' ).matches ) {
+            showContactinfo();
+        }
+
+        if ( matchMedia( 'only screen and (max-width: 991px)' ).matches ) {
+            showAbout();
+        }
+
+        selectAccordionadd();
+        selectAccordion();
+        ajaxContactForm();
         dropLanguage();
         dropProfilelisting();
         brokersIsotope();

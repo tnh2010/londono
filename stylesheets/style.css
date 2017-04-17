@@ -2207,6 +2207,42 @@ input[type="color"],
 	background-color: #1f4159;
 }
 
+/* Select accordion */
+.vnphat-accordion .vnphat-toggle .toggle-content {
+	display: none;
+}
+
+.vnphat-accordion .vnphat-toggle .toggle-content.np-show {
+	display: block !important;
+}
+
+.vnphat-accordion .vnphat-toggle .toggle-title {
+	margin-bottom: 0;
+	text-align: right;
+	padding: 10px;
+	font-family: "Proxima Nova", sans-serif;
+	font-weight: 400;
+	font-size: 13px;
+	color: rgba(68, 68, 68, 0.64);
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.vnphat-accordion .vnphat-toggle .toggle-title img {
+	padding-left: 20px;
+
+}
+
+.vnphat-accordion .vnphat-toggle .toggle-title.active img {
+	padding-left: 0;
+	padding-right: 20px;
+	transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+}
+
 .profile-form {
 	padding: 0 60px 0 50px;
 }
@@ -2294,7 +2330,7 @@ input[type="color"],
     background-color: #fff;
     display: block;
     position: absolute;
-    right: 0;
+    right: -1px;
     bottom: 170px;
     width: 325px;
     height: 45px;
@@ -2306,6 +2342,9 @@ input[type="color"],
     cursor: pointer;
     color: #082d48;
     margin-bottom: 0;
+    border: 1px solid #b9b9b9;
+    border-bottom: 3px solid #fff;
+    margin-bottom: -2px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     -webkit-transition: all 0.3s ease-in-out;
@@ -2313,6 +2352,10 @@ input[type="color"],
         -ms-transition: all 0.3s ease-in-out;
          -o-transition: all 0.3s ease-in-out;
     		transition: all 0.3s ease-in-out;
+}
+
+.favorites {
+	border: 1px solid #b9b9b9;
 }
 
 .title.sw-click i {
@@ -2340,7 +2383,8 @@ input[type="color"],
 }
 
 .favorites-carousel-owl.owl-theme .owl-controls .owl-nav div.owl-prev {
-	left: 805px;
+	left: inherit;
+	right: 65px;
 	top: 30px;
 	width: 30px;
 	height: 30px;
@@ -3102,6 +3146,17 @@ input[type="color"],
 	line-height: 30px;
 }
 
+.vnphat-contact .contact-info .address-contact .content a {
+	color: #fff;
+	font-family: "Proxima Nova", sans-serif;
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.vnphat-contact .contact-info .address-contact .content a:hover {
+	color: #b28500;
+}
+
 .vnphat-contact-form {
 	padding-left: 180px;
 }
@@ -3205,6 +3260,23 @@ input[type="color"],
 	padding: 10px 30px;
 	font-size: 12px;
 	font-family: "ProximaNova Semibold", sans-serif;
+}
+
+.email-error,
+.phone-error {
+    display: table-cell;
+    position: relative;
+}
+
+.vnphat-contact-form .contact-form input.email.error,
+.vnphat-contact-form .contact-form input.phone.error {
+	margin-bottom: 5px;
+}
+
+.email-error label,
+.phone-error label {
+    color: #b28500;
+    margin-bottom: 10px;
 }
 
 /* Profile listing
@@ -3378,6 +3450,7 @@ input[type="color"],
 	width: 225px;
 	float: left;
 	margin-right: 11px;
+	margin-bottom: 10px;
 }
 
 .vnp-size-form:last-child {
@@ -3455,7 +3528,7 @@ input[type="color"],
 /* Language */
 .vnp-language {
 	position: relative;
-    width: 40px;
+    width: 65px;
     height: 100%;
     float: left;
 }
@@ -3468,12 +3541,12 @@ input[type="color"],
 
 .vnp-language input[type="button"] {
 	padding: 0px 15px 0 0;
-    width: 30px;
+    width: 65px;
     height: 30px;
 }
 
 .lag1 {
-	width: 30px !important;
+	width: 77px !important;
     position: absolute !important;
     left: 0 !important;
     top: 50px !important;
