@@ -2947,7 +2947,10 @@ input[type="color"],
 
 .brokers-team .brokers-profile .avatar {
 	float: left;
-	margin-right: 25px;
+    margin-right: 25px;
+    max-width: 101px;
+    height: 94px;
+    overflow: hidden;
 }
 
 .brokers-team .brokers-profile .content {
