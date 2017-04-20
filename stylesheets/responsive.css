@@ -144,8 +144,70 @@
 
 /* Smaller than standard 992 */
 @media only screen and (max-width: 991px) {
-	.vnp-details-profile .introduce-profile .profile-info .mail {
+	/*.vnp-details-profile .introduce-profile .profile-info .mail {
 		display: none;
+	}*/
+
+	li.language.hoa-language:before {
+		top: 13px;
+		background: transparent;
+		color: #fff;
+		right: inherit;
+    	left: 110px;
+	}
+
+	.language.hoa-language {
+		display: block;
+    	width: 100%;
+    	/*padding-left: 35px !important;*/
+	}
+
+	.language.hoa-language .vnp-language {
+		width: 100%;
+
+	}
+
+	.language.hoa-language .vnp-language input[type="button"],
+	.language.hoa-language .vnp-language .lag1 {
+		width: 100%;
+    	text-align: left;
+    	padding-left: 50px;
+	}
+
+	.language.hoa-language .vnp-language input[type="button"] {
+		height: 50px;
+	}
+
+	.language.hoa-language .vnp-language .lag1 {
+		/*left: 20px !important;*/
+    	background-color: #202020 !important;
+    	width: 100% !important;
+    	
+    	border-top: 1px solid #252525;
+	}
+
+	/*.language.hoa-language .vnp-language .lag1:before {
+		width: 55px;
+		height: 100%;
+		content: "";
+		position: absolute;
+		left: -55px;
+		top: 0;
+		background-color: #202020 !important;
+	}*/
+
+	.language.hoa-language .lag1 .la1:hover {
+		background: transparent !important;
+	}
+
+	.language.hoa-language .lag1 .la1 {
+		padding: 7px 0;
+	}
+
+	.language.hoa-language .lag1 .la1 a {
+	    padding: 7px !important;
+	    display: block;
+	    color: #fff !important;
 	}
 	
 	.email-error,
@@ -1200,6 +1262,9 @@
 }
 
 @media only screen and (max-width: 568px) {
+	.vnp-details-profile .introduce-profile .profile-info {
+		    padding-top: 10px;
+	}
 	.vnp-slider .owl-carousel .owl-item img, .vnp-slider .owl-carousel .owl-item .item {
 	    width: 538px;
 	    height: auto;
@@ -1214,6 +1279,16 @@
 }
 
 @media only screen and (max-width: 480px) {
+	.introduce-profile.mobile .col-md-4 {
+		padding-right: 5px;
+		padding-left: 5px;
+	}
+
+	.introduce-profile.mobile .col-md-8 {
+		padding-right: 5px;
+		padding-left: 0px;
+	}
+
 	.brokers-team .brokers-profile .avatar {
 		margin-right: 10px;
 	}
@@ -1699,11 +1774,13 @@
 		font-size: 15px;
 	}
 
-	.introduce-profile .profile-info .phone, .introduce-profile .profile-info .mail,
-	.introduce-profile .profile-info .phone span, .introduce-profile .profile-info .mail span,
+	.introduce-profile .profile-info .phone, 
+	.introduce-profile .profile-info .mail,
+	.vnp-details-profile .introduce-profile .profile-info .phone span, 
+	.vnp-details-profile .introduce-profile .profile-info .mail span,
 	.vnp-details-profile .introduce-profile .profile-info .phone, 
 	.vnp-details-profile .introduce-profile .profile-info .mail {
-		font-size: 16px;
+		font-size: 12px;
 		line-height: 18px;
 	}
 
@@ -2139,12 +2216,12 @@
 	}
 
 	.vnp-details-profile .introduce-profile .profile-info .profile-title {
-		font-size: 13px;
+		font-size: 12px;
 		line-height: 16px;
 	}
 
 	.vnp-details-profile .introduce-profile .profile-info .profile-name {
-		font-size: 20px;
+		font-size: 18px;
 		line-height: 24px;
 		margin-bottom: 5px;
 	}
@@ -2201,14 +2278,14 @@
 	.vnp-details-profile .introduce-profile .profile-info .mail, 
 	.vnp-details-profile .introduce-profile .profile-info .phone span, 
 	.vnp-details-profile .introduce-profile .profile-info .mail span {
-		font-size: 16px;
-		line-height: 18px;
+		font-size: 12px;
+		line-height: 16px;
 	}
 
 	.vnp-details-profile .introduce-profile .profile-info .phone, 
 	.vnp-details-profile .introduce-profile .profile-info .mail {
-	    font-size: 16px;
-	    line-height: 18px;
+	    font-size: 12px;
+	    line-height: 16px;
 	}
 
 	.hoa-row.aboutandcontact .title-section.style4 .title {
@@ -2447,7 +2524,7 @@
 	}
 
 	.vnp-details-profile .introduce-profile .profile-info {
-	    padding-top: 10px;
+	    padding-top: 5px;
 	    padding-bottom: 0;
 	}
 
@@ -2512,6 +2589,16 @@
 	.hoa-carousel-owl {
 	    padding: 0 15px;
 	    text-align: center;
+	}
+
+	.image-profile .hideinpc,
+	.vnp-details-profile .image-profile {
+	    display: inline-block;
+	    width: 65px;
+	}
+
+	.vnp-details-profile .introduce-profile .col-md-4 {
+		width: 25%;
 	}
 	
 }

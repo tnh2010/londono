@@ -3526,6 +3526,14 @@ input[type="color"],
 }
 
 /* Language */
+.language.hideinpc {
+	display: none;
+}
+
+.language.hoa-language {
+	margin: 0 !important;
+}
+
 .vnp-language {
 	position: relative;
     width: 65px;
